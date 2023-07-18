@@ -13,7 +13,7 @@ const Parallax = () => {
       }}
     >
       <h1 className='text-slate-50 text-3xl md:text-5xl text-center font-semibold mt-10 md:mt-20 md:mb-10'>
-        {process.env.REACT_APP_TITLE}
+        {process.env.NEXT_PUBLIC_TITLE}
       </h1>
       <div className=' my-20'>
         <Item text='Relatórios em tempo real' />

@@ -6,7 +6,7 @@ const Access = () => {
     return (
       <a
         className='flex cursor-pointer text-slate-800 hover:text-amber-500 hover:font-bold transition-colors duration-300'
-        href={process.env.REACT_APP_APP_URL}
+        href={process.env.NEXT_PUBLIC_APP_URL}
         target='_blank'
         rel='noopener noreferrer'
       >
