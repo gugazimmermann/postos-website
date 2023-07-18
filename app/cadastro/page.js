@@ -1,6 +1,6 @@
 import { Section } from '../components/layout/sections';
-import { RegisterText, RegisterForm } from '../components/pages/register';
 import { Card } from '../components/helpers';
+import { RegisterText, RegisterForm } from '../components/pages/register';
 
 export default function Register() {
   return (
