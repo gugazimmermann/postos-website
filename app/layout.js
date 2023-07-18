@@ -26,6 +26,8 @@ export default function RootLayout({ children }) {
         <link rel='apple-touch-icon' href='/android-icon-96x96.png' />
         <meta name='theme-color' content='#f59e0b' />
         <meta name='apple-mobile-web-app-status-bar' content='#f59e0b' />
+        <meta name="robots" content="all" />
+        <meta name="googlebot" content="index,follow" />
       </head>
       <body className={inter.className}>
         <div className='flex flex-col min-h-screen'>
