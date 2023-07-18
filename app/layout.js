@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className='flex flex-col min-h-screen'>
           <Header toggleDrawer={toggleDrawer} />
-          <main className='flex flex-grow flex-col items-center justify-start'>{children}</main>
+          <main className='flex flex-grow flex-col items-center justify-start px-2 md:px-0'>{children}</main>
           <Footer />
         </div>
         <Drawer isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />
