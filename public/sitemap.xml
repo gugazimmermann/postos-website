@@ -1,8 +1,40 @@
 <xml version="1.0" encoding="UTF-8">
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://www.touchsistemas.com</loc>
-		<lastmod>2023-07-18</lastmod>
+		<loc>https://www.touchsistemas.com.br/</loc>
+	</url>
+	<url>
+		<loc>https://www.touchsistemas.com.br/postos</loc>
+	</url>
+	<url>
+		<loc>https://www.touchsistemas.com.br/clientes</loc>
+	</url>
+	<url>
+		<loc>https://www.touchsistemas.com.br/cadastro</loc>
+	</url>
+	<url>
+		<loc>https://www.touchsistemas.com.br/empresa</loc>
+	</url>
+	<url>
+		<loc>https://www.touchsistemas.com.br/vagas</loc>
+	</url>
+	<url>
+		<loc>https://www.touchsistemas.com.br/termos-de-uso</loc>
+	</url>
+	<url>
+		<loc>https://www.touchsistemas.com.br/privacidade</loc>
+	</url>
+	<url>
+		<loc>https://www.touchsistemas.com.br/personalizacoes</loc>
+	</url>
+	<url>
+		<loc>https://www.touchsistemas.com.br/novos-relatorios</loc>
+	</url>
+	<url>
+		<loc>https://www.touchsistemas.com.br/faq</loc>
+	</url>
+	<url>
+		<loc>https://www.touchsistemas.com.br/contato</loc>
 	</url>
 </urlset>
 </xml>
