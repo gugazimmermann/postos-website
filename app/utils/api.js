@@ -1,5 +1,5 @@
 import axios from './axios';
-import { masks } from './masks';
+import * as masks from './masks';
 
 const contact = async ({ name, email, message }) => {
     try {
