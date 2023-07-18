@@ -80,9 +80,9 @@ const RegisterForm = () => {
       resetForm();
       router.push(`/cadastro/login/${data.id}`);
     } else {
-      if (data === 'Email is already in registered.') {
+      if (data === 'Email is already registered.') {
         setAlert('Email já está cadastrado.');
-      } else if (data === 'Document is already in registered.') {
+      } else if (data === 'Document is already registered.') {
         setAlert('CNPJ já está cadastrado.');
       } else {
         setAlert('Ocorreu um erro no envio do formulário, tente novamente.');
@@ -178,15 +178,13 @@ const RegisterForm = () => {
         </Grid.Col2>
         <Grid.Row>
           <div className='flex flex-row justify-center items-center'>
-            <div>
-            <Form.Input
+            <input
               id='accept-checkbox'
               type='checkbox'
               checked={accept}
               onChange={(e) => setAccept(e.target.checked)}
               className='w-4 h-4 rounded'
             />
-            </div>
             <label
               htmlFor='accept-checkbox'
               className='ml-2 text-sm font-medium text-slate-800 flex flex-row justify-start items-start'
