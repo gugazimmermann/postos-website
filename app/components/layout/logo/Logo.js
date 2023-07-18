@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-const Logo = ({ title }) => {
+const Logo = () => {
   return (
     <Link href='/' className='flex flex-row items-center'>
       <Image
