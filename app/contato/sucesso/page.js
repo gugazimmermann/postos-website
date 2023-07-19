@@ -1,4 +1,11 @@
+import sharedMetadata from '../../shared-metadata';
 import { Section, SectionTitle, SectionParagraph } from '../../components/layout/sections';
+
+export const metadata = {
+  ...sharedMetadata,
+  title: `Contato | ${sharedMetadata.title}`,
+};
+
 export default function ContactUsSuccess() {
   return (
     <Section>

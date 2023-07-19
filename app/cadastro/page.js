@@ -1,6 +1,17 @@
+import sharedMetadata from '../shared-metadata';
 import { Section } from '../components/layout/sections';
 import { Card } from '../components/helpers';
 import { RegisterText, RegisterForm } from '../components/pages/register';
+
+export const metadata = {
+  ...sharedMetadata,
+  title: `Cadastro de Organização | ${sharedMetadata.title}`,
+  description: `Cadastro de Organização no ${sharedMetadata.title}`,
+  alternates: {
+    canonical: `${sharedMetadata.alternates.canonical}/cadastro`,
+  },
+  keywords: [...sharedMetadata.keywords, 'cadastro', 'organização', 'organizações'],
+};
 
 export default function Register() {
   return (

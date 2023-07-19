@@ -1,6 +1,17 @@
+import sharedMetadata from '../shared-metadata';
 import { Section } from '../components/layout/sections';
 import { ContactText, ContactForm } from '../components/pages/contact-us';
 import { Card } from '../components/helpers';
+
+export const metadata = {
+  ...sharedMetadata,
+  title: `Contato | ${sharedMetadata.title}`,
+  description: `Informações de Contato do ${sharedMetadata.title}`,
+  alternates: {
+    canonical: `${sharedMetadata.alternates.canonical}/contato`,
+  },
+  keywords: [...sharedMetadata.keywords, 'contato', 'suporte'],
+};
 
 export default function ContactUs() {
   return (

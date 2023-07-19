@@ -1,37 +1,22 @@
-'use client';
-
-import { useCallback, useEffect, useState } from 'react';
-import { api } from '../../../utils';
+import sharedMetadata from '../../../shared-metadata';
 import { Section } from '../../../components/layout/sections';
-import { Card } from '../../../components/helpers';
-import { CodeText, CodeForm } from '../../../components/pages/register';
+import Code from './Code';
 
-export default function RegisterLogin({ params }) {
-  const [email, setEmail] = useState('');
-  const [fetchError, setFetchError] = useState(false);
+export const metadata = {
+  ...sharedMetadata,
+  title: `Cadastro de Organização | ${sharedMetadata.title}`,
+  description: `Cadastro de Organização no ${sharedMetadata.title}`,
+  alternates: {
+    canonical: `${sharedMetadata.alternates.canonical}/cadastro/sucesso`,
+  },
+  keywords: [...sharedMetadata.keywords, 'cadastro', 'organização', 'organizações'],
+};
 
-  const getRegister = useCallback(async () => {
-    const data = await api.getOrganization(params?.data?.[0]);
-    if (data?.email) setEmail(data.email);
-    else setFetchError(true);
-  }, [params]);
-
-  useEffect(() => {
-    if (params?.data?.[0]) getRegister();
-  }, [getRegister, params]);
-
+export default function RegisterCode({ params }) {
   return (
     <Section>
       <div className='flex flex-col md:flex-row gap-4 md:gap-8 items-start'>
-        <CodeText email={email} />
-        <Card title='Digite seu Código de Confirmação'>
-          <CodeForm
-            id={params?.data?.[0]}
-            email={email}
-            confirmationCode={params?.data?.[1]}
-            fetchError={fetchError}
-          />
-        </Card>
+        <Code params={params} />
       </div>
     </Section>
   );

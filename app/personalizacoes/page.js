@@ -1,4 +1,15 @@
+import sharedMetadata from '../shared-metadata';
 import { Section, SectionTitle, SectionParagraph } from '../components/layout/sections';
+
+export const metadata = {
+  ...sharedMetadata,
+  title: `Personalizações | ${sharedMetadata.title}`,
+  description: `Personalize o ${sharedMetadata.title} para sua organização e postos`,
+  alternates: {
+    canonical: `${sharedMetadata.alternates.canonical}/personalizacoes`,
+  },
+  keywords: [...sharedMetadata.keywords, 'personalização', 'suporte'],
+}
 
 export default function Customizations() {
   return (
