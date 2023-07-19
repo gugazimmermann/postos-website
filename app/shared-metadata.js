@@ -5,7 +5,6 @@ const URL = process.env.NEXT_PUBLIC_URL || '';
 const sharedMetadata = {
   title: TITLE,
   description: DESCRIPTION,
-  canonical: URL,
   keywords: [
     'Posto',
     'Posto de Combustível',
@@ -22,6 +21,9 @@ const sharedMetadata = {
     'Motoristas',
     'Abastecimentos',
   ],
+  alternates: {
+    canonical: URL,
+  },
   authors: [
     {
       name: 'Guga Zimmermann - gugazimmermann@gmail.com',
