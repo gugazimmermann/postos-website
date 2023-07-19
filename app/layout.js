@@ -7,15 +7,7 @@ import { Header, Footer, Drawer } from './components/layout';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const TITLE = process.env.NEXT_PUBLIC_TITLE || '';
-const DESCRIPTION = process.env.NEXT_PUBLIC_DESCRIPTION || '';
-
-export const metadata = {
-  title: TITLE,
-  description: DESCRIPTION,
-};
-
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const toggleDrawer = () => setIsDrawerOpen(!isDrawerOpen);
 
@@ -26,13 +18,15 @@ export default function RootLayout({ children }) {
         <link rel='apple-touch-icon' href='/android-icon-96x96.png' />
         <meta name='theme-color' content='#f59e0b' />
         <meta name='apple-mobile-web-app-status-bar' content='#f59e0b' />
-        <meta name="robots" content="all" />
-        <meta name="googlebot" content="index,follow" />
+        <meta name='robots' content='all' />
+        <meta name='googlebot' content='index,follow' />
       </head>
       <body className={inter.className}>
         <div className='flex flex-col min-h-screen'>
           <Header toggleDrawer={toggleDrawer} />
-          <main className='flex flex-grow flex-col items-center justify-start px-2 md:px-0'>{children}</main>
+          <main className='flex flex-grow flex-col items-center justify-start px-2 md:px-0'>
+            {children}
+          </main>
           <Footer />
         </div>
         <Drawer isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />
