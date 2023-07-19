@@ -1,6 +1,8 @@
 {
   "name": "postos-website-nextjs",
-  "version": "0.1.0",
+  "description": "Sistema para Gerenciamento de Frotas para Postos de Combustíveis!",
+  "author": "Guga Zimmermann <gugazimmermann@gmail.com> (https://www.linkedin.com/in/guga-zimmermann/)",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev -p 4200",
