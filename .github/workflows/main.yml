@@ -23,13 +23,15 @@ jobs:
 
       - name: Build Next.js app
         run: |
+          touch .env.production
+          echo NEXT_PUBLIC_TITLE=${{ secrets.NEXT_PUBLIC_TITLE }} >> .env.production
+          echo NEXT_PUBLIC_DESCRIPTION=${{ secrets.NEXT_PUBLIC_DESCRIPTION }} >> .env.production
+          echo NEXT_PUBLIC_URL=${{ secrets.NEXT_PUBLIC_URL }} >> .env.production
+          echo NEXT_PUBLIC_APP_URL=${{ secrets.NEXT_PUBLIC_APP_URL }} >> .env.production
+          echo NEXT_PUBLIC_API_URL=${{ secrets.NEXT_PUBLIC_API_URL }} >> .env.production
+          echo NODE_ENV=${{ secrets.NODE_ENV }} >> .env.production
+          npx next telemetry disable
           npm run build
-        env:
-          NEXT_PUBLIC_TITLE: ${{ secrets.NEXT_PUBLIC_TITLE }}
-          NEXT_PUBLIC_DESCRIPTION: ${{ secrets.NEXT_PUBLIC_DESCRIPTION }}
-          NEXT_PUBLIC_URL: ${{ secrets.NEXT_PUBLIC_URL }}
-          NEXT_PUBLIC_APP_URL: ${{ secrets.NEXT_PUBLIC_APP_URL }}
-          NEXT_PUBLIC_API_URL: ${{ secrets.NEXT_PUBLIC_API_URL }}
 
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
@@ -41,6 +43,7 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
       - name: Invalidate CloudFront Cache
         run: |
           aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
