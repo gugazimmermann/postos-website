@@ -1,5 +1,6 @@
 'use client';
 
+// eslint-disable-next-line no-unused-vars
 export default function GlobalError({ error, reset }) {
   return (
     <html>
