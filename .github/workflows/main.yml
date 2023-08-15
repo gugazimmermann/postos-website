@@ -24,7 +24,6 @@ jobs:
       - name: Build Next.js app
         run: |
           npm run build
-          npm run export
         env:
           NEXT_PUBLIC_TITLE: ${{ secrets.NEXT_PUBLIC_TITLE }}
           NEXT_PUBLIC_DESCRIPTION: ${{ secrets.NEXT_PUBLIC_DESCRIPTION }}
@@ -35,7 +34,8 @@ jobs:
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
         with:
-          args: --acl public-read --follow-symlinks --delete
+          args: --follow-symlinks --delete
+          source: dist/
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
