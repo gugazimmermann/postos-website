@@ -23,6 +23,7 @@ jobs:
 
       - name: Build Next.js app
         run: |
+          npx next telemetry disable
           npm run build
         env:
           NEXT_PUBLIC_TITLE: ${{ secrets.NEXT_PUBLIC_TITLE }}
