@@ -33,7 +33,7 @@ export default function AboutUs() {
           width={0}
           height={0}
           className='w-1/2 float-right mr-4'
-          alt='Follow us on Twitter'
+          alt='About Us'
         />
         <SectionParagraph>
           Bem-vindos à <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, uma empresa que nasceu da fusão entre visão

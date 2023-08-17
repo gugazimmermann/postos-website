@@ -42,7 +42,7 @@ export default function Tecnologias() {
           width={0}
           height={0}
           className='w-1/2 float-left mr-4'
-          alt='Follow us on Twitter'
+          alt='Tecnologias'
         />
         <Tecnologies />
       </div>
