@@ -16,8 +16,8 @@ const WhatWeDo = () => {
   return (
     <section className='container my-8 space-y-4 md:space-y-8 text-slate-800'>
       <div className='w-full'>
-        <h2 className='text-3xl font-bold sm:text-4xl'>O Que Oferecemos</h2>
-        <p className='mt-4 text-slate-500'>
+        <h2 className='text-center md:text-left text-3xl font-bold'>O Que Oferecemos</h2>
+        <p className='mt-4 text-center md:text-left text-slate-500'>
           A {process.env.NEXT_PUBLIC_TITLE} oferece um sistema altamente especializado para o
           controle de abastecimentos de veículos de frota em postos de combustíveis.
           Diferenciando-se de sistemas genéricos, não nos envolvemos em funções como controle de

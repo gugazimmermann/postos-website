@@ -19,7 +19,7 @@ const Parallax = () => {
           {process.env.NEXT_PUBLIC_TITLE}
         </h1>
         <div className='my-20 w-full flex flex-row justify-evenly items-center'>
-        <div>
+          <div>
             <Item text='Controle de Abastecimentos' />
             <Divider />
             <Item text='Abastecimentos com Produtos' />
