@@ -12,7 +12,7 @@ const OrganizationDataText = ({ name }) => {
         onClick={openModal}
         className='text-amber-500 hover:underline hover:cursor-pointer text-lg justify-center md:justify-start inline-flex items-center gap-2'
       >
-        Mais Informações
+        Entenda Níveis de Acesso
         <ModalOpen />
       </button>
     );
@@ -32,15 +32,34 @@ const OrganizationDataText = ({ name }) => {
         {nameText(name)}, estamos quase lá, para finalizar complete os dados de acesso.
       </p>
       <MoreInfoButton />
-      <Modal title='Mais Informações'>
+      <Modal title='Níveis de Acesso Personalizados' scroll={true}>
         <div className='flex flex-col justify-center leading-6'>
           <p className='text-slate-800 mb-2'>
-            <strong>Código da Organização</strong> é um código único que identica sua Organização
-            para acessar o sistema. Uma mesma organização pode ter vários <strong>Postos</strong> e
-            vários <strong>Usuários</strong>.
+            Em {process.env.NEXT_PUBLIC_TITLE}, oferecemos uma maneira intuitiva de gerenciar permissões e acesso.
+            Aqui estão os três níveis de acesso que você pode usar para organizar sua estrutura:
           </p>
           <p className='text-slate-800 mb-2'>
-            <strong>Usuário</strong> é o que identifica quem está acessando o sistema.
+            <strong>Código da Organização</strong>: Um identificador único que representa a
+            organização, rede ou empresa. Isso garante que cada entidade seja claramente
+            diferenciada dentro do {process.env.NEXT_PUBLIC_TITLE}.
+          </p>
+          <p className='text-slate-800 mb-2'>
+            <strong>Código do Posto</strong>: Representa os diferentes Postos operados por cada
+            Organização. Este código é único dentro de uma Organização, permitindo uma fácil
+            identificação dos locais específicos.
+          </p>
+          <p className='text-slate-800 mb-2'>
+            <strong>Usuários</strong>: Permitem acesso personalizado em cada Posto ou Organização.
+            Os usuários são únicos dentro de cada esfera, garantindo identificação clara.
+          </p>
+          <p className='text-slate-800 mb-2'>
+            Por exemplo, mesmo que o mesmo nome de usuário &quot;caixa&quot; seja usado em
+            diferentes Postos, eles são tratados separadamente para manter a individualidade.
+          </p>
+          <p className='text-slate-800 mb-4'>
+            Simplificando, nosso sistema oferece uma abordagem eficiente para controlar o acesso e
+            as permissões, utilizando esses três níveis. Isso permite uma gestão clara e organizada,
+            independentemente do tamanho da sua rede ou Organização.
           </p>
         </div>
       </Modal>

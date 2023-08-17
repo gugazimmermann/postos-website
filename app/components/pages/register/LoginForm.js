@@ -86,7 +86,7 @@ const LoginForm = ({ id, name, fetchError }) => {
             <Form.Input
               loading={loading}
               value={login}
-              editValue={(e) => setLogin(e.target.value)}
+              editValue={(e) => setLogin(masks.code(e.target.value))}
               required={true}
               name='login'
             />

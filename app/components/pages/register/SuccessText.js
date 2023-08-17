@@ -39,7 +39,6 @@ const SuccessText = ({ code, name, login, email, fetchError }) => {
         <Alert type='error' text={alert} />
       ) : (
         <>
-          {' '}
           <p className='text-lg text-slate-500 inline'>
             {renderText(name)}, seu cadastro foi concluído com sucesso e seus dados foram enviados
             para {renderText(email)}.
