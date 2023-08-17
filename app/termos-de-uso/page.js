@@ -10,7 +10,7 @@ export const metadata = {
     canonical: `${sharedMetadata.alternates.canonical}/termos-de-uso`,
   },
   keywords: [...sharedMetadata.keywords, 'termos', 'uso', 'utilização'],
-}
+};
 
 export default function UsageTerms() {
   return (

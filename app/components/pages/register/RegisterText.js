@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useModal } from '../../../hooks';
 import { PaymentText, PaymentTable } from '../payment';

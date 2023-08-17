@@ -1,4 +1,12 @@
-const Input = ({ loading, value, editValue, disabled = false, required = true, type = 'text', name }) => {
+const Input = ({
+  loading,
+  value,
+  editValue,
+  disabled = false,
+  required = true,
+  type = 'text',
+  name,
+}) => {
   return (
     <input
       required={required}

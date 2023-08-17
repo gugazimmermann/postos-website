@@ -36,9 +36,9 @@ const UsageTermsText = () => {
       </ul>
       <SectionSubTitle>2. Acesso e Uso</SectionSubTitle>
       <SectionParagraph>
-        2.1 Criação de Conta: Para utilizar o {process.env.NEXT_PUBLIC_TITLE}, os clientes devem criar
-        uma conta. Os clientes são responsáveis por fornecer informações precisas e atualizadas
-        durante o processo de registro.
+        2.1 Criação de Conta: Para utilizar o {process.env.NEXT_PUBLIC_TITLE}, os clientes devem
+        criar uma conta. Os clientes são responsáveis por fornecer informações precisas e
+        atualizadas durante o processo de registro.
       </SectionParagraph>
       <SectionParagraph>
         2.2 Autorização de Uso: Os clientes são responsáveis por manter a confidencialidade das
@@ -61,10 +61,10 @@ const UsageTermsText = () => {
         propriedade de quaisquer dados do cliente.
       </SectionParagraph>
       <SectionParagraph>
-        3.2 Proteção de Dados: O {process.env.NEXT_PUBLIC_TITLE} adota medidas adequadas para proteger
-        os dados dos clientes contra acesso não autorizado, perda ou divulgação. No entanto, os
-        clientes reconhecem que nenhuma transmissão ou armazenamento de dados é totalmente seguro e
-        utilizam o sistema SaaS por sua própria conta e risco.
+        3.2 Proteção de Dados: O {process.env.NEXT_PUBLIC_TITLE} adota medidas adequadas para
+        proteger os dados dos clientes contra acesso não autorizado, perda ou divulgação. No
+        entanto, os clientes reconhecem que nenhuma transmissão ou armazenamento de dados é
+        totalmente seguro e utilizam o sistema SaaS por sua própria conta e risco.
       </SectionParagraph>
       <SectionParagraph>
         3.3 Uso de Dados: O {process.env.NEXT_PUBLIC_TITLE} pode analisar e agregar dados para
@@ -98,8 +98,9 @@ const UsageTermsText = () => {
       </SectionParagraph>
       <SectionSubTitle>5. Propriedade Intelectual</SectionSubTitle>
       <SectionParagraph>
-        5.1 Propriedade: O {process.env.NEXT_PUBLIC_TITLE} retém todos os direitos, título e interesse
-        no sistema SaaS, incluindo todos os direitos de propriedade intelectual associados.
+        5.1 Propriedade: O {process.env.NEXT_PUBLIC_TITLE} retém todos os direitos, título e
+        interesse no sistema SaaS, incluindo todos os direitos de propriedade intelectual
+        associados.
       </SectionParagraph>
       <SectionParagraph>
         5.2 Licença Limitada: O {process.env.NEXT_PUBLIC_TITLE} concede aos clientes uma licença não
@@ -123,7 +124,8 @@ const UsageTermsText = () => {
         danos indiretos, consequenciais ou incidentais decorrentes do uso do sistema SaaS.
       </SectionParagraph>
       <SectionParagraph>
-        6.3 Limitação: Em nenhuma circunstância a responsabilidade do {process.env.NEXT_PUBLIC_TITLE}
+        6.3 Limitação: Em nenhuma circunstância a responsabilidade do{' '}
+        {process.env.NEXT_PUBLIC_TITLE}
         excederá o valor total pago pelo cliente pelo sistema SaaS durante os doze meses anteriores
         à reclamação.
       </SectionParagraph>
@@ -157,9 +159,9 @@ const UsageTermsText = () => {
         tribunais brasileiros.
       </SectionParagraph>
       <SectionParagraph>
-        Ao utilizar o {process.env.NEXT_PUBLIC_TITLE}, você reconhece que leu, compreendeu e concordou
-        com estes Termos de Uso. Se tiver alguma dúvida ou preocupação, entre em contato conosco
-        através das informações de contato fornecidas.
+        Ao utilizar o {process.env.NEXT_PUBLIC_TITLE}, você reconhece que leu, compreendeu e
+        concordou com estes Termos de Uso. Se tiver alguma dúvida ou preocupação, entre em contato
+        conosco através das informações de contato fornecidas.
       </SectionParagraph>
     </>
   );

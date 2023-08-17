@@ -15,9 +15,9 @@ const PrivacityText = () => {
 
       <SectionSubTitle>1. Informações Coletadas</SectionSubTitle>
       <SectionParagraph>
-        1.1 Informações de Cadastro: Ao criar uma conta no {process.env.NEXT_PUBLIC_TITLE}, coletamos
-        informações pessoais como nome, endereço de e-mail, e informações de contato. Esses dados
-        são necessários para o registro e para garantir que podemos fornecer os serviços
+        1.1 Informações de Cadastro: Ao criar uma conta no {process.env.NEXT_PUBLIC_TITLE},
+        coletamos informações pessoais como nome, endereço de e-mail, e informações de contato.
+        Esses dados são necessários para o registro e para garantir que podemos fornecer os serviços
         contratados.
       </SectionParagraph>
       <SectionParagraph>
@@ -97,13 +97,12 @@ const PrivacityText = () => {
       </SectionParagraph>
 
       <SectionParagraph>
-        Ao utilizar o {process.env.NEXT_PUBLIC_TITLE}, você reconhece que leu, compreendeu e concordou
-        com estas Políticas de Privacidade. Se tiver alguma dúvida ou preocupação, entre em contato
-        conosco através das informações de contato fornecidas.
+        Ao utilizar o {process.env.NEXT_PUBLIC_TITLE}, você reconhece que leu, compreendeu e
+        concordou com estas Políticas de Privacidade. Se tiver alguma dúvida ou preocupação, entre
+        em contato conosco através das informações de contato fornecidas.
       </SectionParagraph>
     </>
   );
 };
 
 export default PrivacityText;
-

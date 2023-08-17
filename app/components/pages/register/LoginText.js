@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useModal } from '../../../hooks';
 import { Loading, ModalOpen } from '../../icons';
@@ -35,7 +35,9 @@ const OrganizationDataText = ({ name }) => {
       <Modal title='Mais Informações'>
         <div className='flex flex-col justify-center leading-6'>
           <p className='text-slate-800 mb-2'>
-            <strong>Código da Organização</strong> é um código único que identica sua Organização para acessar o sistema. Uma mesma organização pode ter vários <strong>Postos</strong> e vários <strong>Usuários</strong>.
+            <strong>Código da Organização</strong> é um código único que identica sua Organização
+            para acessar o sistema. Uma mesma organização pode ter vários <strong>Postos</strong> e
+            vários <strong>Usuários</strong>.
           </p>
           <p className='text-slate-800 mb-2'>
             <strong>Usuário</strong> é o que identifica quem está acessando o sistema.

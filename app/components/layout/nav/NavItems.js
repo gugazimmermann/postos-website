@@ -12,7 +12,9 @@ const NavItems = () => {
       <Link
         href={to}
         className={`flex cursor-pointer ${
-          isActive ? 'text-amber-500 font-bold' : 'text-slate-800 hover:text-amber-500 hover:font-bold transition-colors duration-300'
+          isActive
+            ? 'text-amber-500 font-bold'
+            : 'text-slate-800 hover:text-amber-500 hover:font-bold transition-colors duration-300'
         }`}
       >
         {text}

@@ -13,7 +13,6 @@ export const metadata = {
 };
 
 export default function RegisterSuccess({ params }) {
-
   return (
     <Section>
       <div className='flex flex-col md:flex-row gap-4 md:gap-8 items-start'>
