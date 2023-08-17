@@ -1,4 +1,4 @@
-import { Hero } from '../../icons';
+import Image from 'next/image';
 
 const HomeHero = () => {
   const DetailMainText = ({ text }) => {
@@ -15,7 +15,7 @@ const HomeHero = () => {
 
   const Text = ({ className }) => {
     return (
-      <p className={`text-slate-500 text-center ${className}`}>
+      <p className={`text-slate-500 text-lg text-center ${className}`}>
         Tenha uma plataforma moderna para seu controle e dê autonomia para seus clientes!
       </p>
     );
@@ -25,7 +25,14 @@ const HomeHero = () => {
     return (
       <div className='px-3 w-full'>
         <div className='flex justify-center items-center'>
-          <Hero className='h-96' />
+          <Image
+            priority
+            src='/images/home_data.svg'
+            width={0}
+            height={0}
+            className='w-4/5'
+            alt='home'
+          />
         </div>
       </div>
     );
