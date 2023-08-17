@@ -1,4 +1,4 @@
-import Social from '../../layout/social/Social'
+import Social from '../../layout/social/Social';
 
 const Address = () => {
   return (

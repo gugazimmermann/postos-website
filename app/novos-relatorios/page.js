@@ -9,7 +9,7 @@ export const metadata = {
     canonical: `${sharedMetadata.alternates.canonical}/novos-relatorios`,
   },
   keywords: [...sharedMetadata.keywords, 'relatórios', 'gráficos', 'tabelas'],
-}
+};
 
 export default function NewReports() {
   return (

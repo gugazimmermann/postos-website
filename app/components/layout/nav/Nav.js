@@ -1,4 +1,4 @@
-import NavItems from "./NavItems";
+import NavItems from './NavItems';
 
 const Nav = () => {
   return (

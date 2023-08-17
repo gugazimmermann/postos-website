@@ -9,7 +9,7 @@ export const metadata = {
     canonical: `${sharedMetadata.alternates.canonical}/personalizacoes`,
   },
   keywords: [...sharedMetadata.keywords, 'personalização', 'suporte'],
-}
+};
 
 export default function Customizations() {
   return (

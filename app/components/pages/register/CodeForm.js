@@ -51,7 +51,7 @@ const CodeForm = ({ id, email, confirmationCode = '', fetchError }) => {
   useEffect(() => setLoading(!email), [email]);
 
   useEffect(() => {
-    if (fetchError) setAlert('Ocorreu um erro, tente atualizar a página!')
+    if (fetchError) setAlert('Ocorreu um erro, tente atualizar a página!');
   }, [fetchError]);
 
   return (

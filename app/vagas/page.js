@@ -8,7 +8,16 @@ export const metadata = {
   alternates: {
     canonical: `${sharedMetadata.alternates.canonical}/vagas`,
   },
-  keywords: [...sharedMetadata.keywords, 'vagas', 'posições', 'emprego', 'trabalho', 'desenvolvedor', 'developer', 'programador'],
+  keywords: [
+    ...sharedMetadata.keywords,
+    'vagas',
+    'posições',
+    'emprego',
+    'trabalho',
+    'desenvolvedor',
+    'developer',
+    'programador',
+  ],
 };
 
 export default function WorkWithUs() {

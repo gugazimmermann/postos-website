@@ -63,7 +63,7 @@ const LoginForm = ({ id, name, fetchError }) => {
   useEffect(() => setLoading(!name), [name]);
 
   useEffect(() => {
-    if (fetchError) setAlert('Ocorreu um erro, tente atualizar a página!')
+    if (fetchError) setAlert('Ocorreu um erro, tente atualizar a página!');
   }, [fetchError]);
 
   return (
