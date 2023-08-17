@@ -33,7 +33,7 @@ export default function Customizations() {
           width={0}
           height={0}
           className='w-1/2 float-right mr-4'
-          alt='About Us'
+          alt='customizations'
         />
         <SectionParagraph>
           No <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, compreendemos que cada posto de
