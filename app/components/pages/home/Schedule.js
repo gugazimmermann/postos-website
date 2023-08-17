@@ -5,7 +5,7 @@ const imageUrls = ['/images/agenda.png', '/images/agenda2.png'];
 
 const Schedule = () => {
   return (
-    <Inform side='right' imageUrls={imageUrls} title='Agenda de Serviços Integrada'>
+    <Inform side='right' imageUrls={imageUrls}  time={8000} title='Agenda de Serviços Integrada'>
       <SectionParagraph>
         Configure serviços de maneira descomplicada e permita que seus clientes agendem o uso dos
         mesmos. Isso oferece um controle refinado do estoque, permitindo antecipar quais veículos
