@@ -5,10 +5,10 @@ const CallToAction = () => {
   return (
     <section className='container flex flex-col bg-slate-50 rounded-3xl shadow-lg'>
       <div className='py-8 px-4 flex flex-col justify-center items-center uppercase'>
-        <h2 className='mb-4 text-3xl tracking-tight font-extrabold leading-tight text-slate-800'>
+        <h2 className='text-center mb-4 text-3xl tracking-tight font-extrabold leading-tight text-slate-800'>
           Modernize seu Posto Hoje!
         </h2>
-        <p className='mb-6 text-slate-800 '>
+        <p className='mb-6 text-slate-800 text-center'>
           Faça sua conta no {process.env.NEXT_PUBLIC_TITLE} Gratuitamente.
         </p>
         <Link
@@ -22,7 +22,6 @@ const CallToAction = () => {
         src='/images/abastecimento.png'
         width={0}
         height={0}
-        objectFit='fill'
         className='w-full rounded-b-3xl'
         alt='CallToAction'
       />

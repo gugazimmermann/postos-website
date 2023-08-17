@@ -25,7 +25,7 @@ export default function WorkWithUs() {
   return (
     <Section>
       <SectionTitle title='Trabalhe Conosco' />
-      <div className='w-full flex flex-row justify-around items-center mt-4'>
+      <div className='w-full flex flex-col md:flex-row justify-around items-center mt-4'>
         <Image
           src='/images/work.svg'
           width={0}

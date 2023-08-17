@@ -23,7 +23,7 @@ const HomeHero = () => {
 
   const HeroImage = () => {
     return (
-      <div className='px-3 w-full'>
+      <div className='py-4 md:py-0 px-3 w-full'>
         <div className='flex justify-center items-center'>
           <Image
             priority

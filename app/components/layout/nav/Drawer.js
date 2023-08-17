@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef } from 'react';
-import NavItems from './NavItems';
+import DrawerItems from './DrawerItems';
 
 const Drawer = ({ isDrawerOpen, setIsDrawerOpen }) => {
   const drawerRef = useRef(null);
@@ -24,7 +24,7 @@ const Drawer = ({ isDrawerOpen, setIsDrawerOpen }) => {
       } transition-transform ease-in-out duration-300 shadow-lg z-50 md:hidden`}
     >
       <div className='p-4 flex flex-col gap-4'>
-        <NavItems />
+        <DrawerItems />
       </div>
     </div>
   );

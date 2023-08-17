@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
-const NavItems = () => {
+const DrawerItems = () => {
   const pathname = usePathname();
 
   const NavItem = ({ to, text }) => {
@@ -26,9 +26,14 @@ const NavItems = () => {
     <>
       <NavItem to='/postos' text='Para os Postos' />
       <NavItem to='/clientes' text='Para os Clientes' />
+      <NavItem to='/empresa' text='A Empresa' />
+      <NavItem to='/tecnologias' text='Tecnologias Utilizadas' />
+      <NavItem to='/personalizacoes' text='Personalizações' />
+      <NavItem to='/novos-relatorios' text='Novos Relatórios' />
+      <NavItem to='/faq' text='FAQ' />
       <NavItem to='/contato' text='Contato' />
     </>
   );
 };
 
-export default NavItems;
+export default DrawerItems;

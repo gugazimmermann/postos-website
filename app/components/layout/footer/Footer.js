@@ -65,7 +65,7 @@ const Footer = () => {
     <footer className='bg-white mt-8'>
       <div className='container mx-auto mb-4'>
         <MainCol />
-        <div className='flex flex-wrap justify-between gap-4 mt-4'>
+        <div className='flex flex-wrap justify-between gap-2 mt-4'>
           <Column
             title='Sobre Nós'
             items={[
