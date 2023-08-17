@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import sharedMetadata from '../shared-metadata';
 import { Section, SectionTitle, SectionParagraph } from '../components/layout/sections';
 
@@ -24,11 +25,19 @@ export default function WorkWithUs() {
   return (
     <Section>
       <SectionTitle title='Trabalhe Conosco' />
-      <SectionParagraph>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem modi reprehenderit vitae
-        exercitationem aliquid dolores ullam temporibus enim expedita aperiam mollitia iure
-        consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.
-      </SectionParagraph>
+      <div className='w-full flex flex-row justify-around items-center mt-4'>
+        <Image
+          priority
+          src='/images/work.svg'
+          width={0}
+          height={0}
+          className='w-1/4 float-left mr-4'
+          alt='Vagas'
+        />
+        <SectionParagraph>
+          Sem vagas abertas no momento.
+        </SectionParagraph>
+      </div>
     </Section>
   );
 }
