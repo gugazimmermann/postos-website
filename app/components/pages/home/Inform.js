@@ -1,13 +1,13 @@
 import ImageSlider from './ImageSlider';
 import { SectionTitle } from '../../../components/layout/sections';
 
-const Inform = ({ side, imageUrls, title, children }) => {
+const Inform = ({ side, imageUrls, title, time, children }) => {
   return (
     <section className='container my-8 space-y-4 md:space-y-8 text-slate-800'>
       <div className='w-full flex flex-row justify-between items-center'>
         {side === 'left' && (
           <div className='w-1/2'>
-            <ImageSlider imageUrls={imageUrls} alt={title} />
+            <ImageSlider imageUrls={imageUrls} alt={title} time={time} />
           </div>
         )}
         <div className='w-1/2 px-8 text-center'>
@@ -16,7 +16,7 @@ const Inform = ({ side, imageUrls, title, children }) => {
         </div>
         {side === 'right' && (
           <div className='w-1/2'>
-            <ImageSlider imageUrls={imageUrls} alt={title} />
+            <ImageSlider imageUrls={imageUrls} alt={title} time={time} />
           </div>
         )}
       </div>

@@ -5,7 +5,7 @@ const imageUrls = ['/images/pagamentos.png', '/images/pagamentos2.png', '/images
 
 const Transactions = () => {
   return (
-    <Inform side='left' imageUrls={imageUrls} title='Gerenciamento de Pagamentos Simplificado'>
+    <Inform side='left' imageUrls={imageUrls} time={10000} title='Gerenciamento de Pagamentos Simplificado'>
       <SectionParagraph>
         Tenha uma visão completa dos pagamentos realizados, pendentes ou em aberto, abrangendo todos
         os postos, um único posto ou um cliente específico, tudo de forma ágil e eficiente. Use

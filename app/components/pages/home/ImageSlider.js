@@ -3,20 +3,21 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
-const ImageSlider = ({ imageUrls, alt }) => {
+const ImageSlider = ({ imageUrls, alt, time }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     if (imageUrls.length > 1) {
       const interval = setInterval(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
-      }, 10000);
+      }, time);
 
       return () => {
         clearInterval(interval);
       };
     }
-  }, [imageUrls.length]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   if (imageUrls.length === 0) {
     return null;
