@@ -28,7 +28,6 @@ export default function Customizations() {
       </div>
       <div className='w-full mt-4'>
         <Image
-          priority
           src='/images/customizations.svg'
           width={0}
           height={0}

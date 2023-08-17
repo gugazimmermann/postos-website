@@ -28,7 +28,6 @@ export default function NewReports() {
       </div>
       <div className='w-full mt-4'>
         <Image
-          priority
           src='/images/reports.svg'
           width={0}
           height={0}
@@ -55,22 +54,22 @@ export default function NewReports() {
           Nosso <strong>{process.env.NEXT_PUBLIC_DESCRIPTION}</strong> já oferece uma variedade de
           relatórios pré-configurados, fornecendo informações valiosas sobre abastecimentos, vendas
           e desempenho geral do posto. No entanto, entendemos que suas necessidades podem ser
-          únicas. Com Relatórios e Gráficos Personalizados, é possível aprofundar ainda mais, solicitando
-          análises específicas relevantes para o seu negócio.
+          únicas. Com Relatórios e Gráficos Personalizados, é possível aprofundar ainda mais,
+          solicitando análises específicas relevantes para o seu negócio.
         </SectionParagraph>
         <SectionParagraph>
           Compreender o desempenho do posto vai além de números em uma planilha. Trata-se de
           insights que possibilitam a compreensão de padrões, a identificação de oportunidades e a
-          previsão de desafios. Nossos Relatórios e Gráficos Personalizados oferecem uma visão detalhada de
-          suas operações. Seja para avaliar tendências de consumo, monitorar a eficácia de promoções
-          ou planejar estrategicamente, essas ferramentas transformam dados brutos em informações
-          práticas.
+          previsão de desafios. Nossos Relatórios e Gráficos Personalizados oferecem uma visão
+          detalhada de suas operações. Seja para avaliar tendências de consumo, monitorar a eficácia
+          de promoções ou planejar estrategicamente, essas ferramentas transformam dados brutos em
+          informações práticas.
         </SectionParagraph>
         <SectionSubTitle>Perfeitamente Alinhado com seu Negócio</SectionSubTitle>
         <SectionParagraph>
           Reconhecemos que dados são valiosos apenas quando se aplicam às suas operações. Por isso,
-          nossos Relatórios e Gráficos Personalizados são desenvolvidos para se alinharem plenamente com as
-          prioridades de seu posto de combustível. Seja para apresentar informações à equipe
+          nossos Relatórios e Gráficos Personalizados são desenvolvidos para se alinharem plenamente
+          com as prioridades de seu posto de combustível. Seja para apresentar informações à equipe
           interna, compartilhar insights com partes interessadas ou tomar decisões estratégicas,
           nossos relatórios são a base sólida para suas escolhas.
         </SectionParagraph>

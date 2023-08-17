@@ -14,7 +14,7 @@ const Parallax = () => {
         }}
       ></div>
       <div className='absolute top-0 left-0 w-full h-full bg-amber-800 opacity-50'></div>
-      <div className='relative flex flex-col justify-center items-center h-full'>
+      <div className='relative container mx-auto flex flex-col justify-center items-center h-full'>
         <h1 className='text-slate-50 text-3xl md:text-5xl text-center font-semibold mt-10 md:mt-20 md:mb-10'>
           {process.env.NEXT_PUBLIC_TITLE}
         </h1>
