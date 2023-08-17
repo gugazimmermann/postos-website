@@ -74,6 +74,10 @@ const Footer = () => {
                 link: '/empresa',
               },
               {
+                name: 'Tecnologias Utilizadas',
+                link: '/tecnologias',
+              },
+              {
                 name: 'Trabalhe Conosco',
                 link: '/vagas',
               },
