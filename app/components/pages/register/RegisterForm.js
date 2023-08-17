@@ -11,7 +11,7 @@ import { PrivacityText } from '../privacity-terms';
 
 const RegisterForm = () => {
   const router = useRouter();
-  const { openModal: openUsageTermsModal, Modal: UsageTermsyModal } = useModal({
+  const { openModal: openUsageTermsModal, Modal: UsageTermsModal } = useModal({
     closeoutside: true,
   });
   const { openModal: openPrivacityModal, Modal: PrivacityModal } = useModal({ closeoutside: true });
@@ -208,9 +208,9 @@ const RegisterForm = () => {
               .
             </label>
           </div>
-          <UsageTermsyModal title='Termos de Uso' scroll={true}>
+          <UsageTermsModal title='Termos de Uso' scroll={true}>
             <UsageTermsText />
-          </UsageTermsyModal>
+          </UsageTermsModal>
           <PrivacityModal title='Políticas de Privacidade' scroll={true}>
             <PrivacityText />
           </PrivacityModal>
