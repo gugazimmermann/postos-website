@@ -70,7 +70,7 @@ export default function AboutUs() {
           concretos entregues aos nossos clientes e um comprometimento contínuo com a evolução.
         </SectionParagraph>
         <SectionParagraph>
-          Na <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, nossa trajetória é um testemunho da convergência entre
+          No <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, nossa trajetória é um testemunho da convergência entre
           visão estratégica e habilidades técnicas. Estamos dedicados a moldar o cenário do
           gerenciamento de frotas, adaptando-nos constantemente às necessidades em mutação dos
           nossos clientes e às demandas por soluções que transcendam as convenções.

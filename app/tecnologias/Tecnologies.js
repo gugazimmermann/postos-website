@@ -89,7 +89,7 @@ const Tecnologies = () => {
   return (
     <>
       <SectionParagraph>
-        Na <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, estamos comprometidos em proporcionar
+        No <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, estamos comprometidos em proporcionar
         soluções de gerenciamento de frotas que incorporam as últimas inovações tecnológicas. Nossa
         abordagem se baseia na modernidade, com o intuito de garantir que nossos sistemas permaneçam
         à frente do panorama tecnológico. Nossa prioridade é oferecer um acesso ágil e seguro ao
@@ -139,7 +139,7 @@ const Tecnologies = () => {
         conexão confiável entre os sistemas.
       </SectionParagraph>
       <SectionParagraph>
-        Na <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, acreditamos que a excelência
+        No <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, acreditamos que a excelência
         tecnológica é a base de nosso sucesso. Continuamos investindo nas melhores práticas
         tecnológicas para garantir que nossos clientes tenham acesso a soluções inovadoras,
         eficientes e seguras que atendam às suas necessidades em constante evolução.

@@ -79,7 +79,7 @@ export default function Customizations() {
           transparente dos custos associados.
         </SectionParagraph>
         <SectionParagraph>
-          Na <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, estamos empenhados em fornecer um
+          No <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, estamos empenhados em fornecer um
           sistema de gerenciamento de frotas que se adapte a você. Nossas opções de personalização
           garantem que você possa tirar o máximo proveito do nosso{' '}
           <strong>{process.env.NEXT_PUBLIC_DESCRIPTION}</strong>, otimizando suas operações e
