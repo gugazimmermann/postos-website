@@ -1,10 +1,6 @@
 import Image from 'next/image';
 import sharedMetadata from '../shared-metadata';
-import {
-  Section,
-  SectionTitle,
-  SectionSubTitle,
-} from '../components/layout/sections';
+import { Section, SectionTitle, SectionSubTitle } from '../components/layout/sections';
 import Tecnologies from './Tecnologies';
 
 export const metadata = {
@@ -37,7 +33,6 @@ export default function Tecnologias() {
       </div>
       <div className='w-full mt-4'>
         <Image
-          priority
           src='/images/tecnology.svg'
           width={0}
           height={0}
