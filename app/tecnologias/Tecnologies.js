@@ -26,61 +26,13 @@ const Tecnologies = () => {
     closeoutside: true,
   });
 
-  const CICDLink = () => {
+  const Button = ({ text, onClick }) => {
     return (
       <button
-        onClick={openCicdModal}
+        onClick={onClick}
         className='text-amber-500 hover:underline hover:cursor-pointer justify-center md:justify-start inline-flex items-center gap-2'
       >
-        Integração Contínua e Entrega Contínua
-        <ModalOpen />
-      </button>
-    );
-  };
-
-  const ReactLink = () => {
-    return (
-      <button
-        onClick={openReactModal}
-        className='text-amber-500 hover:underline hover:cursor-pointer justify-center md:justify-start inline-flex items-center gap-2'
-      >
-        React
-        <ModalOpen />
-      </button>
-    );
-  };
-
-  const AmazonLink = () => {
-    return (
-      <button
-        onClick={openAmazonModal}
-        className='text-amber-500 hover:underline hover:cursor-pointer justify-center md:justify-start inline-flex items-center gap-2'
-      >
-        Amazon Web Services (AWS)
-        <ModalOpen />
-      </button>
-    );
-  };
-
-  const ElectronLink = () => {
-    return (
-      <button
-        onClick={openElectronModal}
-        className='text-amber-500 hover:underline hover:cursor-pointer justify-center md:justify-start inline-flex items-center gap-2'
-      >
-        Electron
-        <ModalOpen />
-      </button>
-    );
-  };
-
-  const GoLink = () => {
-    return (
-      <button
-        onClick={openGoModal}
-        className='text-amber-500 hover:underline hover:cursor-pointer justify-center md:justify-start inline-flex items-center gap-2'
-      >
-        Go
+        {text}
         <ModalOpen />
       </button>
     );
@@ -96,18 +48,20 @@ const Tecnologies = () => {
         utilizando as ferramentas mais recentes em programação web.
       </SectionParagraph>
       <SectionParagraph>
-        Nossos esforços em <CICDLink /> asseguram que nosso sistema esteja sempre atualizado,
-        proporcionando um fluxo operacional constante e eficaz.
+        Nossos esforços em{' '}
+        <Button text='Integração Contínua e Entrega Contínua' onClick={openCicdModal} /> asseguram
+        que nosso sistema esteja sempre atualizado, proporcionando um fluxo operacional constante e
+        eficaz.
       </SectionParagraph>
       <SectionParagraph>
-        Desenvolvemos nosso sistema com a tecnologia <ReactLink />, que permite um acesso leve e
+        Desenvolvemos nosso sistema com a tecnologia <Button text='React' onClick={openReactModal} />, que permite um acesso leve e
         rápido de qualquer computador ou celular com conexão à internet. Não há necessidade de
         instalação. A plataforma se adapta perfeitamente, assegurando desempenho consistente em
         todos os dispositivos. A facilidade de acesso prioriza o gerenciamento de frotas, oferecendo
         uma experiência incomparável.
       </SectionParagraph>
       <SectionParagraph>
-        Nossa infraestrutura é completamente suportada pela <AmazonLink />, evidenciando nosso
+        Nossa infraestrutura é completamente suportada pela <Button text='Amazon Web Services (AWS)' onClick={openAmazonModal} />, evidenciando nosso
         comprometimento com a segurança e integridade dos dados. A AWS proporciona um ambiente
         altamente seguro e versátil, cobrindo desde bancos de dados e armazenamento de arquivos até
         envio de e-mails e notificações. Adicionalmente, a AWS possibilita o gerenciamento seguro de
@@ -122,7 +76,7 @@ const Tecnologies = () => {
         Compatíveis com Android e iOS, os aplicativos garantem flexibilidade e facilidade de uso.
       </SectionParagraph>
       <SectionParagraph>
-        Destacamos ainda nosso Ponto de Venda (PdV) no caixa, criado com o <ElectronLink />, uma
+        Destacamos ainda nosso Ponto de Venda (PdV) no caixa, criado com o <Button text='Electron' onClick={openElectronModal} />, uma
         tecnologia que oferece conveniência e segurança. Diferentemente de um navegador web, nosso
         PdV é instalado diretamente no dispositivo, proporcionando acesso direto e rápido ao
         sistema. É projetado exclusivamente para operar nosso sistema, sem permitir navegação na
@@ -132,7 +86,7 @@ const Tecnologies = () => {
       <SectionParagraph>
         Além disso, nossa integração com o Desbravador é essencial em nossa gama de serviços. Esta
         integração é fundamental para transmitir de maneira eficiente e precisa os dados de
-        abastecimento nas bombas dos postos ao sistema. Usamos a linguagem de programação <GoLink />
+        abastecimento nas bombas dos postos ao sistema. Usamos a linguagem de programação <Button text='Go' onClick={openGoModal} />
         , reconhecida por sua eficiência e agilidade, garantindo uma conexão robusta entre os
         sistemas.
       </SectionParagraph>
