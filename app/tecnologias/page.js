@@ -29,14 +29,16 @@ export default function Tecnologias() {
       <SectionSubTitle>
         Excelência Tecnológica: Potencializando Eficiência e Segurança Avançadas
       </SectionSubTitle>
-      <Image
-        src='/images/tecnology.svg'
-        width={0}
-        height={0}
-        className='w-full my-4'
-        alt='Tecnologias'
-      />
-      <Tecnologies />
+      <div className='w-full'>
+        <Image
+          src='/images/technologies/tecnology.svg'
+          width={0}
+          height={0}
+          className='w-full my-4 md:w-1/2 md:float-right md:mr-4'
+          alt='Tecnologias'
+        />
+        <Tecnologies />
+      </div>
     </Section>
   );
 }

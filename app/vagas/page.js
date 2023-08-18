@@ -25,14 +25,16 @@ export default function WorkWithUs() {
   return (
     <Section>
       <SectionTitle title='Trabalhe Conosco' />
-      <Image
-        src='/images/work.svg'
-        width={0}
-        height={0}
-        className='w-full my-4'
-        alt='Vagas'
-      />
-      <SectionSubTitle>Sem vagas abertas no momento.</SectionSubTitle>
+      <div className='w-full'>
+        <Image
+          src='/images/work_with_us/work.svg'
+          width={0}
+          height={0}
+          className='w-full my-4 md:w-1/2 md:float-right md:mr-4'
+          alt='Vagas'
+        />
+        <SectionSubTitle>Sem vagas abertas no momento.</SectionSubTitle>
+      </div>
     </Section>
   );
 }
