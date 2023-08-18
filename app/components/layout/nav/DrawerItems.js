@@ -3,14 +3,15 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
-const DrawerItems = () => {
+const DrawerItems = ({ setIsDrawerOpen }) => {
   const pathname = usePathname();
 
-  const NavItem = ({ to, text }) => {
+  const NavItem = ({ setIsDrawerOpen, to, text }) => {
     const isActive = pathname.startsWith(to);
     return (
       <Link
         href={to}
+        onClick={() => setIsDrawerOpen(false)}
         className={`flex cursor-pointer ${
           isActive
             ? 'text-amber-500 font-bold'
@@ -24,14 +25,23 @@ const DrawerItems = () => {
 
   return (
     <>
-      <NavItem to='/postos' text='Para os Postos' />
-      <NavItem to='/clientes' text='Para os Clientes' />
-      <NavItem to='/empresa' text='A Empresa' />
-      <NavItem to='/tecnologias' text='Tecnologias Utilizadas' />
-      <NavItem to='/personalizacoes' text='Personalizações' />
-      <NavItem to='/novos-relatorios' text='Novos Relatórios' />
-      <NavItem to='/faq' text='FAQ' />
-      <NavItem to='/contato' text='Contato' />
+      <NavItem setIsDrawerOpen={setIsDrawerOpen} to='/postos' text='🏠 Página Inicial' />
+      <NavItem setIsDrawerOpen={setIsDrawerOpen} to='/postos' text='⛽️ Para os Postos' />
+      <NavItem setIsDrawerOpen={setIsDrawerOpen} to='/clientes' text='🤝 Para os Clientes' />
+      <NavItem setIsDrawerOpen={setIsDrawerOpen} to='/empresa' text='🎯 A Empresa' />
+      <NavItem
+        setIsDrawerOpen={setIsDrawerOpen}
+        to='/tecnologias'
+        text='🖥️ Tecnologias Utilizadas'
+      />
+      <NavItem setIsDrawerOpen={setIsDrawerOpen} to='/personalizacoes' text='⚙️ Personalizações' />
+      <NavItem
+        setIsDrawerOpen={setIsDrawerOpen}
+        to='/novos-relatorios'
+        text='📈 Novos Relatórios'
+      />
+      <NavItem setIsDrawerOpen={setIsDrawerOpen} to='/faq' text='❓ FAQ' />
+      <NavItem setIsDrawerOpen={setIsDrawerOpen} to='/contato' text='✉️ Contato' />
     </>
   );
 };
