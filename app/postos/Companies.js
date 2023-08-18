@@ -28,7 +28,7 @@ const Companies = () => {
           <p className='mt-4 text-slate-500'>
             E se um cliente já tiver seus veículos e motoristas cadastrados no{' '}
             <strong>{process.env.NEXT_PUBLIC_TITLE}</strong> ele pode rapidamente autorizar os
-            mesmos a abastecerem em outros postos que aceitarem o convite.
+            mesmos a abastecerem em outros postos que enviarem convite.
           </p>
         </div>
         <div className='hidden md:flex md:w-4/12'>
