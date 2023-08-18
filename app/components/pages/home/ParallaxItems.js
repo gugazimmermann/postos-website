@@ -8,7 +8,7 @@ const ParallaxItems = () => {
   };
 
   return (
-    <div className='relative w-full grid grid-cols-1 px-14 gap-4'>
+    <div className='relative w-full grid grid-cols-1 md:grid-cols-3 px-14 gap-4'>
     <Item text='⛽️ Controle de Abastecimentos' />
     <Item text='🛒 Abastecimentos com Produtos' />
     <Item text='💵 Controle de Faturamentos' />

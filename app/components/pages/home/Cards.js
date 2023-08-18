@@ -14,7 +14,7 @@ const Card = ({ image, title, text }) => {
 
 const Cards = () => {
   return (
-    <section className='container mt-4 px-4 grid gap-8 grid-cols-1'>
+    <section className='container mt-4 px-4 md:px-16 grid gap-8 md:gap-4 grid-cols-1 md:grid-cols-3'>
       <Card
         image='/images/what-we-do/facial_recognition.png'
         title='Segurança Aprimorada'

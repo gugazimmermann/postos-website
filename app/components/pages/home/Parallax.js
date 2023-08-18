@@ -11,7 +11,7 @@ const Parallax = () => {
           {process.env.NEXT_PUBLIC_TITLE}
         </h1>
         <ParallaxItems />
-        <div className='px-4'>
+        <div className='px-4 md:px-32'>
           <ParallaxWhatWeDo />
         </div>
       </div>

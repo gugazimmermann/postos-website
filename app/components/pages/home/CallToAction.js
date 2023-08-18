@@ -4,13 +4,13 @@ const CallToAction = () => {
   return (
     <section className='container mt-4'>
       <div className='flex flex-col justify-center items-center bg-slate-50 rounded-3xl shadow-xl uppercase p-4 mx-4'>
-        <h2 className='text-amber-500 text-center mb-4 text-3xl tracking-tight font-bold'>
+        <h2 className='text-amber-500 text-center mb-4 text-3xl md:text-4xl tracking-tight font-bold'>
           Leve a Modernidade ao Seu Posto!
         </h2>
-        <p className='mb-6 text-slate-800 text-center tracking-tight'>
+        <p className='mb-6 text-slate-800 text-center md:text-xl font-semibold tracking-tight'>
           Saiba mais sobre o {process.env.NEXT_PUBLIC_TITLE} clicando abaixo
         </p>
-        <div className='w-full flex flex-col items-center gap-4'>
+        <div className='w-full flex flex-col md:flex-row md:justify-center items-center gap-4'>
             <Link
               href='/postos'
               className='flex cursor-pointer text-slate-50 bg-amber-500 px-4 py-2 rounded-lg'
