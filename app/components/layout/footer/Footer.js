@@ -62,7 +62,7 @@ const ContactColumn = () => {
 
 const Footer = () => {
   return (
-    <footer className='bg-white mt-8'>
+    <footer className='bg-white mt-8 px-4'>
       <div className='container mx-auto mb-4'>
         <MainCol />
         <div className='flex flex-wrap justify-between gap-2 mt-4'>
