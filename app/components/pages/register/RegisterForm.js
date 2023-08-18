@@ -6,7 +6,7 @@ import { api, statesBR } from '../../../utils';
 import { useModal } from '../../../hooks';
 import { isValidCNPJ, isValidEmail, masks } from '../../../utils';
 import { Alert, Button, Form, Grid } from '../../helpers';
-import { UsageTermsText } from '../usage-terms';
+import { UsageTermsText2 } from '../usage-terms';
 import { PrivacityText } from '../privacity-terms';
 
 const RegisterForm = () => {
@@ -209,7 +209,7 @@ const RegisterForm = () => {
             </label>
           </div>
           <UsageTermsModal title='Termos de Uso' scroll={true}>
-            <UsageTermsText />
+            <UsageTermsText2 />
           </UsageTermsModal>
           <PrivacityModal title='Políticas de Privacidade' scroll={true}>
             <PrivacityText />

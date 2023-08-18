@@ -30,7 +30,7 @@ const ImageSlider = ({ imageUrls, alt, time }) => {
         src={imageUrls[currentImageIndex]}
         width={0}
         height={0}
-        className='w-full float-right mr-4 rounded-3xl shadow-lg'
+        className='w-full float-right mr-4 rounded-3xl  shadow-xl'
         alt={alt}
       />
     </div>

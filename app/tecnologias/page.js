@@ -26,17 +26,15 @@ export default function Tecnologias() {
   return (
     <Section>
       <SectionTitle title='Tecnologias Utilizadas' />
-      <div className='w-full text-center'>
-        <SectionSubTitle>
-          Excelência Tecnológica: Potencializando Eficiência e Segurança Avançadas
-        </SectionSubTitle>
-      </div>
-      <div className='w-full mt-4'>
+      <SectionSubTitle>
+        Excelência Tecnológica: Potencializando Eficiência e Segurança Avançadas
+      </SectionSubTitle>
+      <div className='w-full'>
         <Image
-          src='/images/tecnology.svg'
+          src='/images/technologies/tecnology.svg'
           width={0}
           height={0}
-          className='w-1/2 float-left mr-4'
+          className='w-full my-4 md:w-1/2 md:float-right md:mr-4'
           alt='Tecnologias'
         />
         <Tecnologies />

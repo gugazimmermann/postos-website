@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import sharedMetadata from '../shared-metadata';
-import { Section, SectionTitle, SectionParagraph } from '../components/layout/sections';
+import { Section, SectionTitle, SectionSubTitle } from '../components/layout/sections';
 
 export const metadata = {
   ...sharedMetadata,
@@ -25,15 +25,15 @@ export default function WorkWithUs() {
   return (
     <Section>
       <SectionTitle title='Trabalhe Conosco' />
-      <div className='w-full flex flex-col md:flex-row justify-around items-center mt-4'>
+      <div className='w-full'>
         <Image
-          src='/images/work.svg'
+          src='/images/work_with_us/work.svg'
           width={0}
           height={0}
-          className='w-1/4 float-left mr-4'
+          className='w-full my-4 md:w-1/2 md:float-right md:mr-4'
           alt='Vagas'
         />
-        <SectionParagraph>Sem vagas abertas no momento.</SectionParagraph>
+        <SectionSubTitle>Sem vagas abertas no momento.</SectionSubTitle>
       </div>
     </Section>
   );

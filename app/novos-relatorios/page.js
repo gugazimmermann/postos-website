@@ -21,17 +21,13 @@ export default function NewReports() {
   return (
     <Section>
       <SectionTitle title='Novos Relatórios' />
-      <div className='w-full text-center'>
-        <SectionSubTitle>
-          Desvendando Insights: Relatórios e Gráficos Personalizados
-        </SectionSubTitle>
-      </div>
-      <div className='w-full mt-4'>
+      <SectionSubTitle>Desvendando Insights: Relatórios e Gráficos Personalizados</SectionSubTitle>
+      <div className='w-full'>
         <Image
-          src='/images/reports.svg'
+          src='/images/reports/reports.svg'
           width={0}
           height={0}
-          className='w-1/2 float-left mr-4'
+          className='w-full my-4 md:w-1/2 md:float-right md:mr-4'
           alt='reports'
         />
         <SectionParagraph>

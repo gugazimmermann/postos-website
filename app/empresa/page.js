@@ -21,17 +21,15 @@ export default function AboutUs() {
   return (
     <Section>
       <SectionTitle title='Sobre a' word={process.env.NEXT_PUBLIC_TITLE} />
-      <div className='w-full text-center'>
-        <SectionSubTitle>
-          Inovação no Gerenciamento de Frotas para Postos de Combustíveis
-        </SectionSubTitle>
-      </div>
-      <div className='w-full mt-4'>
+      <SectionSubTitle>
+        Inovação no Gerenciamento de Frotas para Postos de Combustíveis
+      </SectionSubTitle>
+      <div className='w-full'>
         <Image
-          src='/images/about_us.svg'
+          src='/images/abouts_us/about_us.svg'
           width={0}
           height={0}
-          className='w-1/2 float-right mr-4'
+          className='w-full my-4 md:w-1/2 md:float-right md:mr-4'
           alt='About Us'
         />
         <SectionParagraph>

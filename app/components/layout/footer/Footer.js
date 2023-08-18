@@ -7,11 +7,11 @@ const MainCol = () => {
     <div className='w-full'>
       <div className='flex flex-col md:flex-row justify-between items-center p-4'>
         <Logo />
-        <p className='text-slate-500 mt-2 text-center md:text-right md:mt-0'>
+        <p className='text-slate-500 font-semibold mt-2 text-center md:text-right md:mt-0'>
           Sistema para Gerenciamento de Frotas para Postos de Combustíveis
         </p>
       </div>
-      <hr className='border-slate-200' />
+      <hr className='border-slate-300' />
     </div>
   );
 };
@@ -62,10 +62,10 @@ const ContactColumn = () => {
 
 const Footer = () => {
   return (
-    <footer className='bg-white mt-8'>
+    <footer className='bg-slate-50 mt-8 px-4'>
       <div className='container mx-auto mb-4'>
         <MainCol />
-        <div className='flex flex-wrap justify-between gap-2 mt-4'>
+        <div className='grid grid-cols-2 md:grid-cols-5 place-content-around text-center gap-4 mt-4'>
           <Column
             title='Sobre Nós'
             items={[
@@ -80,19 +80,6 @@ const Footer = () => {
               {
                 name: 'Trabalhe Conosco',
                 link: '/vagas',
-              },
-            ]}
-          />
-          <Column
-            title='Informações'
-            items={[
-              {
-                name: 'Termos de Uso',
-                link: '/termos-de-uso',
-              },
-              {
-                name: 'Privacidade',
-                link: '/privacidade',
               },
             ]}
           />
@@ -119,6 +106,19 @@ const Footer = () => {
               {
                 name: 'Contato',
                 link: '/contato',
+              },
+            ]}
+          />
+          <Column
+            title='Informações'
+            items={[
+              {
+                name: 'Termos de Uso',
+                link: '/termos-de-uso',
+              },
+              {
+                name: 'Privacidade',
+                link: '/privacidade',
               },
             ]}
           />

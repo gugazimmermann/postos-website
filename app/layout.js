@@ -24,7 +24,7 @@ export default function Layout({ children }) {
       <body className={inter.className}>
         <div className='flex flex-col min-h-screen'>
           <Header toggleDrawer={toggleDrawer} />
-          <main className='flex flex-grow flex-col items-center justify-start px-2 md:px-0'>
+          <main className='flex flex-grow flex-col items-center justify-start'>
             {children}
           </main>
           <Footer />

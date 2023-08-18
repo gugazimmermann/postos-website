@@ -1,5 +1,5 @@
 import ImageSlider from './ImageSlider';
-import { SectionTitle } from '../../../components/layout/sections';
+import { SectionTitle } from '../layout/sections';
 
 const Inform = ({ side, imageUrls, title, time, children }) => {
   return (

@@ -26,61 +26,13 @@ const Tecnologies = () => {
     closeoutside: true,
   });
 
-  const CICDLink = () => {
+  const Button = ({ text, onClick }) => {
     return (
       <button
-        onClick={openCicdModal}
+        onClick={onClick}
         className='text-amber-500 hover:underline hover:cursor-pointer justify-center md:justify-start inline-flex items-center gap-2'
       >
-        Integração Contínua e Entrega Contínua
-        <ModalOpen />
-      </button>
-    );
-  };
-
-  const ReactLink = () => {
-    return (
-      <button
-        onClick={openReactModal}
-        className='text-amber-500 hover:underline hover:cursor-pointer justify-center md:justify-start inline-flex items-center gap-2'
-      >
-        React
-        <ModalOpen />
-      </button>
-    );
-  };
-
-  const AmazonLink = () => {
-    return (
-      <button
-        onClick={openAmazonModal}
-        className='text-amber-500 hover:underline hover:cursor-pointer justify-center md:justify-start inline-flex items-center gap-2'
-      >
-        Amazon Web Services (AWS)
-        <ModalOpen />
-      </button>
-    );
-  };
-
-  const ElectronLink = () => {
-    return (
-      <button
-        onClick={openElectronModal}
-        className='text-amber-500 hover:underline hover:cursor-pointer justify-center md:justify-start inline-flex items-center gap-2'
-      >
-        Electron
-        <ModalOpen />
-      </button>
-    );
-  };
-
-  const GoLink = () => {
-    return (
-      <button
-        onClick={openGoModal}
-        className='text-amber-500 hover:underline hover:cursor-pointer justify-center md:justify-start inline-flex items-center gap-2'
-      >
-        Go
+        {text}
         <ModalOpen />
       </button>
     );
@@ -89,60 +41,60 @@ const Tecnologies = () => {
   return (
     <>
       <SectionParagraph>
-        No <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, estamos comprometidos em proporcionar
+        Em <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, estamos comprometidos em proporcionar
         soluções de gerenciamento de frotas que incorporam as últimas inovações tecnológicas. Nossa
-        abordagem se baseia na modernidade, com o intuito de garantir que nossos sistemas permaneçam
-        à frente do panorama tecnológico. Nossa prioridade é oferecer um acesso ágil e seguro ao
-        nosso sistema por meio da utilização das ferramentas mais recentes em programação web.
+        abordagem é baseada na modernidade, visando garantir que nossos sistemas permaneçam à frente
+        do panorama tecnológico. Priorizamos oferecer acesso ágil e seguro ao nosso sistema,
+        utilizando as ferramentas mais recentes em programação web.
       </SectionParagraph>
       <SectionParagraph>
-        Nossos esforços contínuos de <CICDLink /> asseguram que nosso sistema seja sempre
-        atualizado, resultando em um fluxo operacional constante e eficaz.
+        Nossos esforços em{' '}
+        <Button text='Integração Contínua e Entrega Contínua' onClick={openCicdModal} /> asseguram
+        que nosso sistema esteja sempre atualizado, proporcionando um fluxo operacional constante e
+        eficaz.
       </SectionParagraph>
       <SectionParagraph>
-        Nosso sistema é desenvolvido com a tecnologia <ReactLink />, permitindo acesso leve e rápido
-        de qualquer computador ou celular com conexão à internet. Não é necessário instalar nada. A
-        plataforma se adapta perfeitamente, garantindo performance consistente em todos os
-        dispositivos. A simplicidade de acesso coloca o foco no gerenciamento de frotas,
-        proporcionando uma experiência sem igual.
+        Desenvolvemos nosso sistema com a tecnologia <Button text='React' onClick={openReactModal} />, que permite um acesso leve e
+        rápido de qualquer computador ou celular com conexão à internet. Não há necessidade de
+        instalação. A plataforma se adapta perfeitamente, assegurando desempenho consistente em
+        todos os dispositivos. A facilidade de acesso prioriza o gerenciamento de frotas, oferecendo
+        uma experiência incomparável.
       </SectionParagraph>
       <SectionParagraph>
-        Nossa infraestrutura é totalmente suportada pela <AmazonLink />, uma seleção que evidencia
-        nosso foco na segurança e solidez dos dados. A AWS oferece um ambiente altamente seguro e
-        flexível, que abrange bancos de dados, armazenamento de arquivos e até o envio de e-mails e
-        notificações. Além disso, a AWS viabiliza o gerenciamento seguro de senhas e até o
-        reconhecimento facial. Com essa abordagem, garantimos a você, nosso cliente, a integridade e
-        proteção completa de suas informações. Nossos desenvolvedores possuem certificações como AWS
-        Developer, o que se traduz em vantagens significativas para você. Com esse selo, garantimos
-        a implementação de soluções na nuvem da Amazon Web Services de maneira otimizada e segura.
+        Nossa infraestrutura é completamente suportada pela <Button text='Amazon Web Services (AWS)' onClick={openAmazonModal} />, evidenciando nosso
+        comprometimento com a segurança e integridade dos dados. A AWS proporciona um ambiente
+        altamente seguro e versátil, cobrindo desde bancos de dados e armazenamento de arquivos até
+        envio de e-mails e notificações. Adicionalmente, a AWS possibilita o gerenciamento seguro de
+        senhas e até mesmo reconhecimento facial. Essa abordagem nos permite garantir a integridade
+        e proteção total de suas informações. Nossos desenvolvedores são certificados como AWS
+        Developer, o que se traduz em benefícios significativos para você, assegurando a
+        implementação otimizada e segura das soluções na nuvem da Amazon Web Services.
       </SectionParagraph>
       <SectionParagraph>
-        Nossos aplicativos para celulares são projetados com foco na experiência do cliente,
-        permitindo que eles gerenciem suas frotas de maneira prática e eficiente, independentemente
-        do sistema operacional de seu dispositivo. Compatíveis tanto com Android quanto iOS, esses
-        aplicativos proporcionam flexibilidade e usabilidade.
+        Nossos aplicativos móveis são projetados priorizando a experiência do usuário, permitindo
+        gerenciamento de frotas de forma prática e eficiente, independente do sistema operacional.
+        Compatíveis com Android e iOS, os aplicativos garantem flexibilidade e facilidade de uso.
       </SectionParagraph>
       <SectionParagraph>
-        Destacamos também o nosso Ponto de Venda (PdV) no caixa, desenvolvido com o <ElectronLink />
-        , uma tecnologia que proporciona praticidade e segurança. Ao contrário de depender de um
-        navegador de internet, nosso PdV é instalado diretamente na máquina, garantindo acesso
-        direto e rápido ao sistema. Uma característica importante é que ele é projetado
-        exclusivamente para operar o nosso sistema, não permitindo navegação na internet, o que
-        reforça a segurança e foco no gerenciamento eficiente das transações no caixa. Isso resulta
-        em um ambiente controlado e eficaz para suas operações diárias.
+        Destacamos ainda nosso Ponto de Venda (PdV) no caixa, criado com o <Button text='Electron' onClick={openElectronModal} />, uma
+        tecnologia que oferece conveniência e segurança. Diferentemente de um navegador web, nosso
+        PdV é instalado diretamente no dispositivo, proporcionando acesso direto e rápido ao
+        sistema. É projetado exclusivamente para operar nosso sistema, sem permitir navegação na
+        web, o que fortalece a segurança e mantém o foco no gerenciamento eficaz das transações.
+        Isso resulta em um ambiente controlado e produtivo para suas operações diárias.
       </SectionParagraph>
       <SectionParagraph>
-        Além disso, nossa integração com o Desbravador tem um papel central em nosso conjunto de
-        serviços. Essa integração é vital para repassar de forma eficiente e precisa os dados de
-        abastecimento nas bombas dos postos para o sistema. Para isso, utilizamos a linguagem de
-        programação <GoLink />, conhecida por sua eficiência e agilidade, o que contribui para uma
-        conexão confiável entre os sistemas.
+        Além disso, nossa integração com o Desbravador é essencial em nossa gama de serviços. Esta
+        integração é fundamental para transmitir de maneira eficiente e precisa os dados de
+        abastecimento nas bombas dos postos ao sistema. Usamos a linguagem de programação <Button text='Go' onClick={openGoModal} />
+        , reconhecida por sua eficiência e agilidade, garantindo uma conexão robusta entre os
+        sistemas.
       </SectionParagraph>
       <SectionParagraph>
-        No <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, acreditamos que a excelência
-        tecnológica é a base de nosso sucesso. Continuamos investindo nas melhores práticas
-        tecnológicas para garantir que nossos clientes tenham acesso a soluções inovadoras,
-        eficientes e seguras que atendam às suas necessidades em constante evolução.
+        Em <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, acreditamos que a excelência
+        tecnológica é o alicerce do nosso sucesso. Continuamos a investir nas melhores práticas
+        tecnológicas, assegurando que nossos clientes tenham acesso a soluções inovadoras,
+        eficientes e seguras, atendendo suas necessidades em constante transformação.
       </SectionParagraph>
       <CicdModal title='Integração Contínua e Entrega Contínua' scroll={true}>
         <Cicd />

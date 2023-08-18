@@ -1,5 +1,5 @@
 import Inform from './Inform';
-import { SectionParagraph } from '../../../components/layout/sections';
+import { SectionParagraph } from '../layout/sections';
 
 const imageUrls = ['/images/dashboard.png', '/images/dashboard3.png', '/images/dashboard2.png'];
 
