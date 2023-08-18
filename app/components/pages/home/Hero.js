@@ -1,53 +1,16 @@
-import Image from 'next/image';
-
-const HomeHero = () => {
-  const DetailMainText = ({ text }) => {
-    return <span className='text-4xl md:text-6xl text-amber-500'>{text}</span>;
-  };
-
-  const MainText = () => {
-    return (
-      <h2 className='md:mb-8 text-3xl md:text-5xl font-bold text-center leading-snug text-slate-600'>
-        Sistema para Gerenciamento de <DetailMainText text='Frotas' /> para Postos de Combustíveis
-      </h2>
-    );
-  };
-
-  const Text = ({ className }) => {
-    return (
-      <p className={`text-slate-500 text-lg text-center ${className}`}>
-        Tenha uma plataforma moderna para seu controle e dê autonomia para seus clientes!
-      </p>
-    );
-  };
-
-  const HeroImage = () => {
-    return (
-      <div className='py-4 md:py-0 px-3 w-full'>
-        <div className='flex justify-center items-center'>
-          <Image
-            priority
-            src='/images/home_data.svg'
-            width={0}
-            height={0}
-            className='w-4/5'
-            alt='home'
-          />
+const Hero = () => {
+  return (
+    <section className='container mx-auto mt-[122px]'>
+      <div className="relative overflow-hidden bg-scroll bg-top bg-no-repeat bg-[url('/images/home/hero.png')] h-[500px]" />
+      <div className='-mt-[135px] mx-6 py-10 block rounded-3xl shadow-xl bg-amber-500 backdrop-blur-3xl'>
+        <div className='text-slate-800 text-3xl font-bold text-center leading-snug'>
+          <h2>Sistema para Gerenciamento de</h2>
+          <h2 className='text-slate-50 text-6xl py-4'>Frotas</h2>
+          <h2>para Postos de Combustíveis</h2>
         </div>
       </div>
-    );
-  };
-
-  return (
-    <section className='container flex flex-col md:flex-row items-center mx-auto pb-8 mt-32 md:mt-24'>
-      <div className='px-3 w-full'>
-        <MainText />
-        <Text className='hidden md:flex' />
-      </div>
-      <HeroImage />
-      <Text className='md:hidden' />
     </section>
   );
 };
 
-export default HomeHero;
+export default Hero;
