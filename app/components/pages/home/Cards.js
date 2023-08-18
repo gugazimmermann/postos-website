@@ -2,10 +2,12 @@ import Image from 'next/image';
 
 const Card = ({ image, title, text }) => {
   return (
-    <div className='flex items-start gap-4 shadow-xl rounded-lg p-4 bg-slate-50'>
-      <Image src={image} width={0} height={0} className='w-16 float-right mr-4' alt={title} />
-      <div>
-        <h2 className='text-lg font-bold'>{title}</h2>
+    <div className='flex items-start gap-4 shadow-xl rounded-xl p-4 bg-slate-50'>
+      <div className='flex flex-col gap-2'>
+        <div className='flex flex-row justify-start items-center'>
+          <Image src={image} width={0} height={0} className='w-16 float-right mr-4' alt={title} />
+          <h2 className='text-lg font-bold'>{title}</h2>
+        </div>
         <p className='mt-1 text-sm text-slate-500'>{text}</p>
       </div>
     </div>
@@ -23,7 +25,7 @@ const Cards = () => {
       <Card
         image='images/home/cards/email.png'
         title='Notificações Instantâneas'
-        text='A cada abastecimento, informamos o cliente em tempo real. E-mails detalhados fornecem todas as informações pertinentes, incluindo veículo, motorista, posto e dados de abastecimento.'
+        text='A cada abastecimento, informamos o cliente em tempo real. Notificações e e-mails detalhados fornecem todas as informações pertinentes, incluindo veículo, motorista, posto e dados de abastecimento.'
       />
 
       <Card
@@ -40,14 +42,14 @@ const Cards = () => {
 
       <Card
         image='images/home/cards/vehicles.png'
-        title='Informações Detalhadas de Veículos'
-        text='Nosso sistema não só fornece dados básicos, mas também detalha marca, modelo e ano dos veículos, incluindo a capacidade de verificar compatibilidade de combustíveis para cada veículo em postos específicos.'
+        title='Informações dos Veículos'
+        text='Nosso sistema não só fornece a placa, mas também detalha marca, modelo e ano dos veículos, incluindo a capacidade de verificar restrição de combustíveis para cada veículo em postos específicos.'
       />
 
       <Card
         image='images/home/cards/drivers.png'
-        title='Verificação Simplificada de Motoristas'
-        text='Nosso sistema possibilita a rápida verificação da autorização de um motorista para abastecer em determinados postos ou para ter acesso a produtos específicos.'
+        title='Facilidade para Motoristas'
+        text='Aplicativo para verificar as rotas pra chegar nos postos autorizados, os combustíveis autorizados para o veículo utilizado, e até os produtos que ele tem acesso no posto.'
       />
     </section>
   );
