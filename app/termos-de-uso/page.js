@@ -1,6 +1,6 @@
 import sharedMetadata from '../shared-metadata';
 import { Section, SectionTitle } from '../components/layout/sections';
-import { UsageTermsText } from '../components/pages/usage-terms';
+import { UsageTermsText2 } from '../components/pages/usage-terms';
 
 export const metadata = {
   ...sharedMetadata,
@@ -16,7 +16,7 @@ export default function UsageTerms() {
   return (
     <Section>
       <SectionTitle title='Termos de Uso' />
-      <UsageTermsText />
+      <UsageTermsText2 />
     </Section>
   );
 }
