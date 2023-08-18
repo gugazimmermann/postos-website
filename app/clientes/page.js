@@ -1,5 +1,9 @@
 import sharedMetadata from '../shared-metadata';
-import { Section, SectionTitle, SectionParagraph } from '../components/layout/sections';
+import {
+  Section,
+} from '../components/layout/sections';
+import Companies from '../postos/Companies';
+import CompaniesConfig from '../postos/CompaniesConfig';
 
 export const metadata = {
   ...sharedMetadata,
@@ -11,15 +15,14 @@ export const metadata = {
   keywords: [...sharedMetadata.keywords, 'cliente', 'clientes'],
 };
 
-export default function Companies() {
+export default function Clients() {
   return (
     <Section>
-      <SectionTitle title='Para os' word='Clientes' />
-      <SectionParagraph>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem modi reprehenderit vitae
-        exercitationem aliquid dolores ullam temporibus enim expedita aperiam mollitia iure
-        consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.
-      </SectionParagraph>
+      <h2 className='text-2xl text-center font-bold text-slate-800 md:text-3xl m-4'>
+        Para os<span className='text-amber-500 ml-2'>Clientes</span>
+      </h2>
+      <Companies />
+      <CompaniesConfig />
     </Section>
   );
 }
