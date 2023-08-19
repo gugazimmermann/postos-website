@@ -50,12 +50,6 @@ const ContactColumn = () => {
       <a href='tel:+5547988704247' className='block mt-2 text-sm text-gray-500'>
         (47) 98870-4247
       </a>
-      <a
-        href='mailto:contato@touchsistemas.com.br'
-        className='block mt-2 text-sm text-gray-500 hover:underline hover:cursor-pointer'
-      >
-        contato@touchsistemas.com.br
-      </a>
     </div>
   );
 };
