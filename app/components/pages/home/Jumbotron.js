@@ -6,9 +6,9 @@ const Jumbotron = () => {
       <div className='pt-28 pb-4 lg:pt-0 lg:pb-0'>
       <div className='grid items-center lg:grid-cols-2'>
         <div className='px-6 py-12 lg:px-12 lg:-mr-14 block rounded-3xl shadow-xl bg-[hsla(0,0%,100%,0.55)] backdrop-blur-[30px]'>
-          <h2 className='text-3xl lg:text-5xl font-bold text-center text-slate-800'>
+          <h2 className='text-3xl lg:text-5xl font-bold text-center text-slate-600'>
             Sistema para Gerenciamento de{' '}
-            <span className='text-4xl lg:text-6xl text-amber-500'>Frotas</span> para Postos de
+            <span className='text-4xl lg:text-6xl text-slate-800'>Frotas</span> para Postos de
             Combustíveis
           </h2>
         </div>
