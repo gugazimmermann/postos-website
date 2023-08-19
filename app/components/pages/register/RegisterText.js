@@ -22,7 +22,7 @@ const RegisterText = () => {
   return (
     <div className='flex flex-col justify-center text-center md:text-left gap-4 w-full md:w-1/3'>
       <h1 className='text-3xl font-bold text-slate-800'>Cadastro de Organização</h1>
-      <p className='text-lg text-slate-500'>
+      <p className='text-lg text-slate-600'>
         Faço o cadastro para liberar seu acesso ao sistema, não se preocupe, você somente terá
         cobrança quando seus clientes começarem a abastecer.
       </p>

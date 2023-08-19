@@ -17,13 +17,13 @@ const CompaniesConfig = () => {
           <h2 className='text-2xl font-bold text-slate-800 text-center'>
             Gestão Avançada de Veículos e Motoristas
           </h2>
-          <p className='mt-4 text-slate-500'>
+          <p className='mt-4 text-slate-600'>
             Ao aceitar o convite, o cliente é introduzido a um ambiente de gestão avançado,
             desenhado para otimizar o controle sobre veículos e motoristas. Nesta plataforma, é
             possível definir restrições para veículos, como o tipo de combustível e o controle da
             quilometragem.
           </p>
-          <p className='mt-4 text-slate-500'>
+          <p className='mt-4 text-slate-600'>
             O sistema ainda permite vincular motoristas a veículos específicos, determinar os
             métodos de assinatura dos motoristas, incluindo o cadastro antecipado de assinaturas
             digitais, e especificar quais produtos e serviços são acessíveis a cada um, reforçando a

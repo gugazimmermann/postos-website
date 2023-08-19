@@ -28,7 +28,7 @@ const OrganizationDataText = ({ name }) => {
   return (
     <div className='flex flex-col justify-center text-center md:text-left gap-4 w-full md:w-1/3'>
       <h1 className='text-3xl font-bold text-slate-800'>Cadastro no Sistema</h1>
-      <p className='text-lg text-slate-500 inline'>
+      <p className='text-lg text-slate-600 inline'>
         {nameText(name)}, estamos quase lá, para finalizar complete os dados de acesso.
       </p>
       <MoreInfoButton />

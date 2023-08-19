@@ -8,7 +8,7 @@ const Card = ({ image, title, text }) => {
           <Image src={image} width={0} height={0} className='w-16 float-right mr-4' alt={title} />
           <h2 className='text-lg font-bold'>{title}</h2>
         </div>
-        <p className='mt-1 text-sm text-slate-500'>{text}</p>
+        <p className='mt-1 text-sm text-slate-600'>{text}</p>
       </div>
     </div>
   );

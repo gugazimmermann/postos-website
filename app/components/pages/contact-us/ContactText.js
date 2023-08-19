@@ -24,7 +24,7 @@ const Address = () => {
         <path strokeLinecap='round' strokeLinejoin='round' d='M15 11a3 3 0 11-6 0 3 3 0 016 0z' />
       </svg>
 
-      <span className='mx-2 text-slate-500 text-left'>
+      <span className='mx-2 text-slate-600 text-left'>
         Rua Benjamin Franklin Pereira, 410, apto 705 - Itajaí / SC - 88.304-070
       </span>
     </a>
@@ -49,7 +49,7 @@ const Phone = () => {
         />
       </svg>
 
-      <span className='mx-2 text-slate-500'>(47) 98870-4247</span>
+      <span className='mx-2 text-slate-600'>(47) 98870-4247</span>
     </a>
   );
 };
@@ -71,7 +71,7 @@ const Email = () => {
           d='M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
         />
       </svg>
-      <span className='mx-2 text-slate-500'>contato@touchsistemas.com.br</span>
+      <span className='mx-2 text-slate-600'>contato@touchsistemas.com.br</span>
     </a>
   );
 };

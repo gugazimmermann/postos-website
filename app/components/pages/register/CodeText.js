@@ -11,7 +11,7 @@ const CodeText = ({ email }) => {
   return (
     <div className='flex flex-col justify-center text-center md:text-left gap-4 w-full md:w-1/3'>
       <h1 className='text-3xl font-bold text-slate-800'>Validar Email</h1>
-      <p className='text-lg text-slate-500 inline'>
+      <p className='text-lg text-slate-600 inline'>
         Para validar seu email, por favor, acesse {emailText(email)} e valide o Código de
         Confirmação.
       </p>

@@ -12,7 +12,7 @@ const Social = ({ className }) => {
     if (name === 'Linkedin') icon = <Linkedin />;
     if (icon) {
       return (
-        <div className='mx-2 text-slate-500 hover:text-amber-500 hover:cursor-pointer'>{icon}</div>
+        <div className='mx-2 text-slate-600 hover:text-amber-500 hover:cursor-pointer'>{icon}</div>
       );
     }
     return null;

@@ -12,7 +12,7 @@ const UsageTermsText = () => {
         termos, por favor, não utilize nossos serviços.
       </SectionParagraph>
       <SectionSubTitle>1. Definições</SectionSubTitle>
-      <ul className='text-slate-500'>
+      <ul className='text-slate-600'>
         <li className='mt-1'>
           <strong>{process.env.NEXT_PUBLIC_TITLE}:</strong> Refere-se ao sistema SaaS para Gestão de
           Frota em Postos de Combustível fornecido pela empresa.

@@ -1,7 +1,7 @@
 const PaymentTable = () => {
   return (
     <div className='relative overflow-x-auto shadow-xl sm:rounded-lg'>
-      <table className='w-full text-sm text-left text-slate-500'>
+      <table className='w-full text-sm text-left text-slate-600'>
         <tbody>
           <tr className='bg-white border-b'>
             <th scope='row' className='px-6 py-4 font-medium text-slate-900 whitespace-nowrap'>

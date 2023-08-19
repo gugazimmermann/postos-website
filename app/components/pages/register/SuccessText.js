@@ -39,15 +39,15 @@ const SuccessText = ({ code, name, login, email, fetchError }) => {
         <Alert type='error' text={alert} />
       ) : (
         <>
-          <p className='text-lg text-slate-500 inline'>
+          <p className='text-lg text-slate-600 inline'>
             {renderText(name)}, seu cadastro foi concluído com sucesso e seus dados foram enviados
             para {renderText(email)}.
           </p>
-          <p className='text-lg text-slate-500 inline'>
+          <p className='text-lg text-slate-600 inline'>
             Para acessar o sistema, utilize os dados abaixo:
           </p>
-          <p className='text-lg text-slate-500 inline'>Código da Organização: {renderText(code)}</p>
-          <p className='text-lg text-slate-500 inline'>Usuário: {renderText(login)}</p>
+          <p className='text-lg text-slate-600 inline'>Código da Organização: {renderText(code)}</p>
+          <p className='text-lg text-slate-600 inline'>Usuário: {renderText(login)}</p>
         </>
       )}
       {code && <AccessButton code={code} />}
