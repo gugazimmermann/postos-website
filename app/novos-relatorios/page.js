@@ -6,6 +6,7 @@ import {
   SectionSubTitle,
   SectionParagraph,
 } from '../components/layout/sections';
+import { AppTitle, AppDescription } from '../components/general';
 
 export const metadata = {
   ...sharedMetadata,
@@ -31,10 +32,10 @@ export default function NewReports() {
           alt='reports'
         />
         <SectionParagraph>
-          O <strong>{process.env.NEXT_PUBLIC_TITLE}</strong> entende que decisões informadas são
-          vitais para o sucesso empresarial. A interpretação correta dos dados é a chave para uma
-          estratégia eficaz. Com nossas ferramentas, você tem acesso a insights para acompanhar o
-          crescimento das vendas, avaliar campanhas de marketing e identificar áreas de melhoria.
+          O <AppTitle /> entende que decisões informadas são vitais para o sucesso empresarial. A
+          interpretação correta dos dados é a chave para uma estratégia eficaz. Com nossas
+          ferramentas, você tem acesso a insights para acompanhar o crescimento das vendas, avaliar
+          campanhas de marketing e identificar áreas de melhoria.
         </SectionParagraph>
         <SectionParagraph>
           Disponibilizamos uma gama de relatórios pré-configurados sobre abastecimentos, clientes e
@@ -68,11 +69,9 @@ export default function NewReports() {
           prosseguir com o trabalho.
         </SectionParagraph>
         <SectionParagraph>
-          No <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, acreditamos que os dados são o
-          coração de um negócio inteligente. Nossos{' '}
-          <strong>{process.env.NEXT_PUBLIC_DESCRIPTION}</strong> capacita você a extrair informações
-          valiosas e a tomar decisões informadas que impulsionam o crescimento do seu posto de
-          combustível.
+          No <AppTitle />, acreditamos que os dados são o coração de um negócio inteligente. Nosso{' '}
+          <AppDescription /> capacita você a extrair informações valiosas e a tomar decisões
+          informadas que impulsionam o crescimento do seu posto de combustível.
         </SectionParagraph>
       </div>
     </Section>
