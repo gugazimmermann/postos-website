@@ -1,6 +1,6 @@
 const Section = ({ children }) => {
   return (
-    <section className='bg-white container flex flex-col p-4 mt-32 md:mt-24'>
+    <section className='bg-white container flex flex-col p-4 mt-32 md:mt-20'>
       {children}
     </section>
   );
