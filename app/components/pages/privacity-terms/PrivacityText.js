@@ -7,8 +7,7 @@ const PrivacityText = () => {
       <SectionParagraph>
         Bem-vindo ao {process.env.NEXT_PUBLIC_TITLE}, um {process.env.NEXT_PUBLIC_DESCRIPTION}. Esta
         política esclarece como lidamos com suas informações pessoais. Ao utilizar nosso sistema,
-        você aceita as práticas descritas aqui. Caso não concorde, solicitamos que não utilize o
-        serviço.
+        você aceita as práticas descritas aqui.
       </SectionParagraph>
       <SectionSubTitle>1. Informações Coletadas</SectionSubTitle>
       <SectionParagraph>

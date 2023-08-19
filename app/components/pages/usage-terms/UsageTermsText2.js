@@ -8,8 +8,7 @@ const UsageTermsText = () => {
         Bem-vindo ao {process.env.NEXT_PUBLIC_TITLE}, um Software como Serviço (SaaS) para Gestão de
         Frota em Postos de Combustível. Estes Termos de Uso descrevem os termos e condições que
         regem o uso da plataforma {process.env.NEXT_PUBLIC_TITLE}. Ao acessar ou utilizar nosso
-        sistema SaaS, você concorda em cumprir estes Termos de Uso. Caso você não concorde com estes
-        termos, por favor, não utilize nossos serviços.
+        sistema SaaS, você concorda em cumprir estes Termos de Uso.
       </SectionParagraph>
       <SectionSubTitle>1. Definições</SectionSubTitle>
       <SectionParagraph>
