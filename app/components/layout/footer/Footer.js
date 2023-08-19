@@ -59,7 +59,7 @@ const Footer = () => {
     <footer className='bg-slate-50 mt-8 px-4'>
       <div className='container mx-auto mb-4'>
         <MainCol />
-        <div className='grid grid-cols-2 md:grid-cols-5 place-content-around text-center gap-4 mt-4'>
+        <div className='grid grid-cols-1 md:grid-cols-5 place-content-around text-center gap-4 mt-4'>
           <Column
             title='Sobre Nós'
             items={[
