@@ -10,7 +10,7 @@ const Go = () => {
           width={0}
           height={0}
           className='w-auto h-16 sm:m-4'
-          alt='CI/CD'
+          alt='Go'
         />
       </div>
       <SectionParagraph>

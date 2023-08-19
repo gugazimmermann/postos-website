@@ -57,7 +57,7 @@ export default function AboutUs() {
           gerenciamento estratégico e informado. Afinal, a base de qualquer empreendimento
           bem-sucedido reside na satisfação de todas as partes envolvidas.
         </SectionParagraph>
-        <blockquote class='text-xl italic font-semibold text-slate-800 text-center mt-4'>
+        <blockquote className='text-xl italic font-semibold text-slate-800 text-center mt-4'>
           <p>&quot;Um negócio para ser bom, tem que ser bom para todo mundo.&quot;</p>
         </blockquote>
         <SectionParagraph>
