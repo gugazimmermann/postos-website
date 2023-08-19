@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { Arrow, Loading } from '../../icons';
 import { Alert } from '../../helpers';
+import { AppTitle } from '../../general';
 
 const SuccessText = ({ code, name, login, email, fetchError }) => {
   const [alert, setAlert] = useState();
@@ -19,7 +20,7 @@ const SuccessText = ({ code, name, login, email, fetchError }) => {
         target='_blank'
         rel='noopener noreferrer'
       >
-        Acessar {process.env.NEXT_PUBLIC_TITLE}
+        Acessar <AppTitle />
         <Arrow />
       </a>
     );

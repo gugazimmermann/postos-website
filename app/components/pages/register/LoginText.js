@@ -2,6 +2,7 @@
 
 import { useModal } from '../../../hooks';
 import { Loading, ModalOpen } from '../../icons';
+import { AppTitle } from '../../general';
 
 const OrganizationDataText = ({ name }) => {
   const { openModal, Modal } = useModal({ closeoutside: true });
@@ -35,13 +36,13 @@ const OrganizationDataText = ({ name }) => {
       <Modal title='Níveis de Acesso Personalizados' scroll={true}>
         <div className='flex flex-col justify-center leading-6'>
           <p className='text-slate-800 mb-2'>
-            Em {process.env.NEXT_PUBLIC_TITLE}, oferecemos uma maneira intuitiva de gerenciar permissões e acesso.
-            Aqui estão os três níveis de acesso que você pode usar para organizar sua estrutura:
+            Em <AppTitle />, oferecemos uma maneira intuitiva de gerenciar permissões e acesso. Aqui
+            estão os três níveis de acesso que você pode usar para organizar sua estrutura:
           </p>
           <p className='text-slate-800 mb-2'>
             <strong>Código da Organização</strong>: Um identificador único que representa a
             organização, rede ou empresa. Isso garante que cada entidade seja claramente
-            diferenciada dentro do {process.env.NEXT_PUBLIC_TITLE}.
+            diferenciada dentro do <AppTitle />.
           </p>
           <p className='text-slate-800 mb-2'>
             <strong>Código do Posto</strong>: Representa os diferentes Postos operados por cada
