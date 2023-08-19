@@ -10,7 +10,7 @@ const Amazon = () => {
           width={0}
           height={0}
           className='w-auto h-24 sm:m-4'
-          alt='CI/CD'
+          alt='Amazon Web Services'
         />
       </div>
       <SectionParagraph>

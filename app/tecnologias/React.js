@@ -10,7 +10,7 @@ const React = () => {
           width={0}
           height={0}
           className='w-auto h-32 sm:m-4'
-          alt='CI/CD'
+          alt='React'
         />
       </div>
       <SectionParagraph>
