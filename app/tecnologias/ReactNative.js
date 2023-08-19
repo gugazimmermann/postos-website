@@ -1,8 +1,18 @@
+import Image from 'next/image';
 import { SectionParagraph } from '../components/layout/sections';
 
 const ReactNative = () => {
   return (
-    <div className='px-4'>
+    <div className='px-4 w-full'>
+      <div className='flex justify-center sm:float-right'>
+        <Image
+          src='/images/technologies/react.png'
+          width={0}
+          height={0}
+          className='w-auto h-32 sm:m-4'
+          alt='CI/CD'
+        />
+      </div>
       <SectionParagraph>
         Desenvolvido pelo Facebook, o React Native foi projetado para fornecer experiências nativas
         e de alta qualidade. Ele permite aos desenvolvedores criar aplicativos móveis para iOS e

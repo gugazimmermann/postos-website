@@ -1,8 +1,18 @@
+import Image from 'next/image';
 import { SectionParagraph } from '../components/layout/sections';
 
 const Electron = () => {
   return (
-    <div className='px-4'>
+    <div className='px-4 w-full'>
+      <div className='flex justify-center sm:float-right'>
+        <Image
+          src='/images/technologies/electron.png'
+          width={0}
+          height={0}
+          className='w-auto h-32 sm:m-4'
+          alt='CI/CD'
+        />
+      </div>
       <SectionParagraph>
         Nossa plataforma incorpora a eficiência do Electron, uma tecnologia que traz diversas
         vantagens. Desenvolvida pela GitHub, uma das maiores e mais influentes plataformas de

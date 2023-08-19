@@ -1,8 +1,18 @@
+import Image from 'next/image';
 import { SectionParagraph } from '../components/layout/sections';
 
 const Go = () => {
   return (
-    <div className='px-4'>
+    <div className='px-4 w-full'>
+      <div className='flex justify-center sm:float-right'>
+        <Image
+          src='/images/technologies/go.png'
+          width={0}
+          height={0}
+          className='w-auto h-16 sm:m-4'
+          alt='CI/CD'
+        />
+      </div>
       <SectionParagraph>
         Criada pelo Google, o Go foi projetado para eficiência e velocidade, tornando-o ideal para
         aplicativos de alto desempenho como o nosso sistema de gerenciamento de frotas. O Go foi
