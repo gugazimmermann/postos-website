@@ -1,5 +1,6 @@
 import sharedMetadata from './shared-metadata';
 import { Hero, Jumbotron, Parallax, Cards, CallToAction } from './components/pages/home';
+import Brands from './components/general/Brands';
 
 export const metadata = {
   ...sharedMetadata,
@@ -14,6 +15,7 @@ export default function Home() {
       <div className='lg:hidden'>
         <Jumbotron />
       </div>
+      <Brands />
       <Parallax />
       <Cards />
       <CallToAction />
