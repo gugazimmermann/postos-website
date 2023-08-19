@@ -59,17 +59,14 @@ const BottomRightSVG = () => (
 
 const CallToAction = () => {
   return (
-    <section className='container mx-auto bg-amber-500 mt-8 rounded-3xl shadow-xl'>
-      <div className='relative z-10 rounded px-8 p-16'>
-        <div className='flex items-center'>
-          <div className='w-2/3'>
-            <span className='text-xl font-semibold text-slate-50'>
-              Saiba mais sobre o {process.env.NEXT_PUBLIC_TITLE}
-            </span>
-            <h2 className='text-3xl font-bold text-slate-50'>Leve a Modernidade ao Seu Posto!</h2>
-          </div>
-          <div className='w-1/3'>
-            <div className='flex flex-col gap-4'>
+    <section className='container mx-auto'>
+      <div className='mx-4 sm:mx-0 mt-8 bg-amber-500 rounded-3xl shadow-xl'>
+        <div className='relative z-10 rounded p-4'>
+          <div className='flex flex-col md:flex-row justify-center md:justify-between md:p-8 items-center gap-4'>
+            <h2 className='text-3xl font-bold text-slate-50 text-center'>
+              Leve a Modernidade ao Seu Posto!
+            </h2>
+            <div className='flex flex-col  gap-4'>
               <Link
                 href='/postos'
                 className='rounded-lg text-center bg-slate-50 py-2 px-4 text-slate-800 font-bold text-xl transition hover:bg-opacity-90'
@@ -84,14 +81,14 @@ const CallToAction = () => {
               </Link>
             </div>
           </div>
-        </div>
-        <div>
-          <span className='absolute top-0 left-0 z-[-1]'>
-            <TopLeftSVG />
-          </span>
-          <span className='absolute bottom-0 right-0 z-[-1]'>
-            <BottomRightSVG />
-          </span>
+          <div>
+            <span className='absolute top-0 left-0 z-[-1]'>
+              <TopLeftSVG />
+            </span>
+            <span className='absolute bottom-0 right-0 z-[-1]'>
+              <BottomRightSVG />
+            </span>
+          </div>
         </div>
       </div>
     </section>
