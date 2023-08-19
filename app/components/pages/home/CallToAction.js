@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const CallToAction = () => {
   return (
-    <section className='container mt-4'>
+    <section className='container mt-8'>
       <div className='flex flex-col justify-center items-center bg-slate-50 rounded-3xl shadow-xl uppercase p-4 mx-4'>
         <h2 className='text-amber-500 text-center mb-4 text-3xl md:text-4xl tracking-tight font-bold'>
           Leve a Modernidade ao Seu Posto!
