@@ -1,6 +1,6 @@
 const PaymentTable = () => {
   return (
-    <div className='relative overflow-x-auto  shadow-xl sm:rounded-lg'>
+    <div className='relative overflow-x-auto shadow-xl sm:rounded-lg'>
       <table className='w-full text-sm text-left text-slate-500'>
         <tbody>
           <tr className='bg-white border-b'>
