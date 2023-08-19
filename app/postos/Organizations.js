@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { CheckMark } from '../components/icons';
+import { AppTitle } from '../components/general';
 
 const imageUrls = [
   '/images/gas-stations/1.png',
@@ -48,7 +49,7 @@ const Organizations = () => {
               </h2>
               <p>
                 Seja você um dono de um posto individual ou de uma vasta rede de Postos de
-                Combustíveis, o <strong>{process.env.NEXT_PUBLIC_TITLE}</strong> está pronto para
+                Combustíveis, o <AppTitle /> está pronto para
                 atendê-lo. Aqui, a Organização pode registrar e gerir múltiplos Postos de
                 Combustíveis com facilidade. E não paramos por aí - cada posto pode ter inúmeros
                 clientes. E, por sua vez, esses clientes podem ter vários veículos e motoristas

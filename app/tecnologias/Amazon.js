@@ -1,8 +1,18 @@
+import Image from 'next/image';
 import { SectionParagraph } from '../components/layout/sections';
 
 const Amazon = () => {
   return (
-    <div className='px-4'>
+    <div className='px-4 w-full'>
+      <div className='flex justify-center sm:float-right'>
+        <Image
+          src='/images/technologies/aws.png'
+          width={0}
+          height={0}
+          className='w-auto h-24 sm:m-4'
+          alt='CI/CD'
+        />
+      </div>
       <SectionParagraph>
         Nossa infraestrutura é ancorada na Amazon Web Services (AWS), trazendo inúmeras vantagens
         para você como cliente. A AWS é líder mundial em serviços em nuvem, oferecendo uma base

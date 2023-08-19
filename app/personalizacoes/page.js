@@ -6,6 +6,7 @@ import {
   SectionSubTitle,
   SectionParagraph,
 } from '../components/layout/sections';
+import { AppTitle, AppDescription } from '../components/general';
 
 export const metadata = {
   ...sharedMetadata,
@@ -33,12 +34,10 @@ export default function Customizations() {
           alt='customizations'
         />
         <SectionParagraph>
-          Em <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, entendemos que cada posto de
-          combustível possui necessidades distintas, e um sistema de gerenciamento de frotas deve se
-          adaptar perfeitamente a elas. Por isso, disponibilizamos uma extensa gama de opções de
-          personalização, permitindo que você configure nosso{' '}
-          <strong>{process.env.NEXT_PUBLIC_DESCRIPTION}</strong> de acordo com seus critérios e
-          requisitos específicos.
+          Em <AppTitle />, entendemos que cada posto de combustível possui necessidades distintas, e
+          um sistema de gerenciamento de frotas deve se adaptar perfeitamente a elas. Por isso,
+          disponibilizamos uma extensa gama de opções de personalização, permitindo que você
+          configure nosso <AppDescription /> de acordo com seus critérios e requisitos específicos.
         </SectionParagraph>
         <SectionSubTitle>Notificações Sob Medida para Você e Seus Clientes</SectionSubTitle>
         <SectionParagraph>
@@ -74,11 +73,10 @@ export default function Customizations() {
           envolvidos.
         </SectionParagraph>
         <SectionParagraph>
-          Em <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>, estamos comprometidos em fornecer um
-          sistema de gerenciamento de frotas adaptado ao seu negócio. Nossas opções de
-          personalização garantem que você maximize o potencial do nosso{' '}
-          <strong>{process.env.NEXT_PUBLIC_DESCRIPTION}</strong>, otimizando operações e
-          proporcionando uma experiência singular para seus clientes e equipe.
+          Em <AppTitle />, estamos comprometidos em fornecer um sistema de gerenciamento de frotas
+          adaptado ao seu negócio. Nossas opções de personalização garantem que você maximize o
+          potencial do nosso <AppDescription />, otimizando operações e proporcionando uma
+          experiência singular para seus clientes e equipe.
         </SectionParagraph>
       </div>
     </Section>

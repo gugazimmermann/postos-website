@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { AppTitle } from '../components/general';
 
 const Companies = () => {
   return (
@@ -19,7 +20,7 @@ const Companies = () => {
           </h2>
           <p className='mt-4 text-slate-500'>
             Nosso sistema é construído sobre a base da Liberdade. Um posto pode convidar um cliente
-            a se juntar ao <strong>{process.env.NEXT_PUBLIC_TITLE}</strong>. E esse cliente? Bem,
+            a se juntar ao <AppTitle />. E esse cliente? Bem,
             ele tem a liberdade de usar nosso sistema em diferentes Postos, independentemente de sua
             filiação. Isso significa que o cliente poderá acompanhar seus relatórios de
             abastecimentos, ter seus gráficos, suas métricas de quilometros por litros, etc, de
@@ -27,7 +28,7 @@ const Companies = () => {
           </p>
           <p className='mt-4 text-slate-500'>
             E se um cliente já tiver seus veículos e motoristas cadastrados no{' '}
-            <strong>{process.env.NEXT_PUBLIC_TITLE}</strong> ele pode rapidamente autorizar os
+            <AppTitle /> ele pode rapidamente autorizar os
             mesmos a abastecerem em outros postos que enviarem convite.
           </p>
         </div>

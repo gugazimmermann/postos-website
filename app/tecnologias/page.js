@@ -27,7 +27,7 @@ export default function Tecnologias() {
     <Section>
       <SectionTitle title='Tecnologias Utilizadas' />
       <SectionSubTitle>
-        Excelência Tecnológica: Potencializando Eficiência e Segurança Avançadas
+        Inovação e Segurança: Conectando a Gestão de Frotas à Excelência Tecnológica
       </SectionSubTitle>
       <div className='w-full'>
         <Image

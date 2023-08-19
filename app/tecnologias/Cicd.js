@@ -1,8 +1,18 @@
+import Image from 'next/image';
 import { SectionParagraph } from '../components/layout/sections';
 
 const Cicd = () => {
   return (
-    <div className='px-4'>
+    <div className='px-4 w-full'>
+      <div className='flex justify-center sm:float-right'>
+        <Image
+          src='/images/technologies/cicd.png'
+          width={0}
+          height={0}
+          className='w-auto h-32'
+          alt='CI/CD'
+        />
+      </div>
       <SectionParagraph>
         Empregamos um processo contínuo de Integração Contínua e Entrega Contínua (CI/CD) para
         manter nosso sistema permanentemente atualizado. Esse método se traduz em operações
