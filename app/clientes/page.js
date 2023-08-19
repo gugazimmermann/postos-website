@@ -1,9 +1,6 @@
 import sharedMetadata from '../shared-metadata';
-import {
-  Section,
-} from '../components/layout/sections';
-import Companies from '../postos/Companies';
-import CompaniesConfig from '../postos/CompaniesConfig';
+import { Section } from '../components/layout/sections';
+import Companies from './Companies';
 
 export const metadata = {
   ...sharedMetadata,
@@ -18,11 +15,7 @@ export const metadata = {
 export default function Clients() {
   return (
     <Section>
-      <h2 className='text-2xl text-center font-bold text-slate-800 md:text-3xl m-4'>
-        Para os<span className='text-amber-500 ml-2'>Clientes</span>
-      </h2>
       <Companies />
-      <CompaniesConfig />
     </Section>
   );
 }

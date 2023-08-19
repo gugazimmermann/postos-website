@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { Arrow, Loading } from '../../icons';
 import { Alert } from '../../helpers';
+import { AppTitle } from '../../general';
 
 const SuccessText = ({ code, name, login, email, fetchError }) => {
   const [alert, setAlert] = useState();
@@ -19,7 +20,7 @@ const SuccessText = ({ code, name, login, email, fetchError }) => {
         target='_blank'
         rel='noopener noreferrer'
       >
-        Acessar {process.env.NEXT_PUBLIC_TITLE}
+        Acessar <AppTitle />
         <Arrow />
       </a>
     );
@@ -39,15 +40,15 @@ const SuccessText = ({ code, name, login, email, fetchError }) => {
         <Alert type='error' text={alert} />
       ) : (
         <>
-          <p className='text-lg text-slate-500 inline'>
+          <p className='text-lg text-slate-600 inline'>
             {renderText(name)}, seu cadastro foi concluído com sucesso e seus dados foram enviados
             para {renderText(email)}.
           </p>
-          <p className='text-lg text-slate-500 inline'>
+          <p className='text-lg text-slate-600 inline'>
             Para acessar o sistema, utilize os dados abaixo:
           </p>
-          <p className='text-lg text-slate-500 inline'>Código da Organização: {renderText(code)}</p>
-          <p className='text-lg text-slate-500 inline'>Usuário: {renderText(login)}</p>
+          <p className='text-lg text-slate-600 inline'>Código da Organização: {renderText(code)}</p>
+          <p className='text-lg text-slate-600 inline'>Usuário: {renderText(login)}</p>
         </>
       )}
       {code && <AccessButton code={code} />}

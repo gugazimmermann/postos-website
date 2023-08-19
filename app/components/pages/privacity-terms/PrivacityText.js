@@ -1,13 +1,14 @@
 import { SectionParagraph, SectionSubTitle } from '../../layout/sections';
+import { AppTitle, AppDescription } from '../../general';
 
 const PrivacityText = () => {
   return (
     <>
       <SectionSubTitle>Última Atualização: 18/08/2023</SectionSubTitle>
       <SectionParagraph>
-        Bem-vindo ao {process.env.NEXT_PUBLIC_TITLE}, um {process.env.NEXT_PUBLIC_DESCRIPTION}. Esta
-        política esclarece como lidamos com suas informações pessoais. Ao utilizar nosso sistema,
-        você aceita as práticas descritas aqui.
+        Bem-vindo ao <AppTitle />, um <AppDescription />. Esta política esclarece como lidamos com
+        suas informações pessoais. Ao utilizar nosso sistema, você aceita as práticas descritas
+        aqui.
       </SectionParagraph>
       <SectionSubTitle>1. Informações Coletadas</SectionSubTitle>
       <SectionParagraph>
@@ -59,8 +60,8 @@ const PrivacityText = () => {
         dados pessoais, conforme sua relevância para a operação.
       </SectionParagraph>
       <SectionParagraph>
-        <strong>4.3 Retenção</strong>: Seus dados são mantidos pelo período necessário ao serviço
-        ou conforme legislação aplicável.
+        <strong>4.3 Retenção</strong>: Seus dados são mantidos pelo período necessário ao serviço ou
+        conforme legislação aplicável.
       </SectionParagraph>
       <SectionSubTitle>5. Seus Direitos</SectionSubTitle>
       <SectionParagraph>
@@ -68,8 +69,8 @@ const PrivacityText = () => {
         qualquer momento. Para isso, basta nos contatar.
       </SectionParagraph>
       <SectionParagraph>
-        <strong>5.2 Encerramento</strong>: Pode optar por cancelar a assinatura e pedir a remoção
-        de seus dados. No entanto, a supressão pode impactar a disponibilidade de serviços.
+        <strong>5.2 Encerramento</strong>: Pode optar por cancelar a assinatura e pedir a remoção de
+        seus dados. No entanto, a supressão pode impactar a disponibilidade de serviços.
       </SectionParagraph>
       <SectionSubTitle>6. Atualizações desta Política</SectionSubTitle>
       <SectionParagraph>
@@ -77,9 +78,9 @@ const PrivacityText = () => {
         por e-mail.
       </SectionParagraph>
       <SectionParagraph>
-        Ao utilizar o {process.env.NEXT_PUBLIC_TITLE}, você reconhece que leu, compreendeu e
-        concordou com estas Políticas de Privacidade. Se tiver alguma dúvida ou preocupação, entre
-        em contato conosco através das informações de contato fornecidas.
+        Ao utilizar o <AppTitle />, você reconhece que leu, compreendeu e concordou com estas
+        Políticas de Privacidade. Se tiver alguma dúvida ou preocupação, entre em contato conosco
+        através das informações de contato fornecidas.
       </SectionParagraph>
     </>
   );

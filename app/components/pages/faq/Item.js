@@ -14,7 +14,7 @@ const Item = ({ question, setQuestion, item }) => {
         {question && question === item.id && (
           <div className='flex mt-4 md:mx-10'>
             <span className='border border-amber-500' />
-            <p className='max-w-3xl px-4 text-slate-500'>{item.text} </p>
+            <p className='max-w-3xl px-4 text-slate-600'>{item.text} </p>
           </div>
         )}
       </div>

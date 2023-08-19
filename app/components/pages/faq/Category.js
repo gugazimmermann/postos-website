@@ -6,7 +6,7 @@ const Content = ({ category, changeCategory, items }) => {
           <button
             key={x.id}
             className={`block hover:underline hover:cursor-pointer ${
-              category === x.id ? 'font-bold text-amber-500 underline' : 'text-slate-500'
+              category === x.id ? 'font-bold text-amber-500 underline' : 'text-slate-600'
             }`}
             onClick={() => changeCategory(x.id)}
           >

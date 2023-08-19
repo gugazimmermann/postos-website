@@ -15,7 +15,7 @@ const HomeHero = () => {
 
   const Text = ({ className }) => {
     return (
-      <p className={`text-slate-500 text-lg text-center ${className}`}>
+      <p className={`text-slate-600 text-lg text-center ${className}`}>
         Tenha uma plataforma moderna para seu controle e dê autonomia para seus clientes!
       </p>
     );
