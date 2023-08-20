@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { CheckMark } from '../components/icons';
-import { AppTitle } from '../components/general';
+import { CheckMark } from '../../icons';
+import { AppTitle } from '../../general';
 
 const imageUrls = [
   '/images/gas-stations/1.webp',
@@ -11,7 +11,7 @@ const imageUrls = [
   '/images/gas-stations/3.webp',
 ];
 
-const Organizations = () => {
+const GasStationsOrganizations = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -78,4 +78,4 @@ const Organizations = () => {
   );
 };
 
-export default Organizations;
+export default GasStationsOrganizations;
