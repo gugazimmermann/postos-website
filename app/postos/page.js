@@ -1,8 +1,6 @@
 import sharedMetadata from '../shared-metadata';
-import {
-  Section,
-} from '../components/layout/sections';
-import Organizations from './Organizations';
+import { Section } from '../components/layout/sections';
+import GasStationsContent from '../components/pages/gas-stations/GasStationsContent';
 
 export const metadata = {
   ...sharedMetadata,
@@ -17,10 +15,7 @@ export const metadata = {
 export default function GasStations() {
   return (
     <Section>
-      <h2 className='text-2xl text-center font-bold text-slate-800 md:text-3xl m-6'>
-        Para os<span className='text-amber-500 ml-2'>Postos</span>
-      </h2>
-      <Organizations />
+      <GasStationsContent />
     </Section>
   );
 }

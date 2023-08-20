@@ -1,6 +1,6 @@
-const TITLE = process.env.NEXT_PUBLIC_TITLE || '';
-const DESCRIPTION = process.env.NEXT_PUBLIC_DESCRIPTION || '';
-const URL = process.env.NEXT_PUBLIC_URL || '';
+const TITLE = process.env.NEXT_PUBLIC_TITLE || 'Touch Sistemas - Postos';
+const DESCRIPTION = process.env.NEXT_PUBLIC_DESCRIPTION || 'Sistema para Gerenciamento de Frotas para Postos de Combustíveis';
+const URL = process.env.NEXT_PUBLIC_URL || 'https://www.touchsistemas.com.br';
 
 const sharedMetadata = {
   title: TITLE,

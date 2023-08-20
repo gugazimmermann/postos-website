@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { SubTitle, Title } from './utils';
+import { SubTitle } from '../../general';
 
 const CompaniesInfoCard = ({ icon, title, details }) => {
   return (

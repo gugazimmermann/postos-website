@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { AppTitle } from '../../general';
-import { Title, Paragraph } from './utils';
+import { Title, Paragraph } from '../../general';
 
 const CompaniesRegister = () => {
   return (

@@ -4,7 +4,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { AppTitle, AppDescription } from '../../general';
-import { Title, Paragraph } from './utils';
+import { Title, Paragraph } from '../../general';
 
 const imageUrls = [
   '/images/companies/transactions-open.webp',
