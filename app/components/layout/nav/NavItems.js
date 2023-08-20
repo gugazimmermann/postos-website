@@ -25,7 +25,7 @@ const NavItems = () => {
   return (
     <>
       <NavItem to='/postos' text='Para os Postos' />
-      <NavItem to='/clientes' text='Para os Clientes' />
+      <NavItem to='/clientes' text='Para os Frotistas' />
       <NavItem to='/contato' text='Contato' />
     </>
   );
