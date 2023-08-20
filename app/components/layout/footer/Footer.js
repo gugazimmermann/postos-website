@@ -41,14 +41,17 @@ const ContactColumn = () => {
   return (
     <div>
       <ColumnTitle title='Contato' />
+      <Link
+        href='/contato'
+        className='block mt-2 text-sm text-gray-500 hover:underline hover:cursor-pointer'
+      >
+        Contato
+      </Link>
       <a
         href='https://wa.me/5547988704247'
         className='block mt-2 text-sm text-gray-500 hover:underline hover:cursor-pointer'
       >
         WhatsApp
-      </a>
-      <a href='tel:+5547988704247' className='block mt-2 text-sm text-gray-500'>
-        (47) 98870-4247
       </a>
     </div>
   );
