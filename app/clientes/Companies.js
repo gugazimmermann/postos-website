@@ -6,9 +6,9 @@ import Image from 'next/image';
 import { AppTitle, AppDescription } from '../components/general';
 
 const imageUrls = [
-  '/images/companies/transactions_open.png',
-  '/images/companies/transactions_graph.png',
-  '/images/companies/transactions_graph2.png',
+  '/images/companies/transactions-open.webp',
+  '/images/companies/transactions-graph.webp',
+  '/images/companies/transactions-graph2.webp',
 ];
 
 const Dots = () => {
@@ -650,16 +650,16 @@ const Companies = () => {
           <div className='flex items-center -mx-3 sm:-mx-4'>
             <div className='w-full sm:px-2'>
               <Image
-                onClick={() => handleImageClick('/images/companies/gas-stations.png')}
-                src='/images/companies/gas-stations.png'
+                onClick={() => handleImageClick('/images/companies/gas-stations.webp')}
+                src='/images/companies/gas-stations.webp'
                 width={0}
                 height={0}
                 className='w-full sm:py-2 cursor-pointer'
                 alt='gas-stations'
               />
               <Image
-                onClick={() => handleImageClick('/images/companies/payments.png')}
-                src='/images/companies/payments.png'
+                onClick={() => handleImageClick('/images/companies/payments.webp')}
+                src='/images/companies/payments.webp'
                 width={0}
                 height={0}
                 className='w-full sm:py-2 cursor-pointer'
@@ -669,8 +669,8 @@ const Companies = () => {
             <div className='w-full px-2'>
               <div className='relative z-10'>
                 <Image
-                  onClick={() => handleImageClick('/images/companies/transactions.png')}
-                  src='/images/companies/transactions.png'
+                  onClick={() => handleImageClick('/images/companies/transactions.webp')}
+                  src='/images/companies/transactions.webp'
                   width={0}
                   height={0}
                   className='w-full  cursor-pointer'

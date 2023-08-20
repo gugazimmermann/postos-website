@@ -6,7 +6,7 @@ const React = () => {
     <div className='px-4 w-full'>
       <div className='flex justify-center sm:float-right'>
         <Image
-          src='/images/technologies/react.png'
+          src='/images/technologies/react.webp'
           width={0}
           height={0}
           className='w-auto h-32 sm:m-4'

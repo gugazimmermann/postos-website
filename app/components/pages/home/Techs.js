@@ -13,49 +13,49 @@ const Techs = () => {
           className='flex flex-row flex-wrap gap-4 justify-evenly items-center my-4 px-4'
         >
           <Image
-            src='/images/technologies/aws2.png'
+            src='/images/technologies/aws2.webp'
             width={0}
             height={0}
             className='w-auto h-8 sm:h-12 rounded-lg'
             alt='Amazon Web Services'
           />
           <Image
-            src='/images/technologies/cicd.png'
+            src='/images/technologies/cicd.webp'
             width={0}
             height={0}
             className='w-auto h-8 sm:h-12 rounded-lg'
             alt='CI/CD'
           />
           <Image
-            src='/images/technologies/react2.png'
+            src='/images/technologies/react2.webp'
             width={0}
             height={0}
             className='w-auto h-8 sm:h-12 rounded-lg'
             alt='React'
           />
           <Image
-            src='/images/technologies/node.png'
+            src='/images/technologies/node.webp'
             width={0}
             height={0}
             className='w-auto h-8 sm:h-12 rounded-lg'
             alt='Node'
           />
           <Image
-            src='/images/technologies/nextjs.png'
+            src='/images/technologies/nextjs.webp'
             width={0}
             height={0}
             className='w-auto h-8 sm:h-12 rounded-lg'
             alt='NextJS'
           />
           <Image
-            src='/images/technologies/electron.png'
+            src='/images/technologies/electron.webp'
             width={0}
             height={0}
             className='w-auto h-8 sm:h-12 rounded-lg'
             alt='Electron'
           />
           <Image
-            src='/images/technologies/go.png'
+            src='/images/technologies/go.webp'
             width={0}
             height={0}
             className='w-auto h-8 sm:h-12 rounded-lg'

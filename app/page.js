@@ -1,6 +1,5 @@
 import sharedMetadata from './shared-metadata';
-import { Hero, Jumbotron, Parallax, Cards, Techs, CallToAction } from './components/pages/home';
-import Brands from './components/general/Brands';
+import { Hero, Jumbotron, Brands, Parallax, Cards, Techs, CallToAction } from './components/pages/home';
 
 export const metadata = {
   ...sharedMetadata,
