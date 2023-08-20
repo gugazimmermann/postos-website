@@ -69,13 +69,13 @@ const CallToAction = () => {
             <div className='flex flex-col  gap-4'>
               <Link
                 href='/postos'
-                className='rounded-lg text-center bg-slate-50 py-2 px-4 text-slate-800 font-bold text-xl transition hover:bg-opacity-90'
+                className='rounded-lg text-center bg-white py-2 px-4 md:py-4 md:px-16 text-slate-800 font-bold text-xl transition hover:bg-opacity-90'
               >
                 Para os Postos
               </Link>
               <Link
                 href='/postos'
-                className='rounded-lg text-center bg-sky-500 py-2 px-4 text-slate-50 font-bold text-xl transition hover:bg-opacity-90'
+                className='rounded-lg text-center bg-sky-500 py-2 px-4 md:py-4 md:px-16 text-slate-50 font-bold text-xl transition hover:bg-opacity-90'
               >
                 Para os Clientes
               </Link>
