@@ -9,7 +9,7 @@ export const metadata = {
   alternates: {
     canonical: `${sharedMetadata.alternates.canonical}/faq`,
   },
-  keywords: [...sharedMetadata.keywords, 'faq', 'perguntas', 'frequentes', 'suporte', 'ajuda'],
+  keywords: [...sharedMetadata.keywords],
 };
 
 export default function FAQ() {

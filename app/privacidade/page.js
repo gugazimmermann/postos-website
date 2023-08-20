@@ -9,7 +9,7 @@ export const metadata = {
   alternates: {
     canonical: `${sharedMetadata.alternates.canonical}/privacidade`,
   },
-  keywords: [...sharedMetadata.keywords, 'privacidade'],
+  keywords: [...sharedMetadata.keywords],
 };
 
 export default function PrivacityTerms() {

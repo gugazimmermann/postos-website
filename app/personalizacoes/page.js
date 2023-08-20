@@ -8,7 +8,15 @@ export const metadata = {
   alternates: {
     canonical: `${sharedMetadata.alternates.canonical}/personalizacoes`,
   },
-  keywords: [...sharedMetadata.keywords, 'personalização', 'suporte'],
+  keywords: [
+    ...sharedMetadata.keywords,
+    `${sharedMetadata.title}`,
+    'Personalização de Sistema para Postos',
+    'Notificações Customizadas para Postos',
+    'Ponto de Vendas Personalizado',
+    'Análise de Custos de Personalização',
+    'Customização de Gerenciamento de Frotas',
+  ],
 };
 
 export default function Customizations() {

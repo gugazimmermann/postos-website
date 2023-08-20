@@ -8,7 +8,15 @@ export const metadata = {
   alternates: {
     canonical: `${sharedMetadata.alternates.canonical}/empresa`,
   },
-  keywords: [...sharedMetadata.keywords, `${sharedMetadata.title}`, 'sobre nós'],
+  keywords: [
+    ...sharedMetadata.keywords,
+    `${sharedMetadata.title}`,
+    'Inovação em Gerenciamento de Frotas',
+    'Tecnologia para Postos de Combustível',
+    'Visão Estratégica em Abastecimento',
+    'Eficiência em Gerenciamento de Frotas',
+    'Excelência em Tecnologia para Postos',
+  ],
 };
 
 export default function AboutUs() {

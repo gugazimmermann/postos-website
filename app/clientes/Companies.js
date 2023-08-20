@@ -683,7 +683,7 @@ const Companies = () => {
         </div>
         <div className='mt-4 sm:mt-0 sm:px-8 w-full'>
           <SubTitle text='Acesso Único' />
-          <Title text='Múltipos Postos' />
+          <Title text='Múltiplos Postos' />
           <Paragraph>
             Você também pode solicitar faturamentos, acessar detalhes completos dos abastecimentos
             relacionados a uma fatura, agendar serviços e estabelecer autorizações específicas. Por
