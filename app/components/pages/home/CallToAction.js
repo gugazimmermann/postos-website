@@ -77,7 +77,7 @@ const CallToAction = () => {
                 href='/postos'
                 className='rounded-lg text-center bg-sky-500 py-2 px-4 md:py-4 md:px-16 text-slate-50 font-bold text-xl transition hover:bg-opacity-90'
               >
-                Para os Clientes
+                Para os Frotistas
               </Link>
             </div>
           </div>

@@ -1,9 +1,9 @@
 'use client';
 
-import { useModal } from '../hooks';
-import { ModalOpen } from '../components/icons';
-import { SectionParagraph } from '../components/layout/sections';
-import { AppTitle } from '../components/general';
+import { useModal } from '../../hooks';
+import { ModalOpen } from '../../icons';
+import { SectionParagraph } from '../../layout/sections';
+import { AppTitle } from '../../general';
 import Cicd from './Cicd';
 import React from './React';
 import Amazon from './Amazon';
@@ -11,7 +11,7 @@ import ReactNative from './ReactNative';
 import Electron from './Electron';
 import Go from './Go';
 
-const Tecnologies = () => {
+const TecnologiesContent = () => {
   const { openModal: openCicdModal, Modal: CicdModal } = useModal({
     closeoutside: true,
   });
@@ -127,4 +127,4 @@ const Tecnologies = () => {
   );
 };
 
-export default Tecnologies;
+export default TecnologiesContent;

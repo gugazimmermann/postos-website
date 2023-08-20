@@ -10,7 +10,7 @@ const Threads = () => {
       fill='none'
       strokeLinecap='round'
       strokeLinejoin='round'
-      ariaLabelledby='threads-title'
+      aria-labelledby='threads-title'
       role="img"
     >
       <title id='threads-title'>Ícone do Threads</title>

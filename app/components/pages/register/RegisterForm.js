@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { api, statesBR } from '../../../utils';
-import { useModal } from '../../../hooks';
+import { useModal } from '../../hooks';
 import { isValidCNPJ, isValidEmail, masks } from '../../../utils';
 import { Alert, Button, Form, Grid } from '../../helpers';
 import { UsageTermsText2 } from '../usage-terms';

@@ -9,7 +9,7 @@ const Instagram = () => {
       stroke='currentColor'
       fill='none'
       strokeLinecap='round'
-      ariaLabelledby='instagram-title'
+      aria-labelledby='instagram-title'
       role="img"
     >
       <title id='instagram-title'>Ícone do Instagram</title>

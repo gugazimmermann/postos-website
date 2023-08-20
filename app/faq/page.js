@@ -1,6 +1,6 @@
 import sharedMetadata from '../shared-metadata';
 import { Section, SectionTitle } from '../components/layout/sections';
-import Faq from './Faq';
+import FaqContent from '../components/pages/faq/FaqContent';
 
 export const metadata = {
   ...sharedMetadata,
@@ -16,7 +16,7 @@ export default function FAQ() {
   return (
     <Section>
       <SectionTitle title='Perguntas Frequentes' />
-      <Faq />
+      <FaqContent />
     </Section>
   );
 }

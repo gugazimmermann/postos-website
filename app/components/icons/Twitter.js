@@ -10,7 +10,7 @@ const Twitter = () => {
       fill='none'
       strokeLinecap='round'
       strokeLinejoin='round'
-      ariaLabelledby='twitter-title'
+      aria-labelledby='twitter-title'
       role="img"
     >
       <title id='twitter-title'>Ícone do Twitter</title>

@@ -3,11 +3,11 @@ const envAppDescription =
   'Sistema para Gerenciamento de Frotas para Postos de Combustíveis';
 const appDescription = envAppDescription.split(' Frotas ');
 
-const AppDescription = () => {
+const AppDescription = ({ inverted }) => {
   return (
     <strong>
       {appDescription[0]}{' '}
-      <span className='text-amber-500'>Frotas</span>{' '}
+      <span className={`${!inverted ? 'text-amber-500' : 'text-white'}`}>Frotas</span>{' '}
       {appDescription[1]}
     </strong>
   );
