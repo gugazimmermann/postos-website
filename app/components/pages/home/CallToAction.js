@@ -25,7 +25,7 @@ const TopLeftSVG = () => (
         y2='-106.425'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stopColor='white' stopOpacity='0.3' />
+        <stop stopColor='white' stopOpacity='0.1' />
         <stop offset={1} stopColor='white' stopOpacity='0.1' />
       </linearGradient>
     </defs>
@@ -63,7 +63,7 @@ const CallToAction = () => {
       <div className='mx-4 sm:mx-0 mt-8 bg-amber-500 rounded-3xl shadow-xl'>
         <div className='relative z-10 rounded p-4'>
           <div className='flex flex-col md:flex-row justify-center md:justify-between md:p-8 items-center gap-4'>
-            <h2 className='text-3xl font-bold text-slate-50 text-center'>
+            <h2 className='text-3xl font-bold text-white text-center'>
               Leve a Modernidade ao Seu Posto!
             </h2>
             <div className='flex flex-col  gap-4'>
