@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { SectionParagraph } from '../components/layout/sections';
+import { SectionParagraph } from '../../layout/sections';
 
 const React = () => {
   return (

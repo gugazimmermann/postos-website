@@ -1,10 +1,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Category, Item } from '../components/pages/faq';
-import { faq } from '../utils';
+import { Category, Item } from '.';
+import { faq } from '../../../utils';
 
-export default function FAQ() {
+const FaqContent = () => {
   const [category, setCategory] = useState();
   const [question, setQuestion] = useState();
 
@@ -29,3 +29,5 @@ export default function FAQ() {
     </div>
   );
 }
+
+export default FaqContent;

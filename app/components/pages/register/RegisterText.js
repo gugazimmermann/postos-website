@@ -1,6 +1,6 @@
 'use client';
 
-import { useModal } from '../../../hooks';
+import { useModal } from '../../hooks';
 import { PaymentText, PaymentTable } from '../payment';
 import { ModalOpen } from '../../../components/icons';
 

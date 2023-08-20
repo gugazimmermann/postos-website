@@ -1,6 +1,6 @@
 'use client';
 
-import { useModal } from '../../../hooks';
+import { useModal } from '../../hooks';
 import { Loading, ModalOpen } from '../../icons';
 import { AppTitle } from '../../general';
 
