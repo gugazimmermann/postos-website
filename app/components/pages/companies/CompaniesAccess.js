@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { Title, SubTitle, Paragraph } from './utils';
+import { Title, SubTitle, Paragraph } from '../../general';
 
 const Dots = () => {
   return (
