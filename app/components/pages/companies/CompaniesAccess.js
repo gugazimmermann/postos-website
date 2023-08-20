@@ -572,7 +572,7 @@ const CompaniesAccess = () => {
   };
 
   return (
-    <div className='w-full sm:flex sm:items-center sm:justify-between sm:mt-8'>
+    <div className='w-full sm:flex sm:items-center sm:justify-between mt-8'>
       <div className='px-8 w-full'>
         <div className='flex items-center -mx-3 sm:-mx-4'>
           <div className='w-full sm:px-2'>

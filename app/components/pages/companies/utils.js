@@ -1,9 +1,9 @@
 export const Title = ({ text }) => {
-  return <h2 className='mb-4 text-3xl font-bold text-slate-800 text-center'>{text}</h2>;
+  return <h2 className='mb-4 text-4xl font-bold text-slate-800 text-center'>{text}</h2>;
 };
 
 export const SubTitle = ({ text }) => {
-  return <h2 className='text-2xl font-bold text-slate-800 text-center'>{text}</h2>;
+  return <h2 className='text-3xl font-bold text-slate-800 text-center'>{text}</h2>;
 };
 
 export const Paragraph = ({ children }) => {
