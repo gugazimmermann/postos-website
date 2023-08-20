@@ -3,7 +3,7 @@ import CompaniesInfo from './CompaniesInfo';
 import CompaniesAccess from './CompaniesAccess';
 import CompaniesDrivers from './CompaniesDrivers';
 
-const Companies = () => {
+const CompaniesContent = () => {
   return (
     <>
       <CompaniesRegister />
@@ -14,4 +14,4 @@ const Companies = () => {
   );
 };
 
-export default Companies;
+export default CompaniesContent;
