@@ -8,16 +8,7 @@ export const metadata = {
   alternates: {
     canonical: `${sharedMetadata.alternates.canonical}/tecnologias`,
   },
-  keywords: [
-    ...sharedMetadata.keywords,
-    `${sharedMetadata.title}`,
-    'tecnologias',
-    'react',
-    'aws',
-    'go',
-    'golang',
-    'cicd',
-  ],
+  keywords: [...sharedMetadata.keywords],
 };
 
 export default function Tecnologias() {

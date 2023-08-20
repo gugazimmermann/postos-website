@@ -9,7 +9,7 @@ export const metadata = {
   alternates: {
     canonical: `${sharedMetadata.alternates.canonical}/postos`,
   },
-  keywords: [...sharedMetadata.keywords, 'cliente', 'clientes'],
+  keywords: [...sharedMetadata.keywords],
 };
 
 export default function Clients() {

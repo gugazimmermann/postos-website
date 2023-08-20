@@ -10,7 +10,7 @@ export const metadata = {
   alternates: {
     canonical: `${sharedMetadata.alternates.canonical}/cadastro`,
   },
-  keywords: [...sharedMetadata.keywords, 'cadastro', 'organização', 'organizações'],
+  keywords: [...sharedMetadata.keywords],
 };
 
 export default function Register() {

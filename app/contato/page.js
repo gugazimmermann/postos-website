@@ -10,7 +10,7 @@ export const metadata = {
   alternates: {
     canonical: `${sharedMetadata.alternates.canonical}/contato`,
   },
-  keywords: [...sharedMetadata.keywords, 'contato', 'suporte'],
+  keywords: [...sharedMetadata.keywords],
 };
 
 export default function ContactUs() {
