@@ -622,7 +622,7 @@ const Companies = () => {
             cadastro, pode realizá-lo de forma rápida e simples. Caso já possua cadastro, basta
             aceitar o convite. Assim, você terá a liberdade de aproveitar nosso sistema em
             diferentes postos parceiros, o que lhe permite acompanhar seus relatórios de
-            abastecimento, visualizar gráficos, entender métricas como quilômetros por litro e muito
+            abastecimentos, visualizar gráficos, entender métricas como quilômetros por litro e muito
             mais – tudo isso centralizado de forma prática.
           </Paragraph>
           <Paragraph>
