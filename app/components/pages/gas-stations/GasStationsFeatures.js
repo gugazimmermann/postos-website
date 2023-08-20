@@ -82,7 +82,7 @@ const GasStationsFeatures = () => {
 
   return (
     <div className='mt-4'>
-      <div className='mx-auto mb-4 px-32 text-center'>
+      <div className='mx-auto mb-8 md:mb-4 sm:px-32 text-center'>
         <Title text='Maximize a Eficiência com o' />
         <Title text='Touch Sistemas - Postos' />
         <Paragraph>
@@ -90,10 +90,10 @@ const GasStationsFeatures = () => {
           eficiência, inovação e satisfação do cliente.
         </Paragraph>
       </div>
-      <div className='w-full flex flex-wrap justify-center'>
+      <div className='hidden sm:w-full sm:flex sm:flex-wrap sm:justify-center'>
         <GasStationsFeaturesButtonsRow handleProject={handleProject} showCard={showCard} />
       </div>
-      <div className='grid grid-cols-4 gap-8'>
+      <div className='hidden sm:grid sm:grid-cols-4 sm:gap-8'>
         <GasStationsFeaturesCard
           title='Centralização de Postos'
           ImageHref='/images/gas-stations/controle.webp'
@@ -104,7 +104,7 @@ const GasStationsFeatures = () => {
         <GasStationsFeaturesCard
           title='Configurações Simples'
           ImageHref='/images/gas-stations/configuracoes.webp'
-          buttonHref='#'
+          buttonHref='#ConfiguracoesSimples'
           categories={['postos']}
           showCard={showCard}
         />

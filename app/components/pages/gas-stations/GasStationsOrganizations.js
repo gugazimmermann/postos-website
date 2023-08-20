@@ -3,12 +3,15 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { CheckMark } from '../../icons';
-import { AppTitle } from '../../general';
+import { AppTitle, Paragraph, Title } from '../../general';
 
 const imageUrls = [
-  '/images/gas-stations/1.webp',
-  '/images/gas-stations/2.webp',
-  '/images/gas-stations/3.webp',
+  '/images/gas-stations/organizations/1.webp',
+  '/images/gas-stations/organizations/2a.webp',
+  '/images/gas-stations/organizations/2b.webp',
+  '/images/gas-stations/organizations/2c.webp',
+  '/images/gas-stations/organizations/3.webp',
+  '/images/gas-stations/organizations/4.webp',
 ];
 
 const GasStationsOrganizations = () => {
@@ -27,7 +30,7 @@ const GasStationsOrganizations = () => {
   }, []);
 
   return (
-    <div id="CentralizacaodePostos" className='md:flex my-8'>
+    <div id='CentralizacaodePostos' className='md:flex sm:my-8'>
       <div className='md:w-5/12'>
         <div className='md:flex md:py-12'>
           <Image
@@ -41,33 +44,26 @@ const GasStationsOrganizations = () => {
         </div>
       </div>
       <div className='md:w-7/12'>
-        <div className='flex h-full items-center rounded-lg bg-amber-600 p-2 md:p-6 text-white text-left'>
+        <div className='flex h-full items-center rounded-lg bg-amber-500 p-2 md:p-6 text-white text-left'>
           <div className='md:pl-12'>
-            <h2 className='mb-8 text-2xl text-center font-bold'>
-              Centralização e Controle Múltiplo
-            </h2>
-            <p>
-              Seja você um dono de um posto individual ou de uma vasta rede de Postos de
+            <Title text='Centralização e Controle Múltiplo' white={true} />
+            <Paragraph white={true}>
+              Seja você um dono de um posto individual ou de uma vasta Rede de Postos de
               Combustíveis, o <AppTitle inverted={true} /> está pronto para atendê-lo. Aqui, a
               Organização pode registrar e gerir múltiplos Postos de Combustíveis com facilidade. E
-              não paramos por aí - cada posto pode ter inúmeros clientes. E, por sua vez, esses
-              clientes podem ter vários veículos e motoristas associados.
-            </p>
-            <div className='m-8 flex flex-col md:flex-row gap-4 md:gap-0 justify-around'>
-              <div className='flex items-center'>
+              não paramos por aí - cada posto pode ter inúmeros clientes e compartilhar os clientes.
+              E, por sua vez, esses clientes podem ter vários veículos e motoristas associados.
+            </Paragraph>
+            <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-around'>
+              <div className='flex items-center font-bold'>
                 <CheckMark />
                 Controle Centralizado
               </div>
-              <div className='flex items-center'>
+              <div className='flex items-center font-bold'>
                 <CheckMark />
                 Relatórios Consolidados
               </div>
             </div>
-            <p>
-              Cadastrando um Posto, você pode controlar os tipos de Assinatura, os Combustíveis, as
-              Configurações padrão de cadastro de cliente, os Produtos disponíveis, os Serviços, e
-              muito mais.
-            </p>
           </div>
         </div>
       </div>
