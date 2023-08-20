@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Section, SectionTitle, SectionParagraph, SectionSubTitle } from '../../layout/sections';
 import { AppTitle, AppDescription } from '../../general';
 
-const CompanyText = () => {
+const AboutUsText = () => {
   return (
     <Section>
       <SectionTitle title='Sobre a' word={process.env.NEXT_PUBLIC_TITLE} />
@@ -68,4 +68,4 @@ const CompanyText = () => {
   );
 };
 
-export default CompanyText;
+export default AboutUsText;

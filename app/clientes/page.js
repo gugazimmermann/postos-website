@@ -1,6 +1,6 @@
 import sharedMetadata from '../shared-metadata';
 import { Section } from '../components/layout/sections';
-import Companies from './Companies';
+import CompaniesContent from '../components/pages/companies/CompaniesContent';
 
 export const metadata = {
   ...sharedMetadata,
@@ -15,7 +15,7 @@ export const metadata = {
 export default function Clients() {
   return (
     <Section>
-      <Companies />
+      <CompaniesContent />
     </Section>
   );
 }

@@ -1,5 +1,5 @@
 import sharedMetadata from '../shared-metadata';
-import CompanyText from '../components/pages/company/CompanyText';
+import AboutUsText from '../components/pages/about-us/AboutUsText';
 
 export const metadata = {
   ...sharedMetadata,
@@ -20,5 +20,5 @@ export const metadata = {
 };
 
 export default function AboutUs() {
-  return <CompanyText />;
+  return <AboutUsText />;
 }
