@@ -18,7 +18,7 @@ const Cards = () => {
   return (
     <section className='container mt-4 px-4 lg:px-16 grid gap-8 lg:gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
       <Card
-        image='images/home/cards/facial_recognition.webp'
+        image='images/home/cards/facial-recognition.webp'
         title='Segurança Aprimorada'
         text='Durante o abastecimento, destacamos a segurança como prioridade. Oferecemos opções modernas de Reconhecimento Facial, Biometria e Assinatura Digital, proporcionando um processo robusto e confiável.'
       />
