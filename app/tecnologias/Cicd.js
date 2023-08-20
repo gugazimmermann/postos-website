@@ -6,7 +6,7 @@ const Cicd = () => {
     <div className='px-4 w-full'>
       <div className='flex justify-center sm:float-right'>
         <Image
-          src='/images/technologies/cicd.png'
+          src='/images/technologies/cicd.webp'
           width={0}
           height={0}
           className='w-auto h-32'

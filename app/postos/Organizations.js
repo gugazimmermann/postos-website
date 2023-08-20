@@ -6,9 +6,9 @@ import { CheckMark } from '../components/icons';
 import { AppTitle } from '../components/general';
 
 const imageUrls = [
-  '/images/gas-stations/1.png',
-  '/images/gas-stations/2.png',
-  '/images/gas-stations/3.png',
+  '/images/gas-stations/1.webp',
+  '/images/gas-stations/2.webp',
+  '/images/gas-stations/3.webp',
 ];
 
 const Organizations = () => {

@@ -4,7 +4,7 @@ import ParallaxWhatWeDo from './ParallaxWhatWeDo';
 const Parallax = () => {
   return (
     <section className='relative w-full'>
-      <div className="absolute top-0 left-0 w-full h-full bg-cover bg-fixed bg-center bg-[url('/images/home/parallax.jpg')]" />
+      <div className="absolute top-0 left-0 w-full h-full bg-cover bg-fixed bg-center bg-[url('/images/home/parallax.webp')]" />
       <div className='absolute top-0 left-0 w-full h-full bg-amber-500 opacity-20' />
       <div className='relative container mx-auto flex flex-col justify-center items-center h-full'>
         <h1 className='text-white text-3xl md:text-5xl text-center font-bold my-8'>

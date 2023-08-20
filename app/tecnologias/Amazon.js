@@ -6,7 +6,7 @@ const Amazon = () => {
     <div className='px-4 w-full'>
       <div className='flex justify-center sm:float-right'>
         <Image
-          src='/images/technologies/aws.png'
+          src='/images/technologies/aws.webp'
           width={0}
           height={0}
           className='w-auto h-24 sm:m-4'

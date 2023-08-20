@@ -6,7 +6,7 @@ const Electron = () => {
     <div className='px-4 w-full'>
       <div className='flex justify-center sm:float-right'>
         <Image
-          src='/images/technologies/electron.png'
+          src='/images/technologies/electron.webp'
           width={0}
           height={0}
           className='w-auto h-32 sm:m-4'

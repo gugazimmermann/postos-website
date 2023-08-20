@@ -6,7 +6,7 @@ const Go = () => {
     <div className='px-4 w-full'>
       <div className='flex justify-center sm:float-right'>
         <Image
-          src='/images/technologies/go.png'
+          src='/images/technologies/go.webp'
           width={0}
           height={0}
           className='w-auto h-16 sm:m-4'
