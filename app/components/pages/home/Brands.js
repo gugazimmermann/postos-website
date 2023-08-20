@@ -13,11 +13,11 @@ const Brand = () => {
        Todas as Bandeiras
       </h2>
       <div className='flex flex-row justify-evenly items-center'>
-        <SingleImage alt='Petrobras (BR)' src='/images/home/flags/br.png' />
-        <SingleImage alt='Ipiranga' src='/images/home/flags/ipiranga.png' />
-        <SingleImage alt='Shell' src='/images/home/flags/shell.png' />
-        <SingleImage alt='Ale' src='/images/home/flags/ale.png' />
-        <SingleImage alt='Raízen' src='/images/home/flags/raizen.png' />
+        <SingleImage alt='Petrobras (BR)' src='/images/home/flags/br.webp' />
+        <SingleImage alt='Ipiranga' src='/images/home/flags/ipiranga.webp' />
+        <SingleImage alt='Shell' src='/images/home/flags/shell.webp' />
+        <SingleImage alt='Ale' src='/images/home/flags/ale.webp' />
+        <SingleImage alt='Raízen' src='/images/home/flags/raizen.webp' />
       </div>
     </section>
   );
