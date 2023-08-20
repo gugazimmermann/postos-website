@@ -35,7 +35,7 @@ const Cards = () => {
       <Card
         image='images/home/cards/clients.webp'
         title='Gestão de Clientes Evoluída'
-        text='Gerencie seus clientes frotistas com eficiência e ofereça a eles a autonomia necessária. O cadastro de veículos e motoristas é simplificado e mantido pelos próprios clientes, otimizando seu processo.'
+        text='Gerencie seus clientes frotistas com eficiência e ofereça a eles autonomia necessária. O cadastro de veículos e motoristas é simplificado e mantido pelos próprios clientes, otimizando seu processo.'
       />
       <Card
         image='images/home/cards/vehicles.webp'
