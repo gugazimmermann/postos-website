@@ -730,7 +730,7 @@ const Companies = () => {
             mais próxima para o posto.
           </Paragraph>
           <Paragraph>
-            Converse com seu posto de confiança, começe a usar o <AppDescription /> e traga sua
+            Converse com seu posto de confiança, comece a usar o <AppDescription /> e traga sua
             frota para o <AppTitle />.
           </Paragraph>
         </div>
