@@ -10,7 +10,7 @@ const Linkedin = () => {
       fill='none'
       strokeLinecap='round'
       strokeLinejoin='round'
-      ariaLabelledby='linkedin-title'
+      aria-labelledby='linkedin-title'
       role="img"
     >
       <title id='linkedin-title'>Ícone do Linkedin</title>

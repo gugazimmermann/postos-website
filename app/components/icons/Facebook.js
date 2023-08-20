@@ -10,7 +10,7 @@ const Facebook = () => {
       fill='none'
       strokeLinecap='round'
       strokeLinejoin='round'
-      ariaLabelledby='facebook-title'
+      aria-labelledby='facebook-title'
       role="img"
     >
       <title id='facebook-title'>Ícone do Facebook</title>

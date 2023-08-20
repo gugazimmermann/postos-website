@@ -10,7 +10,7 @@ const Whatsapp = () => {
       fill='none'
       strokeLinecap='round'
       strokeLinejoin='round'
-      ariaLabelledby='whatsapp-title'
+      aria-labelledby='whatsapp-title'
       role="img"
     >
       <title id='whatsapp-title'>Ícone do WhatsApp</title>

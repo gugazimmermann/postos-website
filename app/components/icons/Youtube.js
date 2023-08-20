@@ -10,7 +10,7 @@ const Youtube = () => {
       fill='none'
       strokeLinecap='round'
       strokeLinejoin='round'
-      ariaLabelledby='youtube-title'
+      aria-labelledby='youtube-title'
       role="img"
     >
       <title id='youtube-title'>Ícone do Youtube</title>
