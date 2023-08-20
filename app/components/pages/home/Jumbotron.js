@@ -13,7 +13,7 @@ const Jumbotron = () => {
           </h2>
         </div>
         <Image
-          src='/images/home/jumbotron.png'
+          src='/images/home/jumbotron.webp'
           width={0}
           height={0}
           className='mt-4 lg:mt-0 w-full rounded-xl shadow'
