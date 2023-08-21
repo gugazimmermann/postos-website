@@ -34,7 +34,7 @@ const CompaniesInfo = () => {
         />
         <CompaniesInfoCard
           title='Transparência'
-          details='Notifições em tempo real sempre que ocorrer um abastecimento com todas as informações.'
+          details='Notificações em tempo real sempre que ocorrer um abastecimento com todas as informações.'
           icon={
             <Image
               src='/images/companies/notifications.svg'
