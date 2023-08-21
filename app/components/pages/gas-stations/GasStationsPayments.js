@@ -55,7 +55,7 @@ const GasStationsPayments = () => {
               solicitar o faturamento de seus abastecimentos em aberto antecipadamente.
             </Paragraph>
             <Paragraph>
-              Os clientes desfrutam de uma visão clara e detalhada de seus abastecimentos e srecebem
+              Os clientes desfrutam de uma visão clara e detalhada de seus abastecimentos e recebem
               notificações instantâneas em cada etapa, desde o envio do boleto até a confirmação do
               pagamento.
             </Paragraph>
