@@ -76,6 +76,15 @@ const sharedMetadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: TITLE,
+    description: DESCRIPTION,
+    siteId: '-',
+    creator: '@touchsistemas',
+    creatorId: '-',
+    images: ['https://www.touchsistemas.com.br/images/social/dashboard/1200x628.png'],
+  },
 };
 
 export default sharedMetadata;
