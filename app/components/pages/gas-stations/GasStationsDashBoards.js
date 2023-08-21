@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { Title, SubTitle, Paragraph } from '../../general';
+import { Title, SubTitle, Paragraph, AppTitle } from '../../general';
 
 const Dots = () => {
   return (
@@ -580,16 +580,16 @@ const GasStationsDashBoards = () => {
         <div className='flex items-center -mx-3 sm:-mx-4'>
           <div className='w-full sm:px-2'>
             <Image
-              onClick={() => handleImageClick('/images/gas-stations/dashboard/3.webp')}
-              src='/images/gas-stations/dashboard/3.webp'
+              onClick={() => handleImageClick('/images/gas-stations/dashboard/2.webp')}
+              src='/images/gas-stations/dashboard/2.webp'
               width={0}
               height={0}
               className='w-full sm:py-2 cursor-pointer'
               alt='gas-stations'
             />
             <Image
-              onClick={() => handleImageClick('/images/gas-stations/dashboard/2.webp')}
-              src='/images/gas-stations/dashboard/2.webp'
+              onClick={() => handleImageClick('/images/gas-stations/dashboard/3.webp')}
+              src='/images/gas-stations/dashboard/3.webp'
               width={0}
               height={0}
               className='w-full sm:py-2 cursor-pointer'
@@ -615,18 +615,18 @@ const GasStationsDashBoards = () => {
         <SubTitle text='Dashboard' />
         <Title text='Relatórios e Gráficos' />
         <Paragraph>
-          Logo que você entra no sistema o Dashboard (Consolidado ou por posto) traz Informações
-          Gerais sobre todas suas operações, bem como todas a operações que estão aguardando alguma
-          ação de sua parte, como confimação de agendamento ou envio de boleto. Você também pode
-          visualizar maneira rápida os últimos cadastros de clientes, clientes que estão a longo
-          tempo sem utilizar seus postos, ou ainda informações úteis como o número total de
-          abastecimentos por posto, média de litros, os Top 10 clientes, etc.
+          Ao acessar o <AppTitle />, nosso Dashboard, consolidado ou por posto, oferece uma visão
+          panorâmica de todas as suas operações ativas. Você visualiza de imediato operações
+          pendentes, como confirmações de agendamentos e envios de boletos, além de acessar
+          rapidamente novos cadastros de clientes, detectar clientes inativos e obter insights
+          outros valiosos.
         </Paragraph>
         <Paragraph>
-          Relatórios e Gráficos (Consolidado ou por postos) podem ser gerados por períodos, e em
-          diferentes áreas, como abastecimentos, pagamentos, clientes, veículos, postos, etc. Eles
-          podem ser visualizados em tela, exportados para PDF ou ainda em CSV, facilmente utilizados
-          em Excel, permitindo que você utilize os dados da forma que preferir.
+          Nossa seção de Relatórios e Gráficos, disponível de forma geral ou detalhada por posto, é
+          essencial para análises mais profundas. Você pode gerar dados sobre abastecimentos,
+          pagamentos, clientes e muito mais. Os relatórios podem ser visualizados na plataforma ou
+          exportados para PDF ou CSV, permitindo uma fácil integração com o Excel e adaptando-se ao
+          seu modo de trabalho.
         </Paragraph>
       </div>
       {showModal && (
