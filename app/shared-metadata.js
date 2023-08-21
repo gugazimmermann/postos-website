@@ -60,17 +60,17 @@ const sharedMetadata = {
     siteName: TITLE,
     images: [
       {
-        url: 'https://www.touchsistemas.com.br/images/social/dashboard/800x600.png',
+        url: 'https://www.touchsistemas.com.br/images/social/800x600.png',
         width: 800,
         height: 600,
       },
       {
-        url: 'https://www.touchsistemas.com.br/images/social/dashboard/1800x1600.png',
+        url: 'https://www.touchsistemas.com.br/images/social/1800x1600.png',
         width: 1800,
         height: 1600,
       },
       {
-        url: 'https://www.touchsistemas.com.br/images/social/dashboard/1200x630.png',
+        url: 'https://www.touchsistemas.com.br/images/social/1200x630.png',
         width: 1200,
         height: 630,
       },
@@ -83,7 +83,7 @@ const sharedMetadata = {
     siteId: '-',
     creator: '@touchsistemas',
     creatorId: '-',
-    images: ['https://www.touchsistemas.com.br/images/social/dashboard/1200x628.png'],
+    images: ['https://www.touchsistemas.com.br/images/social/1200x628.png'],
   },
 };
 
