@@ -577,16 +577,16 @@ const CompaniesAccess = () => {
         <div className='flex items-center -mx-3 sm:-mx-4'>
           <div className='w-full sm:px-2'>
             <Image
-              onClick={() => handleImageClick('/images/companies/gas-stations.webp')}
-              src='/images/companies/gas-stations.webp'
+              onClick={() => handleImageClick('/images/companies/1.webp')}
+              src='/images/companies/1.webp'
               width={0}
               height={0}
               className='w-full sm:py-2 cursor-pointer'
               alt='gas-stations'
             />
             <Image
-              onClick={() => handleImageClick('/images/companies/payments.webp')}
-              src='/images/companies/payments.webp'
+              onClick={() => handleImageClick('/images/companies/2.webp')}
+              src='/images/companies/2.webp'
               width={0}
               height={0}
               className='w-full sm:py-2 cursor-pointer'
@@ -596,8 +596,8 @@ const CompaniesAccess = () => {
           <div className='w-full px-2'>
             <div className='relative z-10'>
               <Image
-                onClick={() => handleImageClick('/images/companies/transactions.webp')}
-                src='/images/companies/transactions.webp'
+                onClick={() => handleImageClick('/images/companies/3.webp')}
+                src='/images/companies/3.webp'
                 width={0}
                 height={0}
                 className='w-full  cursor-pointer'
@@ -634,7 +634,7 @@ const CompaniesAccess = () => {
           onClick={() => setShowModal(false)}
         >
           <div className='bg-black bg-opacity-60 absolute inset-0' />
-          <img src={selectedImage} alt='Selected' className='z-10' />
+          <img src={selectedImage} alt='Selected' className='z-10 rounded-3xl' />
         </div>
       )}
     </div>

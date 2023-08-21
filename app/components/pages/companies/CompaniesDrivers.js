@@ -7,9 +7,9 @@ import { AppTitle, AppDescription } from '../../general';
 import { Title, Paragraph } from '../../general';
 
 const imageUrls = [
-  '/images/companies/transactions-open.webp',
-  '/images/companies/transactions-graph.webp',
-  '/images/companies/transactions-graph2.webp',
+  '/images/companies/4.webp',
+  '/images/companies/5.webp',
+  '/images/companies/6.webp',
 ];
 
 const CompaniesDrivers = () => {
@@ -83,7 +83,7 @@ const CompaniesDrivers = () => {
           onClick={() => setShowModal(false)}
         >
           <div className='bg-black bg-opacity-60 absolute inset-0' />
-          <img src={selectedImage} alt='Selected' className='z-10' />
+          <img src={selectedImage} alt='Selected' className='z-10 rounded-3xl' />
         </div>
       )}
     </div>
