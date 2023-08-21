@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { CheckMark } from '../../icons';
 import { AppTitle, Paragraph, Title } from '../../general';
@@ -13,7 +13,6 @@ const imageUrls = [
 ];
 
 const GasStationsOrganizations = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -22,29 +21,17 @@ const GasStationsOrganizations = () => {
     setShowModal(true);
   };
 
-  useEffect(() => {
-    if (imageUrls.length > 1) {
-      const interval = setInterval(() => {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
-      }, 12000);
-
-      return () => {
-        clearInterval(interval);
-      };
-    }
-  }, []);
-
   return (
-    <div id='CentralizacaodePostos' className='md:flex sm:mt-8'>
+    <div id='Centralizacao' className='md:flex sm:mt-8'>
       <div className='md:w-5/12'>
         <div className='md:flex md:py-6'>
           <Image
             priority
-            onClick={() => handleImageClick(imageUrls[currentImageIndex])}
-            src={imageUrls[currentImageIndex]}
+            onClick={() => handleImageClick('/images/gas-stations/organizations/3.webp')}
+            src='/images/gas-stations/organizations/3.webp'
             width={0}
             height={0}
-            className='z-[10] w-full h-full rounded-lg shadow-xl mb-4 md:mb-0 md:shadow-2xl md:ml-6 cursor-pointer'
+            className='z-[10] w-full h-full rounded-lg shadow-xl mb-4 md:mb-0 md:shadow-2xl md:ml-6 mt-6 cursor-pointer'
             alt='organizations'
           />
         </div>
@@ -77,6 +64,26 @@ const GasStationsOrganizations = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className='mt-4 grid grid-cols-2 gap-4 justify-center items-center'>
+          <Image
+            priority
+            onClick={() => handleImageClick('/images/gas-stations/organizations/1.webp')}
+            src='/images/gas-stations/organizations/1.webp'
+            width={0}
+            height={0}
+            className='w-full rounded-lg shadow-xl cursor-pointer'
+            alt='organizations'
+          />
+          <Image
+            priority
+            onClick={() => handleImageClick('/images/gas-stations/organizations/2.webp')}
+            src='/images/gas-stations/organizations/2.webp'
+            width={0}
+            height={0}
+            className='w-full rounded-lg shadow-xl cursor-pointer'
+            alt='organizations'
+          />
         </div>
       </div>
       {showModal && (

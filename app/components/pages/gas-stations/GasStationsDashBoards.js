@@ -572,13 +572,10 @@ const GasStationsDashBoards = () => {
   };
 
   return (
-    <div
-      id='DashboardRelatorioGraficos'
-      className='w-full sm:flex sm:items-center sm:justify-between mt-8'
-    >
+    <div id='RelatorioGraficos' className='w-full sm:flex sm:items-center sm:justify-between mt-8'>
       <div className='px-8 w-full'>
         <div className='flex items-center -mx-3 sm:-mx-4'>
-          <div className='w-full sm:px-2'>
+          <div className='w-full sm:px-2 flex flex-col gap-8'>
             <Image
               onClick={() => handleImageClick('/images/gas-stations/dashboard/2.webp')}
               src='/images/gas-stations/dashboard/2.webp'
@@ -615,18 +612,18 @@ const GasStationsDashBoards = () => {
         <SubTitle text='Dashboard' />
         <Title text='Relatórios e Gráficos' />
         <Paragraph>
-          Ao acessar o <AppTitle />, nosso Dashboard, consolidado ou por posto, oferece uma visão
-          panorâmica de todas as suas operações ativas. Você visualiza de imediato operações
-          pendentes, como confirmações de agendamentos e envios de boletos, além de acessar
-          rapidamente novos cadastros de clientes, detectar clientes inativos e obter insights
-          outros valiosos.
+          Ao acessar o <AppTitle />, nosso <span className='font-semibold'>Dashboard</span>,
+          consolidado ou por posto, oferece uma visão panorâmica de todas as suas operações ativas.
+          Você visualiza de imediato operações pendentes, como confirmações de agendamentos e envios
+          de boletos, além de acessar rapidamente novos cadastros de clientes, detectar clientes
+          inativos e obter insights outros valiosos.
         </Paragraph>
         <Paragraph>
-          Nossa seção de Relatórios e Gráficos, disponível de forma geral ou detalhada por posto, é
-          essencial para análises mais profundas. Você pode gerar dados sobre abastecimentos,
-          pagamentos, clientes e muito mais. Os relatórios podem ser visualizados na plataforma ou
-          exportados para PDF ou CSV, permitindo uma fácil integração com o Excel e adaptando-se ao
-          seu modo de trabalho.
+          Nossos <span className='font-semibold'>Relatórios e Gráficos</span>, disponíveis de forma
+          consolidada ou detalhada por posto, é essencial para análises mais profundas. Você pode
+          gerar dados sobre abastecimentos, pagamentos, clientes e muito mais. Os relatórios podem
+          ser visualizados na plataforma ou exportados para PDF ou CSV, permitindo uma fácil
+          integração com o Excel e adaptando-se ao seu modo de trabalho.
         </Paragraph>
       </div>
       {showModal && (
