@@ -20,7 +20,7 @@ function ScrollToTopButton() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className='fixed bottom-5 right-5 p-3 bg-amber-500 text-white rounded-full cursor-pointer z-50'
+          className='fixed bottom-5 right-5 px-6 py-3 bg-amber-500 text-white text-3xl font-extrabold rounded-3xl cursor-pointer z-50 shadow-xl'
         >
           ↑
         </button>

@@ -562,7 +562,7 @@ const Dots = () => {
   );
 };
 
-const CompaniesAccess = () => {
+const GasStationsDashBoards = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -572,21 +572,24 @@ const CompaniesAccess = () => {
   };
 
   return (
-    <div className='w-full sm:flex sm:items-center sm:justify-between mt-8'>
+    <div
+      id='DashboardRelatorioGraficos'
+      className='w-full sm:flex sm:items-center sm:justify-between mt-8'
+    >
       <div className='px-8 w-full'>
         <div className='flex items-center -mx-3 sm:-mx-4'>
-          <div className='w-full sm:px-2 space-y-12'>
+          <div className='w-full sm:px-2'>
             <Image
-              onClick={() => handleImageClick('/images/companies/2.webp')}
-              src='/images/companies/2.webp'
+              onClick={() => handleImageClick('/images/gas-stations/dashboard/3.webp')}
+              src='/images/gas-stations/dashboard/3.webp'
               width={0}
               height={0}
               className='w-full sm:py-2 cursor-pointer'
               alt='gas-stations'
             />
             <Image
-              onClick={() => handleImageClick('/images/companies/3.webp')}
-              src='/images/companies/3.webp'
+              onClick={() => handleImageClick('/images/gas-stations/dashboard/2.webp')}
+              src='/images/gas-stations/dashboard/2.webp'
               width={0}
               height={0}
               className='w-full sm:py-2 cursor-pointer'
@@ -596,8 +599,8 @@ const CompaniesAccess = () => {
           <div className='w-full px-2'>
             <div className='relative z-10'>
               <Image
-                onClick={() => handleImageClick('/images/companies/1.webp')}
-                src='/images/companies/1.webp'
+                onClick={() => handleImageClick('/images/gas-stations/dashboard/1.webp')}
+                src='/images/gas-stations/dashboard/1.webp'
                 width={0}
                 height={0}
                 className='w-full  cursor-pointer'
@@ -608,18 +611,22 @@ const CompaniesAccess = () => {
           </div>
         </div>
       </div>
-      <div className='mt-16 md:mt-4 sm:mt-0 sm:px-8 w-full'>
-        <SubTitle text='Acesso Único' />
-        <Title text='Múltiplos Postos' />
+      <div className='mt-4 sm:mt-0 sm:px-8 w-full'>
+        <SubTitle text='Dashboard' />
+        <Title text='Relatórios e Gráficos' />
         <Paragraph>
-          Ao ingressar no sistema, você será introduzido a um ambiente de gestão avançada, projetado
-          para otimizar o controle de sua frota. Pode-se estabelecer restrições, como o tipo de
-          combustível permitido para um veículo, controle de quilometragem, associar motoristas a
-          veículos específicos e determinar os métodos de assinatura, incluindo o cadastro
-          antecipado de assinaturas digitais. Além disso, é possível especificar quais produtos e
-          serviços cada motorista pode acessar, garantindo segurança e eficiência na gestão de sua
-          frota. Esse nível de detalhamento e personalização visa atender às necessidades
-          específicas de cada cliente.
+          Logo que você entra no sistema o Dashboard (Consolidado ou por posto) traz Informações
+          Gerais sobre todas suas operações, bem como todas a operações que estão aguardando alguma
+          ação de sua parte, como confimação de agendamento ou envio de boleto. Você também pode
+          visualizar maneira rápida os últimos cadastros de clientes, clientes que estão a longo
+          tempo sem utilizar seus postos, ou ainda informações úteis como o número total de
+          abastecimentos por posto, média de litros, os Top 10 clientes, etc.
+        </Paragraph>
+        <Paragraph>
+          Relatórios e Gráficos (Consolidado ou por postos) podem ser gerados por períodos, e em
+          diferentes áreas, como abastecimentos, pagamentos, clientes, veículos, postos, etc. Eles
+          podem ser visualizados em tela, exportados para PDF ou ainda em CSV, facilmente utilizados
+          em Excel, permitindo que você utilize os dados da forma que preferir.
         </Paragraph>
       </div>
       {showModal && (
@@ -637,4 +644,4 @@ const CompaniesAccess = () => {
   );
 };
 
-export default CompaniesAccess;
+export default GasStationsDashBoards;

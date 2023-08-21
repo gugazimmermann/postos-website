@@ -111,14 +111,14 @@ const GasStationsFeatures = () => {
         <GasStationsFeaturesCard
           title='Dashboard Completo'
           ImageHref='/images/gas-stations/dashboard.webp'
-          buttonHref='#'
+          buttonHref='#DashboardRelatorioGraficos'
           categories={['postos']}
           showCard={showCard}
         />
         <GasStationsFeaturesCard
           title='Relatórios e Gráficos'
           ImageHref='/images/gas-stations/relatorios.webp'
-          buttonHref='#'
+          buttonHref='#DashboardRelatorioGraficos'
           categories={['postos']}
           showCard={showCard}
         />
