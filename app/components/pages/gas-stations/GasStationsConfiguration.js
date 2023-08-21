@@ -37,13 +37,17 @@ const GasStationsConfiguration = () => {
       id='ConfiguracoesSimples'
       className='mt-4 mx-4 sm:mx-0 bg-sky-100 rounded-3xl shadow-xl overflow-hidden'
     >
-      <div className='relative z-10 rounded p-4'>
-        <div className='flex flex-col justify-center p-8'>
-          <Title text='Configurações Simples' />
-          <Paragraph dark={true}>
-            No momento do cadastro, para cada posto, você pode controlar individualmente os tipos de
-            assinatura, os tipos combustíveis, as configurações padrão de cadastro de cliente, os produtos
-            disponíveis, os serviços, e muito mais.
+      <div className='relative z-10 rounded'>
+        <div className='flex flex-col justify-center px-8 pt-4'>
+          <Title text='Configuração Intuitiva e Personalizada' />
+          <Paragraph dark={true} center={true}>
+            Ao registrar um posto em nossa plataforma, você desfrutará de uma experiência de
+            configuração simples e adaptada às suas necessidades.
+          </Paragraph>
+          <Paragraph dark={true} center={true}>
+            Para cada posto, é possível definir de maneira individualizada os tipos de assinatura,
+            variedades de combustíveis, padrões de faturamento, produtos, serviços e diversas outras
+            funcionalidades.
           </Paragraph>
         </div>
         <div>

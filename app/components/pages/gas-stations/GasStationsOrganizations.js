@@ -26,7 +26,7 @@ const GasStationsOrganizations = () => {
     if (imageUrls.length > 1) {
       const interval = setInterval(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
-      }, 8000);
+      }, 12000);
 
       return () => {
         clearInterval(interval);
@@ -52,13 +52,19 @@ const GasStationsOrganizations = () => {
       <div className='md:w-7/12'>
         <div className='flex items-center rounded-lg bg-amber-500 p-2 md:p-6 text-white text-left'>
           <div className='md:pl-6'>
-            <Title text='Centralização e Controle Múltiplo' white={true} />
+            <Title text='Centralização e Controle' white={true} />
             <Paragraph white={true}>
-              Seja você um dono de um posto individual ou de uma vasta Rede de Postos de
-              Combustíveis, o <AppTitle inverted={true} /> está pronto para atendê-lo. Aqui, a
-              Organização pode registrar e gerir múltiplos Postos de Combustíveis com facilidade. E
-              não paramos por aí - cada posto pode ter inúmeros clientes e compartilhar os clientes.
-              E, por sua vez, esses clientes podem ter vários veículos e motoristas associados.
+              Seja um empreendedor com um único posto ou o gestor de uma ampla rede de postos de
+              combustíveis, o <AppTitle inverted={true} /> foi desenhado pensando em você. Em nossa
+              plataforma, centralizar a gestão de múltiplos postos torna-se uma tarefa
+              descomplicada.
+            </Paragraph>
+            <Paragraph white={true}>
+              Além da simples gestão de postos, entendemos a dinâmica e interação entre postos e
+              seus clientes. Nossa plataforma permite que cada posto gerencie uma extensa lista de
+              clientes, promovendo a possibilidade de compartilhá-los com outros postos da rede. E
+              cada um desses clientes tem a liberdade de registrar e administrar múltiplos veículos
+              e motoristas associados.
             </Paragraph>
             <div className='flex flex-col md:flex-row gap-4 md:gap-0 justify-around'>
               <div className='flex items-center font-bold'>
