@@ -18,7 +18,7 @@ const CompaniesInfoCard = ({ icon, title, details }) => {
 const CompaniesInfo = () => {
   return (
     <div className='w-full mt-4'>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:mx-16'>
         <CompaniesInfoCard
           title='Segurança'
           details='Defina onde, os horários, o tipo de combustível, os produtos, os tipos de assinatura, e muito mais!'

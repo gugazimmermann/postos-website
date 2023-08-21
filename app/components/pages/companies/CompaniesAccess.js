@@ -575,18 +575,18 @@ const CompaniesAccess = () => {
     <div className='w-full sm:flex sm:items-center sm:justify-between mt-8'>
       <div className='px-8 w-full'>
         <div className='flex items-center -mx-3 sm:-mx-4'>
-          <div className='w-full sm:px-2'>
+          <div className='w-full sm:px-2 space-y-12'>
             <Image
-              onClick={() => handleImageClick('/images/companies/1.webp')}
-              src='/images/companies/1.webp'
+              onClick={() => handleImageClick('/images/companies/2.webp')}
+              src='/images/companies/2.webp'
               width={0}
               height={0}
               className='w-full sm:py-2 cursor-pointer'
               alt='gas-stations'
             />
             <Image
-              onClick={() => handleImageClick('/images/companies/2.webp')}
-              src='/images/companies/2.webp'
+              onClick={() => handleImageClick('/images/companies/3.webp')}
+              src='/images/companies/3.webp'
               width={0}
               height={0}
               className='w-full sm:py-2 cursor-pointer'
@@ -596,8 +596,8 @@ const CompaniesAccess = () => {
           <div className='w-full px-2'>
             <div className='relative z-10'>
               <Image
-                onClick={() => handleImageClick('/images/companies/3.webp')}
-                src='/images/companies/3.webp'
+                onClick={() => handleImageClick('/images/companies/1.webp')}
+                src='/images/companies/1.webp'
                 width={0}
                 height={0}
                 className='w-full  cursor-pointer'
@@ -608,16 +608,9 @@ const CompaniesAccess = () => {
           </div>
         </div>
       </div>
-      <div className='mt-4 sm:mt-0 sm:px-8 w-full'>
+      <div className='mt-16 md:mt-4 sm:mt-0 sm:px-8 w-full'>
         <SubTitle text='Acesso Único' />
         <Title text='Múltiplos Postos' />
-        <Paragraph>
-          Você também pode solicitar faturamentos, acessar detalhes completos dos abastecimentos
-          relacionados a uma fatura, agendar serviços e estabelecer autorizações específicas. Por
-          exemplo, pode decidir quais veículos ou motoristas têm permissão para abastecer em
-          determinados postos ou adquirir produtos específicos. Esse nível de detalhamento e
-          personalização visa atender às necessidades específicas de cada cliente.
-        </Paragraph>
         <Paragraph>
           Ao ingressar no sistema, você será introduzido a um ambiente de gestão avançada, projetado
           para otimizar o controle de sua frota. Pode-se estabelecer restrições, como o tipo de
@@ -625,16 +618,19 @@ const CompaniesAccess = () => {
           veículos específicos e determinar os métodos de assinatura, incluindo o cadastro
           antecipado de assinaturas digitais. Além disso, é possível especificar quais produtos e
           serviços cada motorista pode acessar, garantindo segurança e eficiência na gestão de sua
-          frota.
+          frota. Esse nível de detalhamento e personalização visa atender às necessidades
+          específicas de cada cliente.
         </Paragraph>
       </div>
       {showModal && (
         <div
-          className='fixed inset-0 flex items-center justify-center z-50'
+          className='fixed inset-0 flex items-center justify-center z-50 overflow-y-auto'
           onClick={() => setShowModal(false)}
         >
           <div className='bg-black bg-opacity-60 absolute inset-0' />
-          <img src={selectedImage} alt='Selected' className='z-10 rounded-3xl' />
+          <div className='relative z-10 max-h-[90vh] overflow-y-auto'>
+            <img src={selectedImage} alt='Selected' className='rounded-3xl mx-auto' />
+          </div>
         </div>
       )}
     </div>

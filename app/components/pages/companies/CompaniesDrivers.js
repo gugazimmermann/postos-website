@@ -1,91 +1,66 @@
-/* eslint-disable @next/next/no-img-element */
-'use client';
-
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import { AppTitle, AppDescription } from '../../general';
-import { Title, Paragraph } from '../../general';
+import { Paragraph, Title } from '../../general';
 
-const imageUrls = [
-  '/images/companies/4.webp',
-  '/images/companies/5.webp',
-  '/images/companies/6.webp',
-];
+const TopLeftSVG = () => (
+  <svg
+    width={189}
+    height={162}
+    viewBox='0 0 189 162'
+    fill='none'
+    xmlns='http://www.w3.org/2000/svg'
+  >
+    <ellipse
+      cx={16}
+      cy='-16.5'
+      rx={173}
+      ry='178.5'
+      transform='rotate(180 16 -16.5)'
+      fill='rgba(56, 189, 248, 0.5)'
+    />
+  </svg>
+);
+
+const BottomRightSVG = () => (
+  <svg
+    width={191}
+    height={208}
+    viewBox='0 0 191 208'
+    fill='none'
+    xmlns='http://www.w3.org/2000/svg'
+  >
+    <ellipse cx={173} cy='178.5' rx={173} ry='178.5' fill='rgba(56, 189, 248, 0.5)' />
+  </svg>
+);
 
 const CompaniesDrivers = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [showModal, setShowModal] = useState(false);
-  const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleImageClick = (src) => {
-    setSelectedImage(src);
-    setShowModal(true);
-  };
-
-  useEffect(() => {
-    if (imageUrls.length > 1) {
-      const interval = setInterval(() => {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
-      }, 8000);
-
-      return () => {
-        clearInterval(interval);
-      };
-    }
-  }, []);
-
   return (
-    <div className='flex flex-col md:flex-row items-center'>
-      <div className='w-full mb-8 sm:hidden'>
-        <Image
-          priority
-          src={imageUrls[currentImageIndex]}
-          width={0}
-          height={0}
-          className='w-full rounded-lg shadow-xl'
-          alt='organizations'
-        />
-      </div>
-      <div className='w-full md:w-8/12'>
-        <Title text='Facilidade para os Motoristas' />
-        <Paragraph>
-          Você receberá notificações no sistema e por e-mail a cada abastecimento. Além disso, no
-          painel de controle, é possível monitorar abastecimentos pendentes de todos os postos,
-          evitando surpresas indesejadas. Com relatórios e gráficos disponíveis em várias seções do
-          sistema, como &quot;Abastecimentos&quot; ou &quot;Postos&quot;, seu planejamento e
-          controle são significativamente aprimorados.
-        </Paragraph>
-        <Paragraph>
-          E não para por aí! Para os motoristas, temos um aplicativo prático onde podem identificar
-          postos nos quais estão cadastrados, verificar os combustíveis autorizados para seus
-          veículos, os produtos que podem ser faturados e até mesmo encontrar a rota mais próxima
-          para o posto.
-        </Paragraph>
-        <Paragraph>
-          Converse com seu posto de confiança, comece a usar o <AppDescription /> e traga sua frota
-          para o <AppTitle />.
-        </Paragraph>
-      </div>
-      <div className='hidden w-full sm:flex sm:w-4/12 ml-4'>
-        <Image
-          onClick={() => handleImageClick(imageUrls[currentImageIndex])}
-          priority
-          src={imageUrls[currentImageIndex]}
-          width={0}
-          height={0}
-          className='w-full rounded-lg shadow-xl cursor-pointer'
-          alt='organizations'
-        />
-      </div>
-      {showModal && (
-        <div
-          className='fixed inset-0 flex items-center justify-center z-50'
-          onClick={() => setShowModal(false)}
-        >
-          <div className='bg-black bg-opacity-60 absolute inset-0' />
-          <img src={selectedImage} alt='Selected' className='z-10 rounded-3xl' />
+    <div
+      id='ConfiguracoesSimples'
+      className='my-8 mx-4 sm:mx-0 bg-sky-100 rounded-3xl shadow-xl overflow-hidden'
+    >
+      <div className='relative z-10 rounded p-4'>
+        <div className='flex flex-col justify-center p-8'>
+          <Title text='Facilidade para os Motoristas' />
+          <Paragraph dark={true}>
+            E não para por aí! Para os motoristas, temos um aplicativo prático onde podem
+            identificar postos nos quais estão cadastrados, verificar os combustíveis autorizados
+            para seus veículos, os produtos que podem ser faturados e até mesmo encontrar a rota
+            mais próxima para o posto.
+          </Paragraph>
+          <Paragraph dark={true}>
+            Converse com seu posto de confiança, comece a usar o <AppDescription /> e traga sua
+            frota para o <AppTitle />.
+          </Paragraph>
         </div>
-      )}
+        <div>
+          <span className='absolute top-0 left-0 z-[-1]'>
+            <TopLeftSVG />
+          </span>
+          <span className='absolute bottom-0 right-0 z-[-1]'>
+            <BottomRightSVG />
+          </span>
+        </div>
+      </div>
     </div>
   );
 };
