@@ -40,16 +40,15 @@ const CompaniesDrivers = () => {
     >
       <div className='relative z-10 rounded p-4'>
         <div className='flex flex-col justify-center p-8'>
-          <Title text='Facilidade para os Motoristas' />
+          <Title text='Praticidade aos Motoristas' />
           <Paragraph dark={true}>
-            E não para por aí! Para os motoristas, temos um aplicativo prático onde podem
-            identificar postos nos quais estão cadastrados, verificar os combustíveis autorizados
-            para seus veículos, os produtos que podem ser faturados e até mesmo encontrar a rota
-            mais próxima para o posto.
+            Para os motoristas, oferecemos um aplicativo intuitivo. Nele, é possível identificar
+            postos cadastrados, verificar combustíveis autorizados para seus veículos, produtos
+            liberados, e localizar a rota mais próxima de um posto.
           </Paragraph>
           <Paragraph dark={true}>
-            Converse com seu posto de confiança, comece a usar o <AppDescription /> e traga sua
-            frota para o <AppTitle />.
+            Fale com seu posto de preferência e integre sua frota ao <AppTitle />, o sistema
+            definitivo para gerenciamento de frotas em postos de combustíveis.
           </Paragraph>
         </div>
         <div>

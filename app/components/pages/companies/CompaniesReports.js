@@ -17,20 +17,15 @@ const CompaniesReports = () => {
 
   return (
     <div className='w-full mt-4 md:mt-16'>
-      <Title text='Informações Completas' />
+      <Title text='Visão Completa' />
       <div className='block md:flex gap-4'>
         <div className='w-full md:w-3/4'>
           <Paragraph>
-            No Dashboard é possível monitorar abastecimentos pendentes de todos os postos, evitando
-            surpresas indesejadas, assim como o acompanhamento dos faturamentos e pagamentos. Com
-            relatórios e gráficos disponíveis em várias seções do sistema, como
-            &quot;Abastecimentos&quot; ou &quot;Postos&quot;, seu planejamento e controle são
-            significativamente aprimorados.
-          </Paragraph>
-          <Paragraph>
-            Você também pode solicitar faturamentos, acompanhar os recebimentos de boletos,
-            confirmações de pagamentos, acessar detalhes completos dos abastecimentos relacionados a
-            uma fatura, agendar serviços, e muito mais.
+            No Dashboard, monitorize abastecimentos pendentes de todos os postos, evite surpresas e
+            faça o acompanhamento de faturamentos. Relatórios e gráficos, disponíveis em seções
+            distintas do sistema, potencializam seu planejamento e controle. Adicionalmente, é
+            possível solicitar faturamentos, acompanhar os recebimentos de boletos, confirmações
+            pagamentos e agendar serviços, entre outras funções.
           </Paragraph>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-4 justify-center items-center'>
             <Image

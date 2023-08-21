@@ -15,23 +15,21 @@ const CompaniesRegister = () => {
         />
       </div>
       <div className='w-full md:w-8/12 '>
-        <Title text='Liberdade para o Clientes' />
+        <Title text='Liberdade ao Cliente' />
         <Paragraph>
-          O <AppTitle /> foi desenvolvido tendo em mente a liberdade. Um posto parceiro pode
-          convidá-lo para aderir ao sistema. Ao aceitar o convite, se você ainda não tiver um
-          cadastro, pode realizá-lo de forma rápida e simples. Caso já possua cadastro, basta
-          aceitar o convite. Assim, você terá a liberdade de aproveitar nosso sistema em diferentes
-          postos parceiros, o que lhe permite acompanhar seus relatórios de abastecimentos,
-          visualizar gráficos, entender métricas como quilômetros por litro e muito mais – tudo isso
-          centralizado de forma prática.
+          O <AppTitle /> foi criado pensando em sua liberdade. Se um posto parceiro convidá-lo para
+          se juntar ao sistema e você ainda não tiver cadastro, poderá fazê-lo de maneira ágil. Se
+          já for cadastrado, apenas aceite o convite. Dessa forma, você poderá desfrutar do nosso
+          sistema em diferentes postos parceiros, acompanhando relatórios de abastecimentos,
+          visualizando gráficos e compreendendo métricas como quilômetros por litro - tudo
+          centralizado.
         </Paragraph>
         <Paragraph>
-          Ao utilizar o <AppTitle />, você não precisará cadastrar veículos e motoristas
-          repetidamente; uma vez cadastrados, eles estarão disponíveis para serem usados em
-          diferentes postos, mesmo que pertençam a organizações distintas. O sistema é um hub
-          centralizado para gerenciar suas operações. Além do fácil cadastro de veículos e
-          motoristas, permite configurar datas de faturamento, visualizar notificações e receber
-          e-mails sobre abastecimentos em tempo real.
+          Com <AppTitle />, o re-cadastro de veículos e motoristas se torna desnecessário. Uma vez
+          registrados, estão prontos para serem utilizados em quaisquer postos, independentemente da
+          organização à qual pertencem. O sistema é um hub centralizado para gerenciar suas
+          operações. Além disso, é possível configurar datas de faturamento, ver notificações e
+          receber e-mails sobre abastecimentos em tempo real.
         </Paragraph>
       </div>
       <div className='hidden md:flex md:w-4/12'>
