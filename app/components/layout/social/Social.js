@@ -31,7 +31,7 @@ const Social = ({ className }) => {
       <SocialItem name='Threads' linkTo='https://www.threads.net/' />
       <SocialItem name='Twitter' linkTo='https://www.twitter.com/' />
       <SocialItem name='Youtube' linkTo='https://www.youtube.com/' />
-      <SocialItem name='Linkedin' linkTo='https://www.linkedin.com/' />
+      <SocialItem name='Linkedin' linkTo='https://www.linkedin.com/company/touch-sistemas-postos' />
     </div>
   );
 };

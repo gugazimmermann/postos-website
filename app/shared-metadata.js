@@ -53,7 +53,7 @@ const sharedMetadata = {
   publisher: 'Guga Zimmermann',
   openGraph: {
     title: TITLE,
-    description: DESCRIPTION,
+    description: 'Sistema de Gerenciamento Integrado para Frotas em Postos de Combustíveis e Frotistas.',
     locale: 'pt_BR',
     type: 'website',
     url: URL,
