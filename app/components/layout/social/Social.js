@@ -26,7 +26,7 @@ const Social = ({ className }) => {
   return (
     <div className={`flex justify-center ${className ? className : ''}`}>
       <SocialItem name='Whatsapp' linkTo='https://wa.me/5547988704247' />
-      <SocialItem name='Facebook' linkTo='https://www.facebook.com/' />
+      <SocialItem name='Facebook' linkTo='facebook.com/touchsistemaspostos' />
       <SocialItem name='Instagram' linkTo='https://www.instagram.com/' />
       <SocialItem name='Threads' linkTo='https://www.threads.net/' />
       <SocialItem name='Twitter' linkTo='https://www.twitter.com/' />
