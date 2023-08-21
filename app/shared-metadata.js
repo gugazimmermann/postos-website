@@ -51,6 +51,31 @@ const sharedMetadata = {
   ],
   creator: 'Guga Zimmermann',
   publisher: 'Guga Zimmermann',
+  openGraph: {
+    title: TITLE,
+    description: DESCRIPTION,
+    locale: 'pt_BR',
+    type: 'website',
+    url: URL,
+    siteName: TITLE,
+    images: [
+      {
+        url: 'https://www.touchsistemas.com.br/images/social/dashboard/800x600.png',
+        width: 800,
+        height: 600,
+      },
+      {
+        url: 'https://www.touchsistemas.com.br/images/social/dashboard/1800x1600.png',
+        width: 1800,
+        height: 1600,
+      },
+      {
+        url: 'https://www.touchsistemas.com.br/images/social/dashboard/1200x630.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default sharedMetadata;
