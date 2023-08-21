@@ -3,7 +3,6 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { AppTitle, AppDescription } from '../../general';
 import { Title, Paragraph } from '../../general';
 
 const CompaniesReports = () => {

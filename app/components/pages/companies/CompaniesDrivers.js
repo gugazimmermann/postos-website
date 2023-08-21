@@ -1,4 +1,4 @@
-import { AppTitle, AppDescription } from '../../general';
+import { AppTitle } from '../../general';
 import { Paragraph, Title } from '../../general';
 
 const TopLeftSVG = () => (

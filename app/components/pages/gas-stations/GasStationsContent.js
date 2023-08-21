@@ -4,6 +4,8 @@ import GasStationsConfiguration from './GasStationsConfiguration';
 import GasStationsDashBoards from './GasStationsDashBoards';
 import GasStationsDesk from './GasStationsDesk';
 import GasStationsPayments from './GasStationsPayments';
+import GasStatiosCompanies from './GasStatiosCompanies';
+import GasStationsCallToAction from './GasStationsCallToAction';
 import ScrollToTopButton from './ScrollToTopButton';
 
 const GasStationsContent = () => {
@@ -15,6 +17,8 @@ const GasStationsContent = () => {
       <GasStationsDashBoards />
       <GasStationsDesk />
       <GasStationsPayments />
+      <GasStatiosCompanies />
+      <GasStationsCallToAction />
       <ScrollToTopButton />
     </>
   );
