@@ -9,6 +9,8 @@ import { Alert, Button, Form, Grid } from '../../helpers';
 import { UsageTermsText2 } from '../usage-terms';
 import { PrivacityText } from '../privacity-terms';
 
+const capitalize = (str) => str.toLowerCase().replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+
 const RegisterForm = () => {
   const router = useRouter();
   const { openModal: openUsageTermsModal, Modal: UsageTermsModal } = useModal({
@@ -21,9 +23,13 @@ const RegisterForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [address, setAddress] = useState('');
-  const [city, setCity] = useState('');
+  const [cep, setCep] = useState('');
   const [state, setState] = useState('');
+  const [city, setCity] = useState('');
+  const [cities, setCities] = useState([]);
+  const [address, setAddress] = useState('');
+  const [longitude, setLongitude] = useState('');
+  const [latitude, setLatitude] = useState('');
   const [accept, setAccept] = useState(false);
 
   const resetForm = () => {
@@ -31,9 +37,112 @@ const RegisterForm = () => {
     setName('');
     setEmail('');
     setPhone('');
-    setAddress('');
-    setCity('');
+    setCep('');
     setState('');
+    setCity('');
+    setAddress('');
+    setLongitude('');
+    setLatitude('');
+  };
+
+  const handleDocument = async (value) => {
+    setDocument(masks.cnpj(value));
+    const cleanValue = value.replace(/\D+/g, '');
+    if (cleanValue.length < 14) {
+      resetForm();
+      return;
+    }
+    setLoading(true);
+    const response = await fetch(`https://brasilapi.com.br/api/cnpj/v1/${cleanValue}`);
+    const data = await response.json();
+    if (!data.type) {
+      setName(capitalize(data?.nome_fantasia || data?.razao_social || ''));
+      setEmail(data?.email ? data.email.toLowerCase() : '');
+      setPhone(data?.ddd_telefone_1 || '');
+      if (data?.cep) {
+        const response = await fetch(`https://brasilapi.com.br/api/cep/v2/${data?.cep}`);
+        const dataCep = await response.json();
+        if (!dataCep.type) {
+          setCep(dataCep?.cep ? masks.cep(dataCep.cep) : '');
+          setState(dataCep?.state || '');
+          setCity(dataCep?.city || '');
+          const formatAddress = `${dataCep?.street}, ${data?.numero && `${data.numero}, `} ${
+            data?.complemento && `${data.complemento},`
+          } ${dataCep?.neighborhood && `${dataCep.neighborhood}`}`.replace(/\s+/g, ' ');
+          setAddress(formatAddress || '');
+          setLongitude(dataCep?.location?.coordinates?.longitude || '');
+          setLatitude(dataCep?.location?.coordinates?.latitude || '');
+        }
+      }
+    } else {
+      setName('');
+      setEmail('');
+      setPhone('');
+      setCep('');
+      setState('');
+      setCity('');
+      setAddress('');
+      setLongitude('');
+      setLatitude('');
+    }
+    setLoading(false);
+  };
+
+  const handleCep = async (value) => {
+    setCep(masks.cep(value));
+    const cleanValue = value.replace(/\D+/g, '');
+    if (cleanValue.length < 8) {
+      setState('');
+      setCity('');
+      setAddress('');
+      setLongitude('');
+      setLatitude('');
+      return;
+    }
+    setLoading(true);
+    const response = await fetch(`https://brasilapi.com.br/api/cep/v2/${cleanValue}`);
+    const dataCep = await response.json();
+    if (!dataCep.type) {
+      setState(dataCep?.state || '');
+      setCity(dataCep?.city || '');
+      const formatAddress = `${dataCep?.street}, ${
+        dataCep?.neighborhood && `${dataCep.neighborhood}`
+      }`.replace(/\s+/g, ' ');
+      setAddress(formatAddress || '');
+      setLongitude(dataCep?.location?.coordinates?.longitude || '');
+      setLatitude(dataCep?.location?.coordinates?.latitude || '');
+    } else {
+      setState('');
+      setCity('');
+      setAddress('');
+      setLongitude('');
+      setLatitude('');
+    }
+    setLoading(false);
+  };
+
+  const handleAddress = async (value, field) => {
+    if (field === 'state') {
+      setLoading(true);
+      setState(value);
+      setCity('');
+      setAddress('');
+      setLongitude('');
+      setLatitude('');
+      const response = await fetch(
+        `https://brasilapi.com.br/api/ibge/municipios/v1/${value}?providers=gov`,
+      );
+      const data = await response.json();
+      if (Array.isArray(data)) {
+        const citiesNames = data.map((x) => capitalize(x.nome));
+        setCities(citiesNames);
+      }
+    } else if (field === 'city') {
+      setCity(value);
+    } else {
+      setAddress(value);
+    }
+    setLoading(false);
   };
 
   const validate = (form) => {
@@ -102,7 +211,7 @@ const RegisterForm = () => {
             <Form.Input
               loading={loading}
               value={masks.cnpj(document)}
-              editValue={(e) => setDocument(masks.cnpj(e.target.value))}
+              editValue={(e) => handleDocument(e.target.value)}
               required={true}
               name='document'
             />
@@ -115,9 +224,11 @@ const RegisterForm = () => {
               editValue={(e) => setName(e.target.value)}
               required={true}
               name='name'
+              disabled={!document}
             />
           </Grid.Row>
         </Grid.Col2>
+
         <Grid.Col2>
           <Grid.Row>
             <Form.Label htmlFor='email' text='Email' />
@@ -128,6 +239,7 @@ const RegisterForm = () => {
               required={true}
               type='email'
               name='email'
+              disabled={!document}
             />
           </Grid.Row>
           <Grid.Row>
@@ -138,44 +250,62 @@ const RegisterForm = () => {
               editValue={(e) => setPhone(masks.phone(e.target.value))}
               required={true}
               name='phone'
+              disabled={!document}
             />
           </Grid.Row>
         </Grid.Col2>
-        <Grid.Col2>
+
+        <Grid.Col3>
           <Grid.Row>
-            <Form.Label htmlFor='address' text='Endedreço' />
+            <Form.Label htmlFor='cep' text='CEP' />
             <Form.Input
               loading={loading}
-              value={address}
-              editValue={(e) => setAddress(e.target.value)}
+              value={masks.cep(cep)}
+              editValue={(e) => setCep(masks.cep(e.target.value))}
+              onBlur={(e) => handleCep(e.target.value)}
               required={true}
-              name='address'
+              name='cep'
+              disabled={!document}
             />
           </Grid.Row>
-          <Grid.Col2>
-            <Grid.Row>
-              <Form.Label htmlFor='city' text='Cidade' />
-              <Form.Input
-                loading={loading}
-                value={city}
-                editValue={(e) => setCity(e.target.value)}
-                required={true}
-                name='city'
-              />
-            </Grid.Row>
-            <Grid.Row>
-              <Form.Label htmlFor='state' text='Estado' />
-              <Form.Select
-                loading={loading}
-                value={state}
-                editValue={(e) => setState(e.target.value)}
-                required={true}
-                name='state'
-                data={statesBR}
-              />
-            </Grid.Row>
-          </Grid.Col2>
-        </Grid.Col2>
+          <Grid.Row>
+            <Form.Label htmlFor='state' text='Estado' />
+            <Form.Select
+              loading={loading}
+              value={state}
+              editValue={(e) => handleAddress(e.target.value, 'state')}
+              required={true}
+              name='state'
+              data={statesBR}
+              disabled={!cep}
+            />
+          </Grid.Row>
+          <Grid.Row>
+            <Form.Label htmlFor='city' text='Cidade' />
+            <Form.AutocompleteInput
+              loading={loading}
+              value={city}
+              editValue={setCity}
+              required={true}
+              name='city'
+              disabled={!cep || !state}
+              suggestions={cities}
+            />
+          </Grid.Row>
+        </Grid.Col3>
+
+        <Grid.Row>
+          <Form.Label htmlFor='address' text='Endedreço' />
+          <Form.Input
+            loading={loading}
+            value={address}
+            editValue={(e) => handleAddress(e.target.value, 'address')}
+            required={true}
+            name='address'
+            disabled={!cep || !state || !city}
+          />
+        </Grid.Row>
+
         <Grid.Row>
           <div className='flex flex-row justify-center items-center'>
             <input
@@ -215,6 +345,7 @@ const RegisterForm = () => {
             <PrivacityText />
           </PrivacityModal>
         </Grid.Row>
+
         <div className='w-full text-center'>
           <Button type='submit' loading={loading} text='Registrar' />
         </div>

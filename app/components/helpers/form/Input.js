@@ -2,6 +2,7 @@ const Input = ({
   loading,
   value,
   editValue,
+  onBlur,
   disabled = false,
   required = true,
   type = 'text',
@@ -16,6 +17,7 @@ const Input = ({
       id={name}
       value={value}
       onChange={editValue}
+      onBlur={onBlur}
       className='bg-slate-50 border border-slate-300 text-slate-800 text-sm rounded-lg block w-full p-2.5'
     />
   );
