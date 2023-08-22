@@ -40,15 +40,17 @@ const GasStationsConfiguration = () => {
       <div className='relative z-10 rounded'>
         <div className='flex flex-col justify-center px-8 pt-4'>
           <Title text='Configuração Intuitiva e Personalizada' />
-          <Paragraph dark={true} center={true}>
-            Ao registrar um posto em nossa plataforma, você desfrutará de uma experiência de
-            configuração simples e adaptada às suas necessidades.
-          </Paragraph>
-          <Paragraph dark={true} center={true}>
-            Para cada posto, é possível definir de maneira individualizada os tipos de assinatura,
-            variedades de combustíveis, padrões de faturamento, produtos, serviços e diversas outras
-            funcionalidades.
-          </Paragraph>
+          <div className='sm:px-8'>
+            <Paragraph dark={true} center={true}>
+              Ao registrar um posto em nossa plataforma, você desfrutará de uma experiência de
+              configuração simples e adaptada às suas necessidades.
+            </Paragraph>
+            <Paragraph dark={true} center={true}>
+              Para cada posto, é possível definir de maneira individualizada os tipos de assinatura,
+              variedades de combustíveis, padrões de faturamento, produtos, serviços e diversas
+              outras funcionalidades.
+            </Paragraph>
+          </div>
         </div>
         <div>
           <span className='absolute top-0 left-0 z-[-1]'>

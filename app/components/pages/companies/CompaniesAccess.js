@@ -613,9 +613,9 @@ const CompaniesAccess = () => {
         <Title text='Múltiplos Postos' />
         <Paragraph>
           No sistema, você descobrirá um ambiente de gestão avançada, criado para maximizar o
-          controle de sua frota. É possível definir restrições como o tipo de combustível para cada
-          veículo, controlar a quilometragem, associar motoristas a veículos específicos e
-          determinar métodos de assinatura, incluindo o cadastro antecipado de assinaturas digitais,
+          controle de sua frota. É possível definir restrições como os tipos de combustíveis para
+          cada veículo, controlar a quilometragem, associar motoristas a veículos específicos e
+          determinar métodos de assinatura, realizar o cadastro antecipado de assinaturas digitais,
           entre outros. Você também pode designar quais produtos e serviços cada motorista tem
           permissão para acessar, assegurando uma gestão eficaz e segura.
         </Paragraph>

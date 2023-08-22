@@ -118,7 +118,7 @@ const UsageTermsText = () => {
         danos indiretos, consequenciais ou incidentais decorrentes do uso do sistema SaaS.
       </SectionParagraph>
       <SectionParagraph>
-        <strong>6.3 Limitação</strong>: Em nenhuma circunstância a responsabilidade do <AppTitle />
+        <strong>6.3 Limitação</strong>: Em nenhuma circunstância a responsabilidade do <AppTitle />{' '}
         excederá o valor total pago pelo cliente pelo sistema SaaS durante os doze meses anteriores
         à reclamação.
       </SectionParagraph>

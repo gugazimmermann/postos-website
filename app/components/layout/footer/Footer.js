@@ -97,7 +97,7 @@ const Footer = () => {
             title='Ajuda'
             items={[
               {
-                name: 'FAQ',
+                name: 'Perguntas Frequentes',
                 link: '/faq',
               },
               {

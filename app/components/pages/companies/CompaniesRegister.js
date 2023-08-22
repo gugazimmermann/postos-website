@@ -24,6 +24,7 @@ const CompaniesRegister = () => {
           visualizando gráficos e compreendendo métricas como quilômetros por litro - tudo
           centralizado.
         </Paragraph>
+        <h1 className='font-semibold text-slate-800 mb-4 text-center text-xl'>É tudo gratuito! O cliente não tem custos.</h1>
         <Paragraph>
           Com <AppTitle />, o re-cadastro de veículos e motoristas se torna desnecessário. Uma vez
           registrados, estão prontos para serem utilizados em quaisquer postos, independentemente da
