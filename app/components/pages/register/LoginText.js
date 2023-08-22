@@ -34,7 +34,7 @@ const OrganizationDataText = ({ name }) => {
       </p>
       <MoreInfoButton />
       <Modal title='Níveis de Acesso Personalizados' scroll={true}>
-        <div className='flex flex-col justify-center leading-6'>
+        <div className='flex flex-col justify-center'>
           <p className='text-slate-800 mb-2'>
             Em <AppTitle />, oferecemos uma maneira intuitiva de gerenciar permissões e acesso. Aqui
             estão os três níveis de acesso que você pode usar para organizar sua estrutura:
@@ -54,7 +54,7 @@ const OrganizationDataText = ({ name }) => {
             Os usuários são únicos dentro de cada esfera, garantindo identificação clara.
           </p>
           <p className='text-slate-800 mb-2'>
-            Por exemplo, mesmo que o mesmo nome de usuário &quot;caixa&quot; seja usado em
+            Por exemplo, mesmo que o usuário &quot;caixa&quot; seja usado em
             diferentes Postos, eles são tratados separadamente para manter a individualidade.
           </p>
           <p className='text-slate-800 mb-4'>

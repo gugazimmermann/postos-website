@@ -20,7 +20,7 @@ const SuccessText = ({ code, name, login, email, fetchError }) => {
         target='_blank'
         rel='noopener noreferrer'
       >
-        Acessar <AppTitle />
+        <span className='mr-2'>Acessar</span><AppTitle />
         <Arrow />
       </a>
     );
