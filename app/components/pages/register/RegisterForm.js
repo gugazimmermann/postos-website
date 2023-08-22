@@ -9,7 +9,8 @@ import { Alert, Button, Form, Grid } from '../../helpers';
 import { UsageTermsText2 } from '../usage-terms';
 import { PrivacityText } from '../privacity-terms';
 
-const capitalize = (str) => str.toLowerCase().replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+const capitalize = (str) =>
+  str.toLowerCase().replace(/(^\w{1})|(\s+\w{1})/g, (letter) => letter.toUpperCase());
 
 const RegisterForm = () => {
   const router = useRouter();
@@ -121,28 +122,37 @@ const RegisterForm = () => {
     setLoading(false);
   };
 
-  const handleAddress = async (value, field) => {
-    if (field === 'state') {
-      setLoading(true);
-      setState(value);
-      setCity('');
-      setAddress('');
-      setLongitude('');
-      setLatitude('');
-      const response = await fetch(
-        `https://brasilapi.com.br/api/ibge/municipios/v1/${value}?providers=gov`,
-      );
-      const data = await response.json();
-      if (Array.isArray(data)) {
-        const citiesNames = data.map((x) => capitalize(x.nome));
-        setCities(citiesNames);
-      }
-    } else if (field === 'city') {
-      setCity(value);
-    } else {
-      setAddress(value);
+  const handleState = async (value) => {
+    setLoading(true);
+    setState(value);
+    setCity('');
+    setAddress('');
+    setLongitude('');
+    setLatitude('');
+    const response = await fetch(
+      `https://brasilapi.com.br/api/ibge/municipios/v1/${value}?providers=gov`,
+    );
+    const data = await response.json();
+    if (Array.isArray(data)) {
+      const citiesNames = data.map((x) => capitalize(x.nome));
+      setCities(citiesNames);
     }
     setLoading(false);
+  };
+
+  const getCoordinates = async (address, city, state) => {
+    const response = await fetch(
+      `https://nominatim.openstreetmap.org/search?format=json&addressdetails=1&q=${address},${city},${state},BR&limit=1`,
+    );
+    const data = await response.json();
+    if (data && data.length > 0) {
+      return {
+        lat: data[0].lat,
+        lon: data[0].lon,
+      };
+    } else {
+      return null;
+    }
   };
 
   const validate = (form) => {
@@ -152,9 +162,10 @@ const RegisterForm = () => {
       !form.name ||
       !form.email ||
       !form.phone ||
-      !form.address ||
+      !form.cep ||
+      !form.state ||
       !form.city ||
-      !form.state
+      !form.address
     )
       return 'Todos os campos são obrigatórios!';
     if (!isValidCNPJ(form.document)) return 'CNPJ inválido!';
@@ -173,15 +184,25 @@ const RegisterForm = () => {
       name,
       email,
       phone,
-      address,
-      city,
+      cep,
       state,
+      city,
+      address,
+      longitude,
+      latitude,
     };
     const validationError = validate(form);
     if (validationError) {
       setAlert(validationError);
       setLoading(false);
       return;
+    }
+    if (!form.latitude || !form.longitude) {
+      const coords = await getCoordinates(address, city, state);
+      if (coords) {
+        form.latitude = coords.lat;
+        form.longitude = coords.lon;
+      }
     }
     const data = await api.saveOrganization(form);
     if (data?.id) {
@@ -228,7 +249,6 @@ const RegisterForm = () => {
             />
           </Grid.Row>
         </Grid.Col2>
-
         <Grid.Col2>
           <Grid.Row>
             <Form.Label htmlFor='email' text='Email' />
@@ -254,7 +274,6 @@ const RegisterForm = () => {
             />
           </Grid.Row>
         </Grid.Col2>
-
         <Grid.Col3>
           <Grid.Row>
             <Form.Label htmlFor='cep' text='CEP' />
@@ -273,7 +292,7 @@ const RegisterForm = () => {
             <Form.Select
               loading={loading}
               value={state}
-              editValue={(e) => handleAddress(e.target.value, 'state')}
+              editValue={(e) => handleState(e.target.value)}
               required={true}
               name='state'
               data={statesBR}
@@ -293,19 +312,17 @@ const RegisterForm = () => {
             />
           </Grid.Row>
         </Grid.Col3>
-
         <Grid.Row>
           <Form.Label htmlFor='address' text='Endedreço' />
           <Form.Input
             loading={loading}
             value={address}
-            editValue={(e) => handleAddress(e.target.value, 'address')}
+            editValue={(e) => setAddress(e.target.value)}
             required={true}
             name='address'
             disabled={!cep || !state || !city}
           />
         </Grid.Row>
-
         <Grid.Row>
           <div className='flex flex-row justify-center items-center'>
             <input

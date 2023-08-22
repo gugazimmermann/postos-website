@@ -24,16 +24,30 @@ const getOrganization = async (organizationID) => {
   }
 };
 
-const saveOrganization = async ({ document, name, phone, email, address, city, state }) => {
+const saveOrganization = async ({
+  document,
+  name,
+  email,
+  phone,
+  cep,
+  state,
+  city,
+  address,
+  longitude,
+  latitude,
+}) => {
   try {
     const { data } = await axios.post(`/organization`, {
       document: masks.cnpj(document),
       name,
-      phone: masks.phone(phone),
       email,
-      address,
-      city,
+      phone: masks.phone(phone),
+      cep: masks.cep(cep),
       state,
+      city,
+      address,
+      longitude,
+      latitude,
     });
     return data;
   } catch (e) {
