@@ -21,7 +21,7 @@ const CompaniesInfo = () => {
       <div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:mx-16'>
         <CompaniesInfoCard
           title='Segurança'
-          details='Defina onde, os horários, o tipo de combustível, os produtos, os tipos de assinatura, e muito mais!'
+          details='Defina onde, o tipo de combustíveis, os horários, os produtos, os tipos de assinatura, e muito mais!'
           icon={
             <Image
               src='/images/companies/security.svg'

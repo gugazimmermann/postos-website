@@ -20,8 +20,13 @@ const phone = (value) => {
   return r;
 };
 
+const cep = (value) => {
+  if (!value) return '';
+  return value.replace(/\D+/g, '').replace(/(\d{2})(\d{3})(\d{3})/, '$1.$2-$3').slice(0, 10);
+};
+
 const confirmationCode = (value) => {
   return value?.replace(/\D+/g, '')?.slice(0, 6);
 };
 
-export { code, cnpj, phone, confirmationCode };
+export { code, cnpj, phone, cep, confirmationCode };

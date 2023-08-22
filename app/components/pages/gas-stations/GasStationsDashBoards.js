@@ -616,11 +616,11 @@ const GasStationsDashBoards = () => {
           consolidado ou por posto, oferece uma visão panorâmica de todas as suas operações ativas.
           Você visualiza de imediato operações pendentes, como confirmações de agendamentos e envios
           de boletos, além de acessar rapidamente novos cadastros de clientes, detectar clientes
-          inativos e obter insights outros valiosos.
+          inativos e obter outros insights valiosos.
         </Paragraph>
         <Paragraph>
-          Nossos <span className='font-semibold'>Relatórios e Gráficos</span>, disponíveis de forma
-          consolidada ou detalhada por posto, é essencial para análises mais profundas. Você pode
+          Os nossos <span className='font-semibold'>Relatórios e Gráficos</span>, disponíveis de forma
+          consolidada ou detalhada por posto, são essenciais para análises mais profundas. Você pode
           gerar dados sobre abastecimentos, pagamentos, clientes e muito mais. Os relatórios podem
           ser visualizados na plataforma ou exportados para PDF ou CSV, permitindo uma fácil
           integração com o Excel e adaptando-se ao seu modo de trabalho.

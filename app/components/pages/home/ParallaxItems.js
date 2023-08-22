@@ -17,7 +17,7 @@ const ParallaxItems = () => {
     <Item text='📈 Relatórios e Gráficos' />
     <Item text='🌐 Controle de Rede' />
     <Item text='⚙️ Totalmente Granular' />
-    <Item text='🤝 Total liberdade para o Cliente' />
+    <Item text='🚗 Total Liberdade para o Cliente' />
   </div>
   );
 };

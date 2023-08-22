@@ -20,7 +20,7 @@ const CompaniesReports = () => {
       <div className='block md:flex gap-4'>
         <div className='w-full md:w-3/4'>
           <Paragraph>
-            No Dashboard, monitorize abastecimentos pendentes de todos os postos, evite surpresas e
+            No Dashboard, monitore abastecimentos pendentes de todos os postos, evite surpresas e
             faça o acompanhamento de faturamentos. Relatórios e gráficos, disponíveis em seções
             distintas do sistema, potencializam seu planejamento e controle. Adicionalmente, é
             possível solicitar faturamentos, acompanhar os recebimentos de boletos, confirmações

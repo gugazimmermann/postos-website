@@ -51,6 +51,7 @@ const sharedMetadata = {
   ],
   creator: 'Guga Zimmermann',
   publisher: 'Guga Zimmermann',
+  metadataBase: URL,
   openGraph: {
     title: TITLE,
     description: 'Sistema de Gerenciamento Integrado para Frotas em Postos de Combustíveis e Frotistas.',
@@ -60,17 +61,17 @@ const sharedMetadata = {
     siteName: TITLE,
     images: [
       {
-        url: 'https://www.touchsistemas.com.br/images/social/800x600.png',
+        url: `${URL}/images/social/800x600.png`,
         width: 800,
         height: 600,
       },
       {
-        url: 'https://www.touchsistemas.com.br/images/social/1800x1600.png',
+        url: `${URL}/images/social/1800x1600.png`,
         width: 1800,
         height: 1600,
       },
       {
-        url: 'https://www.touchsistemas.com.br/images/social/1200x630.png',
+        url: `${URL}/images/social/1200x630.png`,
         width: 1200,
         height: 630,
       },
@@ -83,7 +84,7 @@ const sharedMetadata = {
     siteId: '-',
     creator: '@touchsistemas',
     creatorId: '-',
-    images: ['https://www.touchsistemas.com.br/images/social/1200x628.png'],
+    images: [`${URL}/images/social/1200x628.png`],
   },
 };
 

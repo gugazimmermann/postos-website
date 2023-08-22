@@ -72,15 +72,15 @@ const GasStatiosCompanies = () => {
   const items = [
     {
       title: 'Cadastro Ágil e Direto',
-      text: 'Para convidar, basta cadastrar o e-mail no Touch Sistemas - Postos. O convidado receberá uma notificação para se associar como cliente do posto (ou postos). Caso não possua cadastro, ele pode preencher um formulário rápido para ter acesso; se já estiver cadastrado, basta aceitar o convite, liberar seus veículos e motoristas para abastecerem no posto, e estará pronto para começar!',
+      text: 'Para convidar, basta cadastrar o e-mail no Touch Sistemas - Postos. O convidado receberá uma notificação para se associar como cliente do posto (ou postos). Caso não possua cadastro, irá preencher um formulário rápido para ter acesso; se já estiver cadastrado, basta aceitar o convite, liberar seus veículos e motoristas para abastecerem no posto, e estará pronto para começar!',
     },
     {
       title: 'Múltiplos Postos',
-      text: 'Não há necessidade de recadastrar veículos e motoristas. Uma vez registrados, estão aptos a serem utilizados em qualquer posto, independentemente da organização a que pertençam. O cliente pode configurar datas de faturamento, liberar produtos, e restringir veículos ou motoristas para cada posto de forma individual.',
+      text: 'Não há necessidade de re-cadastrar veículos e motoristas. Uma vez registrados, estão aptos a serem utilizados em qualquer posto, independentemente da organização a que pertençam. O cliente pode configurar datas de faturamento, liberar produtos, e restringir veículos ou motoristas para cada posto de forma individual.',
     },
     {
       title: 'Dashboard, Relatórios e Gráficos',
-      text: 'Com um dashboard, relatórios e gráficos unificados, seja por posto, veículo ou motorista, o cliente obtém um controle total sobre seus abastecimentos. Pode visualizar abastecimentos pendentes, pagamentos à espera de atualização e muito mais.',
+      text: 'Com dashboard, relatórios e gráficos, centralizados ou por posto, veículo ou motorista, o cliente obtém um controle total sobre seus abastecimentos. Pode visualizar abastecimentos pendentes, pagamentos à espera de atualização e muito mais.',
     },
     {
       title: 'Veículos e Motoristas',
@@ -88,7 +88,7 @@ const GasStatiosCompanies = () => {
     },
     {
       title: 'Restrições Sob Medida',
-      text: 'Cada cliente sabe como quer gerenciar sua frota. Por isso, tem a liberdade de registrar a quilometragem do veículo ao abastecer, limitar o tipo de combustível e determinar os horários em que os motoristas podem abastecer.',
+      text: 'Cada cliente sabe como quer gerenciar sua frota. Por isso, tem a liberdade de solicitar registro da quilometragem do veículo ao abastecer, limitar o tipo de combustível e determinar os horários em que os motoristas podem abastecer.',
     },
     {
       title: 'Permissões de Produtos',
@@ -116,7 +116,7 @@ const GasStatiosCompanies = () => {
             responsabilidade total para seus clientes. Visite também nossa área{' '}
             <Link href='/clientes' className='font-bold underline hover:cursor-pointer'>
               Para os Frotistas
-            </Link>
+            </Link>.
           </p>
         </div>
       </div>
