@@ -1,5 +1,7 @@
 const TITLE = process.env.NEXT_PUBLIC_TITLE || 'Touch Sistemas - Postos';
-const DESCRIPTION = process.env.NEXT_PUBLIC_DESCRIPTION || 'Sistema para Gerenciamento de Frotas para Postos de Combustíveis';
+const DESCRIPTION =
+  process.env.NEXT_PUBLIC_DESCRIPTION ||
+  'Sistema para Gerenciamento de Frotas para Postos de Combustíveis';
 const URL = process.env.NEXT_PUBLIC_URL || 'https://www.touchsistemas.com.br';
 
 const sharedMetadata = {
@@ -34,7 +36,7 @@ const sharedMetadata = {
     'Abastecimento de Frotas',
     'Abastecimento de Frotas para Postos',
     'Abastecimento de Frotas para Postos de Combustível',
-     'Segurança em Postos',
+    'Segurança em Postos',
     'Segurança em Postos de Combustível',
     'Sistema de Notificações para Abastecimentos',
     'Personalização em Sistemas de Postos',
@@ -49,12 +51,13 @@ const sharedMetadata = {
       url: 'https://www.linkedin.com/in/guga-zimmermann/',
     },
   ],
-  creator: 'Guga Zimmermann',
-  publisher: 'Guga Zimmermann',
+  creator: 'Touch Sistemas',
+  publisher: 'Touch Sistemas',
   metadataBase: URL,
   openGraph: {
     title: TITLE,
-    description: 'Sistema de Gerenciamento Integrado para Frotas em Postos de Combustíveis e Frotistas.',
+    description:
+      'Sistema de Gerenciamento Integrado para Frotas em Postos de Combustíveis e Frotistas.',
     locale: 'pt_BR',
     type: 'website',
     url: URL,

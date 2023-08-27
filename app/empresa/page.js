@@ -4,7 +4,7 @@ import AboutUsText from '../components/pages/about-us/AboutUsText';
 export const metadata = {
   ...sharedMetadata,
   title: `Sobre Nós | ${sharedMetadata.title}`,
-  description: `Informações sobre ${sharedMetadata.title}`,
+  description: `Conheça mais sobre o ${sharedMetadata.title}`,
   alternates: {
     canonical: `${sharedMetadata.alternates.canonical}/empresa`,
   },

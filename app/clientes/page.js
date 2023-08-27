@@ -4,8 +4,8 @@ import CompaniesContent from '../components/pages/companies/CompaniesContent';
 
 export const metadata = {
   ...sharedMetadata,
-  title: `Para os Clientes | ${sharedMetadata.title}`,
-  description: `Informações para os clientes dos postos e organizações no ${sharedMetadata.title}`,
+  title: `Para os Frotistas | ${sharedMetadata.title}`,
+  description: `Informações para os Frotistas do ${sharedMetadata.title}`,
   alternates: {
     canonical: `${sharedMetadata.alternates.canonical}/postos`,
   },
