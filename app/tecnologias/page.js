@@ -4,7 +4,7 @@ import TechnologiesText from '../components/pages/technologies/TechnologiesText'
 export const metadata = {
   ...sharedMetadata,
   title: `Tecnologias | ${sharedMetadata.title}`,
-  description: `Tecnologias Utilizadas em ${sharedMetadata.title}`,
+  description: `Tecnologias Utilizadas no ${sharedMetadata.title}`,
   alternates: {
     canonical: `${sharedMetadata.alternates.canonical}/tecnologias`,
   },
