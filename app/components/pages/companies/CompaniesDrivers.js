@@ -1,4 +1,4 @@
-import { AppTitle } from '../../general';
+import { AppTitle, YoutubeEmbed } from '../../general';
 import { Paragraph, Title } from '../../general';
 
 const TopLeftSVG = () => (
@@ -34,31 +34,33 @@ const BottomRightSVG = () => (
 
 const CompaniesDrivers = () => {
   return (
-    <div
-      id='ConfiguracoesSimples'
-      className='my-8 mx-4 sm:mx-0 bg-sky-100 rounded-3xl shadow-xl overflow-hidden'
-    >
-      <div className='relative z-10 rounded p-4'>
-        <div className='flex flex-col justify-center p-8'>
-          <Title text='Praticidade aos Motoristas' />
-          <Paragraph dark={true}>
-            Para os motoristas, oferecemos um aplicativo intuitivo. Nele, é possível identificar
-            postos cadastrados, verificar combustíveis autorizados para seus veículos, produtos
-            liberados, e localizar a rota mais próxima de um posto.
-          </Paragraph>
-          <Paragraph dark={true}>
-            Fale com seu posto de preferência e integre sua frota ao <AppTitle />, o sistema
-            definitivo para gerenciamento de frotas em postos de combustíveis.
-          </Paragraph>
+    <div id='ConfiguracoesSimples' className='w-full flex flex-col-reverse sm:flex-row sm:gap-4'>
+      <div className='w-full sm:w-8/12 my-8 bg-sky-100 rounded-3xl shadow-xl overflow-hidden'>
+        <div className='relative z-10 rounded p-4'>
+          <div className='flex flex-col justify-center p-8'>
+            <Title text='Praticidade aos Motoristas' />
+            <Paragraph dark={true}>
+              Para os motoristas, oferecemos um aplicativo intuitivo. Nele, é possível identificar
+              postos cadastrados, verificar combustíveis autorizados para seus veículos, produtos
+              liberados, e localizar a rota mais próxima de um posto.
+            </Paragraph>
+            <Paragraph dark={true}>
+              Fale com seu posto de preferência e integre sua frota ao <AppTitle />, o sistema
+              definitivo para gerenciamento de frotas em postos de combustíveis.
+            </Paragraph>
+          </div>
+          <div>
+            <span className='absolute top-0 left-0 z-[-1]'>
+              <TopLeftSVG />
+            </span>
+            <span className='absolute bottom-0 right-0 z-[-1]'>
+              <BottomRightSVG />
+            </span>
+          </div>
         </div>
-        <div>
-          <span className='absolute top-0 left-0 z-[-1]'>
-            <TopLeftSVG />
-          </span>
-          <span className='absolute bottom-0 right-0 z-[-1]'>
-            <BottomRightSVG />
-          </span>
-        </div>
+      </div>
+      <div className='w-full mt-8 sm:w-4/12'>
+        <YoutubeEmbed embedId='7HMywUyhHqQ' />
       </div>
     </div>
   );
