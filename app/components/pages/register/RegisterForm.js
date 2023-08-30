@@ -232,7 +232,8 @@ const RegisterForm = () => {
             <Form.Input
               loading={loading}
               value={masks.cnpj(document)}
-              editValue={(e) => handleDocument(e.target.value)}
+              editValue={(e) => setDocument(e.target.value)}
+              onBlur={(e) => handleDocument(e.target.value)}
               required={true}
               name='document'
             />
