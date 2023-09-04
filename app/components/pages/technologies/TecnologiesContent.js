@@ -7,7 +7,8 @@ import { AppTitle } from '../../general';
 import Cicd from './Cicd';
 import React from './React';
 import Amazon from './Amazon';
-import ReactNative from './ReactNative';
+// import ReactNative from './ReactNative';
+import Flutter from './Flutter';
 import Electron from './Electron';
 import Go from './Go';
 
@@ -21,7 +22,10 @@ const TecnologiesContent = () => {
   const { openModal: openAmazonModal, Modal: AmazonModal } = useModal({
     closeoutside: true,
   });
-  const { openModal: openReactNativeModal, Modal: ReactNativeModal } = useModal({
+  // const { openModal: openReactNativeModal, Modal: ReactNativeModal } = useModal({
+  //   closeoutside: true,
+  // });
+  const { openModal: openFlutterModal, Modal: FlutterModal } = useModal({
     closeoutside: true,
   });
   const { openModal: openElectronModal, Modal: ElectronModal } = useModal({
@@ -80,8 +84,9 @@ const TecnologiesContent = () => {
       <SectionParagraph>
         Nossos aplicativos móveis são projetados priorizando a experiência do usuário, permitindo
         gerenciamento de frotas de forma prática e eficiente, independente do sistema operacional,
-        para isto utilizamos <Button text='React Native' onClick={openReactNativeModal} />.
-        Compatíveis com Android e iOS, os aplicativos garantem flexibilidade e facilidade de uso.
+        para isto utilizamos <Button text='Flutter' onClick={openFlutterModal} />. Compatíveis com
+        Android e iOS, os aplicativos garantem flexibilidade, facilidade de uso e todas as
+        funcionalidades de um sistema nativo.
       </SectionParagraph>
       <SectionParagraph>
         Destacamos ainda nosso Ponto de Venda (PdV) no caixa, criado com o{' '}
@@ -114,9 +119,12 @@ const TecnologiesContent = () => {
       <AmazonModal title='Amazon Web Services (AWS)' scroll={true}>
         <Amazon />
       </AmazonModal>
-      <ReactNativeModal title='React Native' scroll={true}>
+      {/* <ReactNativeModal title='React Native' scroll={true}>
         <ReactNative />
-      </ReactNativeModal>
+      </ReactNativeModal> */}
+      <FlutterModal title='Flutter' scroll={true}>
+        <Flutter />
+      </FlutterModal>
       <ElectronModal title='Electron' scroll={true}>
         <Electron />
       </ElectronModal>
