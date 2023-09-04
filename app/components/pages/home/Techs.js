@@ -10,7 +10,7 @@ const Techs = () => {
         </h2>
         <Link
           href='/tecnologias'
-          className='flex flex-row flex-wrap gap-4 justify-evenly items-center my-4 px-4'
+          className='flex flex-row flex-wrap gap-2 justify-evenly items-center my-4 px-4'
         >
           <Image
             src='/images/technologies/aws2.webp'
@@ -39,6 +39,13 @@ const Techs = () => {
             height={0}
             className='w-auto h-8 sm:h-12 rounded-lg'
             alt='Node'
+          />
+          <Image
+            src='/images/technologies/flutter.webp'
+            width={0}
+            height={0}
+            className='w-auto h-8 sm:h-12 rounded-lg'
+            alt='Flutter'
           />
           <Image
             src='/images/technologies/nextjs.webp'
