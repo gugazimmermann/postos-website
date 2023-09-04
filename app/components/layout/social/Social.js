@@ -29,7 +29,7 @@ const Social = ({ className }) => {
       <SocialItem name='Facebook' linkTo='https://www.facebook.com/touchsistemaspostos' />
       <SocialItem name='Instagram' linkTo='https://www.instagram.com/' />
       <SocialItem name='Threads' linkTo='https://www.threads.net/' />
-      <SocialItem name='Twitter' linkTo='https://www.twitter.com/' />
+      <SocialItem name='Twitter' linkTo='https://twitter.com/SistemasTo58014' />
       <SocialItem name='Youtube' linkTo='https://www.youtube.com/@touchsistemas' />
       <SocialItem name='Linkedin' linkTo='https://www.linkedin.com/company/touch-sistemas-postos' />
     </div>
