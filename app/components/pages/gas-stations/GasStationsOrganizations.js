@@ -6,12 +6,6 @@ import Image from 'next/image';
 import { CheckMark } from '../../icons';
 import { AppTitle, Paragraph, Title } from '../../general';
 
-const imageUrls = [
-  '/images/gas-stations/organizations/1.webp',
-  '/images/gas-stations/organizations/2.webp',
-  '/images/gas-stations/organizations/3.webp',
-];
-
 const GasStationsOrganizations = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);

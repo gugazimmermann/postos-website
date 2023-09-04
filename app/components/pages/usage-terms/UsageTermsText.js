@@ -1,5 +1,5 @@
 import { SectionParagraph, SectionSubTitle } from '../../layout/sections';
-import { AppTitle, AppDescription } from '../../general';
+import { AppTitle } from '../../general';
 
 const UsageTermsText = () => {
   return (
