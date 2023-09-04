@@ -38,7 +38,7 @@ const CompaniesDrivers = () => {
       <div className='w-full sm:w-8/12 my-8 bg-sky-100 rounded-3xl shadow-xl overflow-hidden'>
         <div className='relative z-10 rounded p-4'>
           <div className='flex flex-col justify-center p-8'>
-            <Title text='Praticidade aos Motoristas' />
+            <Title text='Praticidade para os Motoristas' />
             <Paragraph dark={true}>
               Para os motoristas, oferecemos um aplicativo intuitivo. Nele, é possível identificar
               postos cadastrados, verificar combustíveis autorizados para seus veículos, produtos
