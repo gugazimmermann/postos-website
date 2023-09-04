@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
+import { getAnalytics, isSupported } from 'firebase/analytics';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Header, Footer, Drawer } from './components/layout';
@@ -24,8 +24,12 @@ export default function Layout({ children }) {
   const toggleDrawer = () => setIsDrawerOpen(!isDrawerOpen);
 
   const app = initializeApp(firebaseConfig);
+  // eslint-disable-next-line no-unused-vars
+  let analytics = null;
   if (process.env.NODE_ENV === 'production') {
-    getAnalytics(app);
+    isSupported().then((result) => {
+      if (result) analytics = getAnalytics(app);
+    });
   }
   return (
     <html lang='en'>
