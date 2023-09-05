@@ -42,7 +42,11 @@ const CompaniesDrivers = () => {
             <Paragraph dark={true}>
               Para os motoristas, oferecemos um aplicativo intuitivo. Nele, é possível identificar
               postos cadastrados, verificar combustíveis autorizados para seus veículos, produtos
-              liberados, e localizar a rota mais próxima de um posto.
+              liberados, localizar a rota mais próxima de um posto (integrado com Google Maps e
+              Waze), ver histórico de abastecimentos, e até mesmo receber Código de abastecimento.
+            </Paragraph>
+            <Paragraph dark={true}>
+              Veja no vídeo ao lado uma rápida demonstração do app em funcionamento.
             </Paragraph>
             <Paragraph dark={true}>
               Fale com seu posto de preferência e integre sua frota ao <AppTitle />, o sistema
@@ -61,7 +65,6 @@ const CompaniesDrivers = () => {
       </div>
       <div className='w-full mt-8 sm:w-4/12'>
         <YoutubeEmbed embedId='Mn91BM2ORzQ' />
-        
       </div>
     </div>
   );
