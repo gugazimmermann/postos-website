@@ -6,7 +6,7 @@ import { AppTitle } from '../../general';
 
 const BackgroundBar = () => {
   return (
-    <div class='absolute bottom-0 right-0 z-[-1]'>
+    <div className='absolute bottom-0 right-0 z-[-1]'>
       <svg
         width='1440'
         height='886'
@@ -28,8 +28,8 @@ const BackgroundBar = () => {
             y2='-418.681'
             gradientUnits='userSpaceOnUse'
           >
-            <stop stop-color='#f59e0b' stop-opacity='0.36' />
-            <stop offset='1' stop-color='#f59e0b' stop-opacity='0' />
+            <stop stopColor='#f59e0b' stopOpacity='0.36' />
+            <stop offset='1' stopColor='#f59e0b' stopOpacity='0' />
           </linearGradient>
         </defs>
       </svg>
