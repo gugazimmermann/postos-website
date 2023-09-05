@@ -43,7 +43,7 @@ const GasStationsDesk = () => {
             </Paragraph>
             <Paragraph>
               Modernizamos o processo de autorização do abastecimento: opte por Assinatura Digital,
-              Reconhecimento Facial ou Biometria, mas ainda suportamos a tradicional assinatura
+              Reconhecimento Facial, Biometria ou Código pelo aplicativo, mas ainda suportamos a tradicional assinatura
               manual. E a transparência? Garantida! Após autorizar a transação, o cliente é
               imediatamente notificado em nosso sistema, no aplicativo e por email. Sua operação
               nunca foi tão clara e eficaz!

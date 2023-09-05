@@ -20,7 +20,7 @@ const Cards = () => {
       <Card
         image='images/home/cards/facial-recognition.webp'
         title='Segurança Aprimorada'
-        text='Durante o abastecimento, destacamos a segurança como prioridade. Oferecemos opções modernas de Reconhecimento Facial, Biometria e Assinatura Digital, proporcionando um processo robusto e confiável.'
+        text='Durante o abastecimento, destacamos a segurança como prioridade. Oferecemos opções modernas de Assinatura Digital, Reconhecimento Facial, Biometria e Código pelo App, proporcionando um processo robusto e confiável.'
       />
       <Card
         image='images/home/cards/email.webp'
@@ -45,7 +45,7 @@ const Cards = () => {
       <Card
         image='images/home/cards/drivers.webp'
         title='Facilidade para Motoristas'
-        text='Aplicativo para verificar as rotas pra chegar nos postos autorizados, os combustíveis autorizados para o veículo utilizado, e até os produtos que ele tem acesso no posto.'
+        text='Aplicativo para verificar as rotas pra chegar nos postos autorizados, os combustíveis autorizados para o veículo utilizado, os produtos que ele tem acesso no posto e Código de autorização para abastecimento.'
       />
     </section>
   );
