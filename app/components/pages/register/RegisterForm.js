@@ -21,6 +21,7 @@ const RegisterForm = () => {
   const [alert, setAlert] = useState();
   const [loading, setLoading] = useState(false);
   const [document, setDocument] = useState('');
+  const [legalName, setLegalName] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -35,6 +36,7 @@ const RegisterForm = () => {
 
   const resetForm = () => {
     setDocument('');
+    setLegalName('');
     setName('');
     setEmail('');
     setPhone('');
@@ -57,7 +59,8 @@ const RegisterForm = () => {
     const response = await fetch(`https://brasilapi.com.br/api/cnpj/v1/${cleanValue}`);
     const data = await response.json();
     if (!data.type) {
-      setName(capitalize(data?.nome_fantasia || data?.razao_social || ''));
+      setLegalName(capitalize(data?.razao_social || ''));
+      setName(capitalize(data?.nome_fantasia || ''));
       setEmail(data?.email ? data.email.toLowerCase() : '');
       setPhone(data?.ddd_telefone_1 || '');
       if (data?.cep) {
@@ -76,6 +79,7 @@ const RegisterForm = () => {
         }
       }
     } else {
+      setLegalName('');
       setName('');
       setEmail('');
       setPhone('');
@@ -159,6 +163,7 @@ const RegisterForm = () => {
     if (!form.accept) return 'É necessário aceitar os Termos de Uso e Privacidade!';
     if (
       !form.document ||
+      !form.legalName ||
       !form.name ||
       !form.email ||
       !form.phone ||
@@ -181,6 +186,7 @@ const RegisterForm = () => {
     const form = {
       accept,
       document,
+      legalName,
       name,
       email,
       phone,
@@ -226,16 +232,27 @@ const RegisterForm = () => {
     <>
       {alert && <Alert type='error' text={alert} />}
       <form onSubmit={(e) => handleSubmit(e)} className='mt-8 space-y-6'>
+        <Grid.Row>
+          <Form.Label htmlFor='document' text='CNPJ' />
+          <Form.Input
+            loading={loading}
+            value={masks.cnpj(document)}
+            editValue={(e) => setDocument(e.target.value)}
+            onBlur={(e) => handleDocument(e.target.value)}
+            required={true}
+            name='document'
+          />
+        </Grid.Row>
         <Grid.Col2>
           <Grid.Row>
-            <Form.Label htmlFor='document' text='CNPJ' />
+          <Form.Label htmlFor='legalName' text='Razão Social' />
             <Form.Input
               loading={loading}
-              value={masks.cnpj(document)}
-              editValue={(e) => setDocument(e.target.value)}
-              onBlur={(e) => handleDocument(e.target.value)}
+              value={legalName}
+              editValue={(e) => setLegalName(e.target.value)}
               required={true}
-              name='document'
+              name='legalName'
+              disabled={!document}
             />
           </Grid.Row>
           <Grid.Row>
