@@ -18,7 +18,7 @@ export default function Home() {
       <Parallax />
       <Cards />
       <CallToAction />
-      <FAQ />
+      <FAQ top='mt-8' />
       <Techs />
     </>
   );

@@ -11,7 +11,7 @@ const Logo = () => {
         src='/icon.png'
         alt={`${process.env.NEXT_PUBLIC_TITLE} logo`}
       />
-      <span className='font-bold text-xl'>{process.env.NEXT_PUBLIC_TITLE}</span>
+      <span className='font-bold sm:text-xl'>{process.env.NEXT_PUBLIC_TITLE}</span>
     </Link>
   );
 };

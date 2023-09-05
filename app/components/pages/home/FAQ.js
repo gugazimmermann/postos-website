@@ -32,10 +32,10 @@ const BottomRightSVG = () => (
   </svg>
 );
 
-const FAQ = () => {
+const FAQ = ({top}) => {
   return (
     <section className='container mx-auto'>
-      <div className='mt-8 mx-4 sm:mx-0 bg-sky-100 rounded-3xl shadow-xl overflow-hidden'>
+      <div className={`${top} mx-4 sm:mx-0 bg-sky-100 rounded-3xl shadow-xl overflow-hidden`}>
         <div className='relative z-10 rounded'>
           <div className='flex flex-col justify-center px-8 pt-4'>
             <Title text='Tire Todas Suas Dúvidas' />
