@@ -25,7 +25,7 @@ const DrawerItems = ({ setIsDrawerOpen }) => {
 
   return (
     <>
-      <NavItem setIsDrawerOpen={setIsDrawerOpen} to='/postos' text='🏠 Página Inicial' />
+      <NavItem setIsDrawerOpen={setIsDrawerOpen} to='/' text='🏠 Página Inicial' />
       <NavItem setIsDrawerOpen={setIsDrawerOpen} to='/postos' text='⛽️ Para os Postos' />
       <NavItem setIsDrawerOpen={setIsDrawerOpen} to='/clientes' text='🚗 Para os Frotistas' />
       <NavItem setIsDrawerOpen={setIsDrawerOpen} to='/empresa' text='🤝 A Empresa' />
