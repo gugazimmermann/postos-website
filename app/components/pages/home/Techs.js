@@ -16,56 +16,56 @@ const Techs = () => {
             src='/images/technologies/aws2.webp'
             width={0}
             height={0}
-            className='w-auto h-8 sm:h-12 rounded-lg'
+            className='w-auto h-8 sm:h-10 rounded-lg'
             alt='Amazon Web Services'
           />
           <Image
             src='/images/technologies/cicd.webp'
             width={0}
             height={0}
-            className='w-auto h-8 sm:h-12 rounded-lg'
+            className='w-auto h-8 sm:h-10 rounded-lg'
             alt='CI/CD'
           />
           <Image
             src='/images/technologies/react2.webp'
             width={0}
             height={0}
-            className='w-auto h-8 sm:h-12 rounded-lg'
+            className='w-auto h-8 sm:h-10 rounded-lg'
             alt='React'
           />
           <Image
             src='/images/technologies/node.webp'
             width={0}
             height={0}
-            className='w-auto h-8 sm:h-12 rounded-lg'
+            className='w-auto h-8 sm:h-10 rounded-lg'
             alt='Node'
           />
           <Image
             src='/images/technologies/flutter.webp'
             width={0}
             height={0}
-            className='w-auto h-8 sm:h-12 rounded-lg'
+            className='w-auto h-8 sm:h-10 rounded-lg'
             alt='Flutter'
           />
           <Image
             src='/images/technologies/nextjs.webp'
             width={0}
             height={0}
-            className='w-auto h-8 sm:h-12 rounded-lg'
+            className='w-auto h-8 sm:h-10 rounded-lg'
             alt='NextJS'
           />
           <Image
             src='/images/technologies/electron.webp'
             width={0}
             height={0}
-            className='w-auto h-8 sm:h-12 rounded-lg'
+            className='w-auto h-8 sm:h-10 rounded-lg'
             alt='Electron'
           />
           <Image
             src='/images/technologies/go.webp'
             width={0}
             height={0}
-            className='w-auto h-8 sm:h-12 rounded-lg'
+            className='w-auto h-8 sm:h-10 rounded-lg'
             alt='Go'
           />
         </Link>
