@@ -105,7 +105,7 @@ const GasStatiosCompanies = () => {
   ];
 
   return (
-    <div id='Clientes' className='relative z-20 overflow-hidden  sm:mt-8'>
+    <div id='Clientes' className='relative z-20 overflow-hidden sm:mt-4'>
       <div className='flex flex-wrap my-8 px-8'>
         <div className='mx-auto text-center w-full'>
           <h2 className='mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]'>

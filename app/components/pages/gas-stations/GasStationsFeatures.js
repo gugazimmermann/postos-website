@@ -218,14 +218,14 @@ const GasStationsFeatures = () => {
         <GasStationsFeaturesCard
           title='Agendamento de Serviços'
           ImageHref='/images/gas-stations/servicos.webp'
-          buttonHref='#'
+          buttonHref='#Agendamentos'
           categories={['postos', 'clientes']}
           showCard={showCard}
         />
         <GasStationsFeaturesCard
           title='Promoções Personalizadas'
           ImageHref='/images/gas-stations/promocoes.webp'
-          buttonHref='#'
+          buttonHref='#Promocoes'
           categories={['postos']}
           showCard={showCard}
         />
