@@ -9,12 +9,12 @@ const Item = ({ question, setQuestion, item }) => {
           className='flex items-center focus:outline-none'
         >
           {question && question === item.id ? <FaqOpen /> : <FaqClose />}
-          <h1 className='mx-4 text-xl text-slate-800'>{item.question}</h1>
+          <h1 className='mx-4 text-lg text-slate-800 text-left'>{item.question}</h1>
         </button>
         {question && question === item.id && (
           <div className='flex mt-4 md:mx-10'>
             <span className='border border-amber-500' />
-            <p className='max-w-3xl px-4 text-slate-600'>{item.text} </p>
+            <p className='px-4 text-slate-600'>{item.text} </p>
           </div>
         )}
       </div>
