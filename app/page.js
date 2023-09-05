@@ -1,5 +1,5 @@
 import sharedMetadata from './shared-metadata';
-import { Hero, Jumbotron, Brands, Parallax, Cards, Techs, CallToAction } from './components/pages/home';
+import { Hero, Jumbotron, Brands, Parallax, Cards, Techs, CallToAction, FAQ } from './components/pages/home';
 
 export const metadata = {
   ...sharedMetadata,
@@ -17,8 +17,9 @@ export default function Home() {
       <Brands />
       <Parallax />
       <Cards />
-      <Techs />
       <CallToAction />
+      <FAQ />
+      <Techs />
     </>
   );
 }
