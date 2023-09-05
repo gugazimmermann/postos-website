@@ -26,6 +26,7 @@ const getOrganization = async (organizationID) => {
 
 const saveOrganization = async ({
   document,
+  legalName,
   name,
   email,
   phone,
@@ -39,6 +40,7 @@ const saveOrganization = async ({
   try {
     const { data } = await axios.post(`/organization`, {
       document: masks.cnpj(document),
+      legalName,
       name,
       email,
       phone: masks.phone(phone),
