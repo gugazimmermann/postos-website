@@ -110,6 +110,26 @@ const faq = [
         question: 'Como posso gerenciar os produtos no sistema?',
         text: 'Gerenciar produtos no sistema é um processo simples e direto. Você pode adicionar produtos individualmente fornecendo detalhes como categoria, nome e valor, ou, se preferir, pode agilizar o processo importando múltiplos itens através de um arquivo .CSV com essas informações. Uma vez que os produtos estão cadastrados no sistema, você pode determinar quais produtos estarão disponíveis para cada cliente. Os clientes, por sua vez, têm a opção de autorizar determinados produtos para seus respectivos motoristas, proporcionando um controle mais granular e eficiente sobre as transações.',
       },
+      {
+        id: 4,
+        question: 'Como posso personalizar para atender às necessidades específicas do meu posto?',
+        text: 'Você pode configurar o sistema de acordo com os seus critérios e requisitos específicos, podendo adaptar desde a interface do caixa até as notificações e emails enviados aos clientes. Veja mais em Personalizações na parte inferior do site.',
+      },
+      {
+        id: 5,
+        question: 'É possível alterar o visual do software usado pelos funcionários no ponto de venda?',
+        text: 'Sim, oferecemos a opção de personalizar o sistema de caixa, permitindo modificar paletas de cores, layouts, entre outros, para facilitar e agilizar o atendimento ao cliente. Veja mais em Personalizações  na parte inferior do site.',
+      },
+      {
+        id: 6,
+        question: 'É possível alterar o visual do software usado pelos funcionários no ponto de venda?',
+        text: 'Você pode controlar todas as comunicações com seus clientes, definindo o tom das mensagens, destacando promoções especiais, a marca ou a bandeira do posto. Veja mais em Personalizações na parte inferior do site.',
+      },
+      {
+        id: 7,
+        question: 'O que são os Relatórios e Gráficos Personalizados?',
+        text: 'São ferramentas que oferecem insights específicos, podem ser sobre o crescimento das vendas, desempenho de campanhas de marketing ou áreas que necessitam de melhorias, por exemplo, permitindo análises mais alinhadas ao seu negócio. O Touch Sistema Postos já oferece uma ampla variedade de relatórios e gráficos, mas se você precisar de algo mais específico, podemos realiza. Veja mais em Novos Relatórios na parte inferior do site.',
+      },
     ],
   },
   {
@@ -130,6 +150,16 @@ const faq = [
         id: 3,
         question: 'Os clientes têm a liberdade de modificar suas configurações no sistema?',
         text: 'Sim, os clientes podem modificar grande parte das suas configurações no sistema, incluindo atualizações em dados cadastrais, informações de veículos e motoristas, além de ajustes em autorizações e restrições diversas. No entanto, configurações relacionadas ao faturamento permanecem sob controle do posto. Se um cliente deseja modificar aspectos como o período de faturamento, a data de fechamento ou prazos, ele deve solicitar estas mudanças através do sistema. Tais solicitações serão encaminhadas para análise e aprovação do posto responsável.',
+      },
+      {
+        id: 4,
+        question: 'Quais informações dos veículos e motorista são fornecidas pelo sistema?',
+        text: 'O nosso sistema fornece detalhes abrangentes sobre os veículos, incluindo placa, marca, modelo, ano e a capacidade de verificar restrições de combustíveis em postos específicos, e sobre os motoristas temos registro sobre o nome e CPF, bem como os produtos e assinaturas autorizadas.',
+      },
+      {
+        id: 5,
+        question: 'Quais são as facilidades oferecidas aos motoristas através do aplicativo?',
+        text: 'O aplicativo oferece funcionalidades como a verificação de rotas para chegar aos postos autorizados (integrados com Google Maps e Waze), a consulta de combustíveis permitidos para o veículo utilizado, visualização dos produtos autorizados no posto, notificação se o veículo tiver restrição no momento que parar no posto, notificação de promoçõs exclusivas, históricos dos abastecimentos, e muito mais.',
       },
     ],
   },  
@@ -154,11 +184,16 @@ const faq = [
       },
       {
         id: 4,
+        question: 'Quais são as opções de segurança disponíveis durante o abastecimento?',
+        text: 'Durante o abastecimento, priorizamos a segurança através de tecnologias como Assinatura Digital, Reconhecimento Facial, Biometria e Código pelo App, tornando o processo robusto e confiável.',
+      },
+      {
+        id: 5,
         question: 'É possível somente faturar os abastecimentos?',
         text: 'Na verdade, nosso sistema oferece a você a liberdade de escolher a forma de pagamento que preferir, incluindo cartão combustível, dinheiro, pix, etc. No caso de optar pelo faturamento, nosso sistema facilitará o monitoramento do encerramento de faturas e dos prazos correspondentes, garantindo uma gestão financeira eficiente.',
       },
       {
-        id: 5,
+        id: 6,
         question: 'Como o cliente é notificado após um abastecimento?',
         text: 'Ao concluir um abastecimento, o sistema automaticamente notifica o cliente através de uma mensagem no sistema e um e-mail detalhado. Este e-mail em tempo real conterá todas as informações pertinentes sobre o abastecimento, incluindo detalhes do veículo, do motorista e dos produtos, garantindo transparência e mantendo o cliente informado a cada passo.',
       },
@@ -218,6 +253,57 @@ const faq = [
         id: 3,
         question: 'Como posso monitorar os faturamentos?',
         text: 'Oferecemos ferramentas abrangentes para você acompanhar os faturamentos de maneira eficiente. Você pode monitorar as faturas individualmente por cliente ou visualizar a situação de todos os clientes, identificando facilmente faturas pagas, pendentes ou atrasadas. Além disso, através do dashboard, você terá uma visão detalhada dos diferentes estados dos faturamentos, tais como "Aguardando Boleto" ou "Aguardando Confirmação de Pagamento", facilitando a gestão e o acompanhamento do ciclo de faturamento.',
+      },
+    ],
+  },  
+  {
+    id: 8,
+    name: 'Frotista',
+    items: [
+      {
+        id: 1,
+        question: 'O que é o Touch Sistemas - Postos e qual sua principal vantagem?',
+        text: 'O Touch Sistemas - Postos é uma plataforma centralizada criada para facilitar o gerenciamento de frotas em postos de combustíveis parceiros. A principal vantagem é a liberdade que oferece ao frotista, permitindo o gerenciamento eficiente e centralizado de suas operações em diversos postos, sem a necessidade de re-cadastro.'
+    },
+      {
+        id: 2,
+        question: 'Como faço para me cadastrar no sistema?',
+        text: 'Se você for convidado por um posto parceiro para se juntar ao sistema e ainda não tiver um cadastro, você poderá criar um de maneira ágil. Se já for cadastrado, simplesmente aceite o convite do posto parceiro.',
+      },
+      {
+        id: 3,
+        question: 'Há algum custo envolvido para os Frotistas?',
+        text: 'Não, o uso do Touch Sistemas - Postos é completamente gratuito para os Frotistas.',
+      },
+      {
+        id: 4,
+        question: 'Quais funcionalidades o sistema oferece para ajudar no gerenciamento de frotas?',
+        text: 'O sistema oferece uma série de funcionalidades para um gerenciamento eficaz, como acompanhamento de relatórios de abastecimentos, visualização de gráficos, configuração de datas de faturamento e atualizações de status dos mesmos, recebimento de notificações e e-mails em tempo real sobre abastecimentos, entre outros.',
+      },
+      {
+        id: 5,
+        question: 'O que posso controlar através do sistema?',
+        text: 'Através do sistema, é possível definir várias restrições e configurações, como o tipo de combustíveis permitido para cada veículo, associar motoristas a veículos específicos, determinar métodos de assinatura, configurar quais produtos cada motorista tem autorização, os postos que pode abastecer, etc, garantindo uma gestão eficaz e segura.',
+      },
+      {
+        id: 6,
+        question: 'Como o sistema garante a segurança das minhas operações?',
+        text: 'O sistema permite definir uma série de parâmetros de segurança, como locais permitidos para abastecimento, tipos de combustíveis, horários, produtos e tipos de assinatura, garantindo que você tenha controle completo e transparente sobre todas as operações. E cada abastecimento realizado é informado em tempo real por notificação no sistema e email.',
+      },
+      {
+        id: 7,
+        question: 'O que o Dashboard do sistema oferece?',
+        text: 'O Dashboard do sistema oferece uma visão completa de todas as operações, permitindo monitorar abastecimentos pendentes de todos os postos, acompanhar faturamentos, e acessar relatórios e gráficos detalhados que auxiliam no planejamento e controle da sua frota.',
+      },
+      {
+        id: 8,
+        question: 'Há alguma funcionalidade específica para os motoristas?',
+        text: 'Sim, para os motoristas, o sistema oferece um aplicativo para celular intuitivo, onde entre outras opções podem identificar postos cadastrados, verificar combustíveis autorizados para seus veículos, produtos liberados, e localizar a rota mais próxima para um posto cadastrado.',
+      },
+      {
+        id: 9,
+        question: 'Como posso integrar minha frota ao Touch Sistemas - Postos?',
+        text: 'Para integrar sua frota ao sistema, entre em contato com seu posto de combustível preferido e solicite a integração ao Touch Sistemas - Postos.',
       },
     ],
   },  
