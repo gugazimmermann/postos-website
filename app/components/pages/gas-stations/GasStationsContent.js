@@ -5,6 +5,8 @@ import GasStationsDashBoards from './GasStationsDashBoards';
 import GasStationsDesk from './GasStationsDesk';
 import GasStationsPersonalization from './GasStationsPersonalization';
 import GasStationsPayments from './GasStationsPayments';
+import GasStationsSchedule from './GasStationsSchedule';
+import GasStationsPromotions from './GasStationsPromotions';
 import GasStatiosCompanies from './GasStatiosCompanies';
 import GasStationsCallToAction from './GasStationsCallToAction';
 import ScrollToTopButton from './ScrollToTopButton';
@@ -21,6 +23,8 @@ const GasStationsContent = () => {
       <GasStationsPersonalization />
       <GasStationsPayments />
       <FAQ />
+      <GasStationsSchedule />
+      <GasStationsPromotions />
       <GasStatiosCompanies />
       <GasStationsCallToAction />
       <ScrollToTopButton />
