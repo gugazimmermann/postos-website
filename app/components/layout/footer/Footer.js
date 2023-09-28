@@ -48,7 +48,7 @@ const ContactColumn = () => {
         Contato
       </Link>
       <a
-        href='https://wa.me/5547988704247'
+        href='https://wa.me/5547997014984'
         className='block mt-2 text-sm text-gray-500 hover:underline hover:cursor-pointer'
       >
         WhatsApp

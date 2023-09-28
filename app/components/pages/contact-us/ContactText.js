@@ -33,7 +33,7 @@ const Address = () => {
 
 const Phone = () => {
   return (
-    <a href='tel:+5547988704247' className='flex items-start'>
+    <a href='tel:+5547997014984' className='flex items-start'>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         className='w-6 h-6 text-amber-500'
@@ -49,7 +49,7 @@ const Phone = () => {
         />
       </svg>
 
-      <span className='mx-2 text-slate-600'>(47) 98870-4247</span>
+      <span className='mx-2 text-slate-600'>(47) 99701-4984</span>
     </a>
   );
 };
