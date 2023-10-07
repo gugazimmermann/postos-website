@@ -8,7 +8,7 @@ const MainCol = () => {
       <div className='flex flex-col md:flex-row justify-between items-center p-4'>
         <Logo />
         <p className='text-slate-600 font-semibold mt-2 text-center md:text-right md:mt-0'>
-          Sistema para Gerenciamento de Frotas para Postos de Combustíveis
+          Sistema para Gerenciamento de Frotas para Postos de Combustível
         </p>
       </div>
       <hr className='border-slate-300' />

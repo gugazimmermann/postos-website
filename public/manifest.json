@@ -1,7 +1,7 @@
 {
-  "name": "Touch Sistemas - Postos - Website",
+  "name": "Touch Postos - Website",
   "short_name": "Postos Site",
-  "description": "Sistema para Gerenciamento de Frotas para Postos de Combustíveis",
+  "description": "Sistema para Gerenciamento de Frotas para Postos de Combustível",
   "theme_color": "#f59e0b",
   "background_color": "#f59e0b",
   "display": "standalone",
@@ -72,6 +72,6 @@
       "sizes": "512x512",
       "type": "image/png"
     },
-    "title": "Touch Sistemas - Postos - Website"
+    "title": "Touch Postos - Website"
   }
 }

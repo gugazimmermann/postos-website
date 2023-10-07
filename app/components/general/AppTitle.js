@@ -1,4 +1,4 @@
-const envAppTitle = process.env.NEXT_PUBLIC_TITLE || 'Touch Sistemas - Postos';
+const envAppTitle = process.env.NEXT_PUBLIC_TITLE || 'Touch Postos';
 const appTitle = envAppTitle.split(' - ');
 
 const AppTitle = ({ inverted }) => {

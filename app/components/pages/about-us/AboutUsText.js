@@ -7,7 +7,7 @@ const AboutUsText = () => {
     <Section>
       <SectionTitle title='Sobre a' word={process.env.NEXT_PUBLIC_TITLE} />
       <SectionSubTitle>
-        Inovação no Gerenciamento de Frotas para Postos de Combustíveis
+        Inovação no Gerenciamento de Frotas para Postos de Combustível
       </SectionSubTitle>
       <div className='w-full'>
         <Image
@@ -18,20 +18,20 @@ const AboutUsText = () => {
           alt='About Us'
         />
         <SectionParagraph>
-          Bem-vindos à <AppTitle />, uma empresa que nasceu da fusão entre visão estratégica e
+          Bem-vindos ao <AppTitle />, uma empresa que nasceu da fusão entre visão estratégica e
           competência técnica. Fundada em Itajaí, Santa Catarina, nossa história teve início a
-          partir de um encontro entre um programador e um proprietário de postos de combustíveis,
+          partir de um encontro entre um programador e um proprietário de Postos de Combustível,
           cujas discussões revelaram oportunidades cruciais no setor de gerenciamento de frotas.
         </SectionParagraph>
         <SectionParagraph>
           Esse diálogo inicial despertou nossa consciência para as complexidades enfrentadas pelos
-          postos de combustíveis no que se refere ao controle de suas frotas. Reconhecemos a
+          Postos de Combustível no que se refere ao controle de suas frotas. Reconhecemos a
           necessidade de soluções que permitissem um gerenciamento mais eficaz do abastecimento, ao
           mesmo tempo em que aprimorássemos a experiência dos clientes finais, os gestores das
           frotas.
         </SectionParagraph>
         <SectionParagraph>
-          Assumindo o compromisso de criar um <AppDescription /> de ponta, a <AppTitle /> entrou em
+          Assumindo o compromisso de criar um <AppDescription /> de ponta, o <AppTitle /> entrou em
           ação. Cada linha de código escrita e cada funcionalidade desenvolvida eram movidas por
           nossa incessante busca por eficiência e excelência operacional.
         </SectionParagraph>
@@ -46,7 +46,7 @@ const AboutUsText = () => {
         </blockquote>
         <SectionParagraph>
           À medida que nossas soluções ganharam forma e funcionalidade, nosso impacto no mercado se
-          tornou evidente. Atualmente, a <AppTitle /> é reconhecida como um líder no desenvolvimento
+          tornou evidente. Atualmente, o <AppTitle /> é reconhecido como um líder no desenvolvimento
           de tecnologias inovadoras voltadas para o gerenciamento de frotas em postos de
           combustíveis. Nossa jornada é marcada por parcerias sólidas, resultados concretos
           entregues aos nossos clientes e um comprometimento contínuo com a evolução.
@@ -60,7 +60,7 @@ const AboutUsText = () => {
         <SectionParagraph>
           Convidamos você a se unir a nós nessa jornada em direção a um futuro onde a tecnologia
           redefine o potencial e onde o gerenciamento de frotas é sinônimo de excelência,
-          praticidade e sucesso. Seja bem-vindo à <AppTitle />, onde a inovação impulsiona a
+          praticidade e sucesso. Seja bem-vindo ao <AppTitle />, onde a inovação impulsiona a
           eficiência!
         </SectionParagraph>
       </div>

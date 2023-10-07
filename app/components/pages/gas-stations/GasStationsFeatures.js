@@ -91,7 +91,7 @@ const GasStationsFeatures = () => {
     <div className='mt-4'>
       <div className='mx-auto mb-8 md:mb-4 sm:px-32 text-center'>
         <Title text='Maximize a Eficiência com o' />
-        <Title text='Touch Sistemas - Postos' />
+        <Title text='Touch Postos' />
         <Paragraph>
           Conheça algumas de nossas funcionalidades que transformarão seu posto em um modelo de
           eficiência, inovação e satisfação do cliente.
