@@ -36,7 +36,7 @@ const GasStationsOrganizations = () => {
             <Title text='Centralização e Controle' white={true} />
             <Paragraph white={true}>
               Seja um empreendedor com um único posto ou o gestor de uma ampla rede de postos de
-              combustíveis, o <AppTitle inverted={true} /> foi desenhado pensando em você. Em nossa
+              combustível, o <AppTitle inverted={true} /> foi desenhado pensando em você. Em nossa
               plataforma, centralizar a gestão de múltiplos postos torna-se uma tarefa
               descomplicada.
             </Paragraph>
