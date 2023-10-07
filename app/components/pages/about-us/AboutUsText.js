@@ -48,7 +48,7 @@ const AboutUsText = () => {
           À medida que nossas soluções ganharam forma e funcionalidade, nosso impacto no mercado se
           tornou evidente. Atualmente, o <AppTitle /> é reconhecido como um líder no desenvolvimento
           de tecnologias inovadoras voltadas para o gerenciamento de frotas em postos de
-          combustíveis. Nossa jornada é marcada por parcerias sólidas, resultados concretos
+          combustível. Nossa jornada é marcada por parcerias sólidas, resultados concretos
           entregues aos nossos clientes e um comprometimento contínuo com a evolução.
         </SectionParagraph>
         <SectionParagraph>

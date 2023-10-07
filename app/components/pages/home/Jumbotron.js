@@ -9,7 +9,7 @@ const Jumbotron = () => {
           <h2 className='text-3xl lg:text-5xl font-bold text-center text-slate-800'>
             Sistema para Gerenciamento de{' '}
             <span className='text-4xl lg:text-6xl text-slate-950'>Frotas</span> para Postos de
-            Combustíveis
+            Combustível
           </h2>
         </div>
         <Image
