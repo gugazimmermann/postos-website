@@ -82,9 +82,9 @@ const UsageTermsText = () => {
       </SectionParagraph>
       <SectionSubTitle>4. Pagamento e Assinatura</SectionSubTitle>
       <SectionParagraph>
-        4.1 Preços: Os clientes devem pagar a taxa de assinatura acordada pelo uso do Touch Sistemas
-        - Postos. Os detalhes de preços, termos de pagamento e ciclo de faturamento serão
-        especificados no contrato de assinatura.
+        4.1 Preços: Os clientes devem pagar a taxa de assinatura acordada pelo uso do Touch Postos.
+        Os detalhes de preços, termos de pagamento e ciclo de faturamento serão especificados no
+        contrato de assinatura.
       </SectionParagraph>
       <SectionParagraph>
         4.2 Período de Assinatura: O período de assinatura será definido no contrato de assinatura.

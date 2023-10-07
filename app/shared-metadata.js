@@ -1,7 +1,7 @@
-const TITLE = process.env.NEXT_PUBLIC_TITLE || 'Touch Sistemas - Postos';
+const TITLE = process.env.NEXT_PUBLIC_TITLE || 'Touch Postos';
 const DESCRIPTION =
   process.env.NEXT_PUBLIC_DESCRIPTION ||
-  'Sistema para Gerenciamento de Frotas para Postos de Combustíveis';
+  'Sistema para Gerenciamento de Frotas para Postos de Combustível';
 const URL = process.env.NEXT_PUBLIC_URL || 'https://www.touchsistemas.com.br';
 
 const sharedMetadata = {
@@ -57,7 +57,7 @@ const sharedMetadata = {
   openGraph: {
     title: TITLE,
     description:
-      'Sistema de Gerenciamento Integrado para Frotas em Postos de Combustíveis e Frotistas.',
+      'Sistema de Gerenciamento Integrado para Frotas em Postos de Combustível e Frotistas.',
     locale: 'pt_BR',
     type: 'website',
     url: URL,

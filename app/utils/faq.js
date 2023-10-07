@@ -5,8 +5,8 @@ const faq = [
     items: [
       {
         id: 1,
-        question: 'O que representa o Touch Sistemas Postos?',
-        text: 'O Touch Sistemas Postos é uma plataforma avançada para o gerenciamento de frotas em postos de combustíveis. Desenvolvemos uma solução robusta que centraliza o controle rigoroso dos abastecimentos de veículos de frotas, oferecendo funcionalidades como autenticação de abastecimentos, acompanhamento do faturamento, relatórios detalhados, notificações em tempo real e promoções personalizadas para atender às suas necessidades específicas.',
+        question: 'O que representa o Touch Postos?',
+        text: 'O Touch Postos é uma plataforma avançada para o gerenciamento de frotas em Postos de Combustível. Desenvolvemos uma solução robusta que centraliza o controle rigoroso dos abastecimentos de veículos de frotas, oferecendo funcionalidades como autenticação de abastecimentos, acompanhamento do faturamento, relatórios detalhados, notificações em tempo real e promoções personalizadas para atender às suas necessidades específicas.',
       },
       {
         id: 2,
@@ -56,8 +56,8 @@ const faq = [
     items: [
       {
         id: 1,
-        question: 'O que caracteriza uma "Organização" no Touch Sistemas Postos?',
-        text: 'No contexto do Touch Sistemas Postos, uma "Organização" é a entidade que administra um ou mais postos de combustível. Ela representa o nível mais elevado de controle dentro do sistema, permitindo uma gestão centralizada e abrangente de todas as operações e informações relativas aos postos que estão sob sua gestão.',
+        question: 'O que caracteriza uma "Organização" no Touch Postos?',
+        text: 'No contexto do Touch Postos, uma "Organização" é a entidade que administra um ou mais postos de combustível. Ela representa o nível mais elevado de controle dentro do sistema, permitindo uma gestão centralizada e abrangente de todas as operações e informações relativas aos postos que estão sob sua gestão.',
       },
       {
         id: 2,
@@ -103,7 +103,7 @@ const faq = [
       {
         id: 2,
         question: 'Posso utilizar o sistema se o computador do caixa não possui um navegador?',
-        text: 'Sim, você pode! Para atender a esta necessidade, criamos um programa especial que facilita a utilização do Touch Sistemas Postos em computadores que não possuem um navegador. Este programa abre exclusivamente a interface do Touch Sistemas Postos, não permitindo a navegação em outros sites da internet, garantindo assim a segurança e a focagem nas operações do posto.',
+        text: 'Sim, você pode! Para atender a esta necessidade, criamos um programa especial que facilita a utilização do Touch Postos em computadores que não possuem um navegador. Este programa abre exclusivamente a interface do Touch Postos, não permitindo a navegação em outros sites da internet, garantindo assim a segurança e a focagem nas operações do posto.',
       },
       {
         id: 3,
@@ -138,8 +138,8 @@ const faq = [
     items: [
       {
         id: 1,
-        question: 'Como posso convidar um cliente para o Touch Sistemas Postos?',
-        text: 'Convidar um cliente para o Touch Sistemas Postos é um processo simples e rápido. Você precisa apenas inserir o endereço de email do cliente e nosso sistema enviará um convite automaticamente. Após receber o convite, o cliente poderá realizar um breve cadastro para começar a utilizar o sistema. Caso já seja um usuário registrado, basta aceitar o convite do posto. Vale ressaltar que, se o convite for realizado pela organização, ele será válido para todos os postos vinculados. Além disso, facilitamos a transição para migrar clientes de outro sistema, oferecendo uma opção para importar os emails através de um arquivo CSV.',
+        question: 'Como posso convidar um cliente para o Touch Postos?',
+        text: 'Convidar um cliente para o Touch Postos é um processo simples e rápido. Você precisa apenas inserir o endereço de email do cliente e nosso sistema enviará um convite automaticamente. Após receber o convite, o cliente poderá realizar um breve cadastro para começar a utilizar o sistema. Caso já seja um usuário registrado, basta aceitar o convite do posto. Vale ressaltar que, se o convite for realizado pela organização, ele será válido para todos os postos vinculados. Além disso, facilitamos a transição para migrar clientes de outro sistema, oferecendo uma opção para importar os emails através de um arquivo CSV.',
       },
       {
         id: 2,
@@ -221,12 +221,12 @@ const faq = [
       {
         id: 4,
         question: 'Como o uso de Códigos facilita o processo de abastecimento?',
-        text: 'A funcionalidade de geração de códigos oferece uma maneira ágil e segura de autorizar abastecimentos. O cliente pode gerar um código único de abastecimento através do Touch Sistemas Postos, que será atribuído ao motorista ou veículo específico. Durante o abastecimento, o motorista acessa o aplicativo e fornece este código ao atendente, facilitando e agilizando o processo de autorização de abastecimento.',
+        text: 'A funcionalidade de geração de códigos oferece uma maneira ágil e segura de autorizar abastecimentos. O cliente pode gerar um código único de abastecimento através do Touch Postos, que será atribuído ao motorista ou veículo específico. Durante o abastecimento, o motorista acessa o aplicativo e fornece este código ao atendente, facilitando e agilizando o processo de autorização de abastecimento.',
       },
       {
         id: 5,
         question: 'O que fazer se o motorista não tiver uma assinatura cadastrada previamente?',
-        text: 'Se o motorista não tiver uma assinatura cadastrada no sistema, não há com o que se preocupar. Ele pode realizar o cadastro rapidamente no momento do abastecimento. Além disso, vale ressaltar que, uma vez cadastrado em qualquer posto que utilize o nosso sistema, a assinatura será válida e poderá ser utilizada em outros postos que também adotam o Touch Sistemas Postos, facilitando transações futuras.',
+        text: 'Se o motorista não tiver uma assinatura cadastrada no sistema, não há com o que se preocupar. Ele pode realizar o cadastro rapidamente no momento do abastecimento. Além disso, vale ressaltar que, uma vez cadastrado em qualquer posto que utilize o nosso sistema, a assinatura será válida e poderá ser utilizada em outros postos que também adotam o Touch Postos, facilitando transações futuras.',
       },
       {
         id: 6,
@@ -262,8 +262,8 @@ const faq = [
     items: [
       {
         id: 1,
-        question: 'O que é o Touch Sistemas - Postos e qual sua principal vantagem?',
-        text: 'O Touch Sistemas - Postos é uma plataforma centralizada criada para facilitar o gerenciamento de frotas em postos de combustíveis parceiros. A principal vantagem é a liberdade que oferece ao frotista, permitindo o gerenciamento eficiente e centralizado de suas operações em diversos postos, sem a necessidade de re-cadastro.'
+        question: 'O que é o Touch Postos e qual sua principal vantagem?',
+        text: 'O Touch Postos é uma plataforma centralizada criada para facilitar o gerenciamento de frotas em Postos de Combustível parceiros. A principal vantagem é a liberdade que oferece ao frotista, permitindo o gerenciamento eficiente e centralizado de suas operações em diversos postos, sem a necessidade de re-cadastro.'
     },
       {
         id: 2,
@@ -273,7 +273,7 @@ const faq = [
       {
         id: 3,
         question: 'Há algum custo envolvido para os Frotistas?',
-        text: 'Não, o uso do Touch Sistemas - Postos é completamente gratuito para os Frotistas.',
+        text: 'Não, o uso do Touch Postos é completamente gratuito para os Frotistas.',
       },
       {
         id: 4,
@@ -302,8 +302,8 @@ const faq = [
       },
       {
         id: 9,
-        question: 'Como posso integrar minha frota ao Touch Sistemas - Postos?',
-        text: 'Para integrar sua frota ao sistema, entre em contato com seu posto de combustível preferido e solicite a integração ao Touch Sistemas - Postos.',
+        question: 'Como posso integrar minha frota ao Touch Postos?',
+        text: 'Para integrar sua frota ao sistema, entre em contato com seu posto de combustível preferido e solicite a integração ao Touch Postos.',
       },
     ],
   },  

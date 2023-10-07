@@ -50,7 +50,7 @@ const CompaniesDrivers = () => {
             </Paragraph>
             <Paragraph dark={true}>
               Fale com seu posto de preferência e integre sua frota ao <AppTitle />, o sistema
-              definitivo para gerenciamento de frotas em postos de combustíveis.
+              definitivo para gerenciamento de frotas em Postos de Combustível.
             </Paragraph>
           </div>
           <div>

@@ -72,7 +72,7 @@ const GasStatiosCompanies = () => {
   const items = [
     {
       title: 'Cadastro Ágil e Direto',
-      text: 'Para convidar, basta cadastrar o e-mail no Touch Sistemas - Postos. O convidado receberá uma notificação para se associar como cliente do posto (ou postos). Caso não possua cadastro, irá preencher um formulário rápido para ter acesso; se já estiver cadastrado, basta aceitar o convite, liberar seus veículos e motoristas para abastecerem no posto, e estará pronto para começar!',
+      text: 'Para convidar, basta cadastrar o e-mail no Touch Postos. O convidado receberá uma notificação para se associar como cliente do posto (ou postos). Caso não possua cadastro, irá preencher um formulário rápido para ter acesso; se já estiver cadastrado, basta aceitar o convite, liberar seus veículos e motoristas para abastecerem no posto, e estará pronto para começar!',
     },
     {
       title: 'Múltiplos Postos',
@@ -84,7 +84,7 @@ const GasStatiosCompanies = () => {
     },
     {
       title: 'Veículos e Motoristas',
-      text: 'Os dados dos veículos e motoristas são de responsabilidade do cliente, que também gerencia suas liberações e restrições. No Touch Sistemas - Postos, o cliente pode facilmente registrar, inativar ou liberar motoristas, autorizar postos e mais – tudo com apenas alguns cliques.',
+      text: 'Os dados dos veículos e motoristas são de responsabilidade do cliente, que também gerencia suas liberações e restrições. No Touch Postos, o cliente pode facilmente registrar, inativar ou liberar motoristas, autorizar postos e mais – tudo com apenas alguns cliques.',
     },
     {
       title: 'Restrições Sob Medida',
@@ -100,7 +100,7 @@ const GasStatiosCompanies = () => {
     },
     {
       title: 'Agendamento de Serviços',
-      text: 'O Touch Sistemas - Postos oferece uma ferramenta de agendamento que permite aos clientes marcar serviços com facilidade. Isso proporciona comodidade para o cliente e potencializa a fidelização ao posto. Notificações são enviadas por e-mail e pelo aplicativo. Alguns serviços, que dependem de peças e produtos específicos, aguardam confirmação.',
+      text: 'O Touch Postos oferece uma ferramenta de agendamento que permite aos clientes marcar serviços com facilidade. Isso proporciona comodidade para o cliente e potencializa a fidelização ao posto. Notificações são enviadas por e-mail e pelo aplicativo. Alguns serviços, que dependem de peças e produtos específicos, aguardam confirmação.',
     },
   ];
 

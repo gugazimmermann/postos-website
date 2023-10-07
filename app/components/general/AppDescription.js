@@ -1,6 +1,6 @@
 const envAppDescription =
   process.env.NEXT_PUBLIC_DESCRIPTION ||
-  'Sistema para Gerenciamento de Frotas para Postos de Combustíveis';
+  'Sistema para Gerenciamento de Frotas para Postos de Combustível';
 const appDescription = envAppDescription.split(' Frotas ');
 
 const AppDescription = ({ inverted }) => {
