@@ -20,7 +20,7 @@ const Access = () => {
     return (
       <Link
         href='/cadastro'
-        className='flex cursor-pointer text-slate-800 hover:text-amber-500 hover:font-bold transition-colors duration-300'
+        className='flex cursor-pointer text-amber-500 font-bold'
       >
         <Register />
         Cadastro
