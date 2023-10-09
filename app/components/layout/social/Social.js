@@ -26,12 +26,12 @@ const Social = ({ className }) => {
   return (
     <div className={`flex justify-center ${className ? className : ''}`}>
       <SocialItem name='Whatsapp' linkTo='https://wa.me/5547997014984' />
-      <SocialItem name='Facebook' linkTo='https://www.facebook.com/touchsistemaspostos' />
-      <SocialItem name='Instagram' linkTo='https://www.instagram.com/touchsistemas_postos' />
-      <SocialItem name='Threads' linkTo='https://www.threads.net/@touchsistemas_postos' />
-      <SocialItem name='Twitter' linkTo='https://twitter.com/SistemasTo58014' />
-      <SocialItem name='Youtube' linkTo='https://www.youtube.com/@touchsistemas' />
-      <SocialItem name='Linkedin' linkTo='https://www.linkedin.com/company/touch-sistemas-postos' />
+      <SocialItem name='Facebook' linkTo='https://www.facebook.com/touchpostos' />
+      <SocialItem name='Instagram' linkTo='https://instagram.com/touchpostos' />
+      {/* <SocialItem name='Threads' linkTo='https://www.threads.net/@touchsistemas_postos' /> */}
+      <SocialItem name='Twitter' linkTo='https://x.com/@touchpostos' />
+      <SocialItem name='Youtube' linkTo='https://www.youtube.com/@touchpostos' />
+      <SocialItem name='Linkedin' linkTo='https://www.linkedin.com/company/touchpostos' />
     </div>
   );
 };
