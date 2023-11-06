@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics, isSupported } from 'firebase/analytics';
 import { Inter } from 'next/font/google';
+import Script from 'next/script'
 import './globals.css';
 import { Header, Footer, Drawer } from './components/layout';
 
@@ -40,6 +41,15 @@ export default function Layout({ children }) {
         <meta name='apple-mobile-web-app-status-bar' content='#f59e0b' />
         <meta name='robots' content='all' />
         <meta name='googlebot' content='index,follow' />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-11399149504" />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-11399149504');
+          `}
+        </Script>
       </head>
       <body className={inter.className}>
         <div className='flex flex-col min-h-screen'>
